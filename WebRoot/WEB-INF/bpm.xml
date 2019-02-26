@@ -1,0 +1,731 @@
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.task.process_002dhis_002dtab_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.task.process_002dhis_002dtab_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.task.task_002dform_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.task.task_002dform_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.task.task_002dmap_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.task.task_002dmap_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.task.task_002doperate_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.task.task_002doperate_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.task.task_002dtab_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.task.task_002dtab_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.task.taskList_002dgroup_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.task.taskList_002dgroup_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.task.taskList_002dhistory_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.task.taskList_002dhistory_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.task.taskList_002dperson_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.task.taskList_002dperson_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.task.taskList_002dtab_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.task.taskList_002dtab_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.processnode.nodeDateRuleListForFunction_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.processnode.nodeDateRuleListForFunction_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.processnode.nodeOperaListForFunction_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.processnode.nodeOperaListForFunction_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.processnode.nodeRoleSet_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.processnode.nodeRoleSet_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.processnode.processnode_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.processnode.processnode_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.processnode.processnodeList_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.processnode.processnodeList_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.processhandle.dynamicHandle_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.processhandle.dynamicHandle_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.processhandle.processHandle_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.processhandle.processHandle_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.process.busbase_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.process.busbase_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.process.busbaseList_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.process.busbaseList_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.process.processIframe_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.process.processIframe_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.process.processList_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.process.processList_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.process.processPic_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.process.processPic_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.process.processpro_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.process.processpro_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.process.processproList_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.process.processproList_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.process.processTabs_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.process.processTabs_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.process.processUpload_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.process.processUpload_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.listener.listener_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.listener.listener_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.listener.listenerList_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.listener.listenerList_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.form.form_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.form.form_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.form.formpro_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.form.formpro_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.form.formproList_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.form.formproList_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.form.formsList_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.form.formsList_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.deployment.deploymentInProcesskeyList_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.deployment.deploymentInProcesskeyList_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.deployment.deploymentList_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.deployment.deploymentList_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.deployment.deploypro_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.deployment.deploypro_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.database.datatable_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.database.datatable_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.database.tableList_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.database.tableList_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.database.tableTypeTabs_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.database.tableTypeTabs_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.activiti.claimedTask_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.activiti.claimedTask_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.activiti.finishedTask_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.activiti.finishedTask_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.activiti.myRunningProcessList_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.activiti.myRunningProcessList_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.activiti.processlist_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.activiti.processlist_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.activiti.reassignInit_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.activiti.reassignInit_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.activiti.reassignUsers_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.activiti.reassignUsers_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.activiti.runninglist_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.activiti.runninglist_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.activiti.skipNodeInit_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.activiti.skipNodeInit_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.activiti.uploadFile_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.activiti.uploadFile_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.activiti.viewProcessInstanceHistory_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.activiti.viewProcessInstanceHistory_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.workflow.activiti.waitingClaimTask_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.workflow.activiti.waitingClaimTask_jsp</servlet-class>
+    </servlet>
+	
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.designer.addCandidateGroup_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.designer.addCandidateGroup_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.designer.addCandidateUser_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.designer.addCandidateUser_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.designer.boundaryEventProperties_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.designer.boundaryEventProperties_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.designer.businessRuleTaskProperties_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.designer.businessRuleTaskProperties_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.designer.candidateGroupsConfig_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.designer.candidateGroupsConfig_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.designer.candidateUsersConfig_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.designer.candidateUsersConfig_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.designer.errorBoundaryEventProperties_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.designer.errorBoundaryEventProperties_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.designer.eventProperties_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.designer.eventProperties_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.designer.flowListenerConfig_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.designer.flowListenerConfig_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.designer.flowProperties_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.designer.flowProperties_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.designer.gatewayProperties_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.designer.gatewayProperties_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.designer.index_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.designer.index_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.designer.listenerList_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.designer.listenerList_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.designer.mailTaskProperties_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.designer.mailTaskProperties_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.designer.processListenerConfig_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.designer.processListenerConfig_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.designer.processpro_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.designer.processpro_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.designer.processProperties_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.designer.processProperties_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.designer.receiveTaskProperties_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.designer.receiveTaskProperties_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.designer.scriptTaskProperties_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.designer.scriptTaskProperties_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.designer.serviceTaskProperties_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.designer.serviceTaskProperties_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.designer.subProcessProperties_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.designer.subProcessProperties_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.designer.taskFormConfig_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.designer.taskFormConfig_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.designer.taskListenerConfig_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.designer.taskListenerConfig_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.designer.taskProperties_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.designer.taskProperties_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.webpage.designer.taskVariableConfig_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.webpage.designer.taskVariableConfig_jsp</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.task.process_002dhis_002dtab_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/task/process-his-tab.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.task.task_002dform_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/task/task-form.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.task.task_002dmap_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/task/task-map.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.task.task_002doperate_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/task/task-operate.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.task.task_002dtab_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/task/task-tab.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.task.taskList_002dgroup_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/task/taskList-group.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.task.taskList_002dhistory_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/task/taskList-history.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.task.taskList_002dperson_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/task/taskList-person.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.task.taskList_002dtab_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/task/taskList-tab.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.processnode.nodeDateRuleListForFunction_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/processnode/nodeDateRuleListForFunction.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.processnode.nodeOperaListForFunction_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/processnode/nodeOperaListForFunction.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.processnode.nodeRoleSet_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/processnode/nodeRoleSet.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.processnode.processnode_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/processnode/processnode.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.processnode.processnodeList_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/processnode/processnodeList.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.processhandle.dynamicHandle_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/processhandle/dynamicHandle.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.processhandle.processHandle_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/processhandle/processHandle.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.process.busbase_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/process/busbase.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.process.busbaseList_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/process/busbaseList.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.process.processIframe_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/process/processIframe.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.process.processList_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/process/processList.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.process.processPic_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/process/processPic.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.process.processpro_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/process/processpro.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.process.processproList_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/process/processproList.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.process.processTabs_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/process/processTabs.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.process.processUpload_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/process/processUpload.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.listener.listener_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/listener/listener.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.listener.listenerList_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/listener/listenerList.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.form.form_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/form/form.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.form.formpro_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/form/formpro.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.form.formproList_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/form/formproList.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.form.formsList_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/form/formsList.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.deployment.deploymentInProcesskeyList_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/deployment/deploymentInProcesskeyList.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.deployment.deploymentList_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/deployment/deploymentList.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.deployment.deploypro_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/deployment/deploypro.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.database.datatable_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/database/datatable.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.database.tableList_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/database/tableList.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.database.tableTypeTabs_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/database/tableTypeTabs.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.activiti.claimedTask_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/activiti/claimedTask.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.activiti.finishedTask_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/activiti/finishedTask.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.activiti.myRunningProcessList_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/activiti/myRunningProcessList.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.activiti.processlist_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/activiti/processlist.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.activiti.reassignInit_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/activiti/reassignInit.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.activiti.reassignUsers_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/activiti/reassignUsers.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.activiti.runninglist_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/activiti/runninglist.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.activiti.skipNodeInit_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/activiti/skipNodeInit.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.activiti.uploadFile_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/activiti/uploadFile.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.activiti.viewProcessInstanceHistory_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/activiti/viewProcessInstanceHistory.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.workflow.activiti.waitingClaimTask_jsp</servlet-name>
+        <url-pattern>/webpage/workflow/activiti/waitingClaimTask.jsp</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.designer.addCandidateGroup_jsp</servlet-name>
+        <url-pattern>/webpage/designer/addCandidateGroup.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.designer.addCandidateUser_jsp</servlet-name>
+        <url-pattern>/webpage/designer/addCandidateUser.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.designer.boundaryEventProperties_jsp</servlet-name>
+        <url-pattern>/webpage/designer/boundaryEventProperties.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.designer.businessRuleTaskProperties_jsp</servlet-name>
+        <url-pattern>/webpage/designer/businessRuleTaskProperties.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.designer.candidateGroupsConfig_jsp</servlet-name>
+        <url-pattern>/webpage/designer/candidateGroupsConfig.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.designer.candidateUsersConfig_jsp</servlet-name>
+        <url-pattern>/webpage/designer/candidateUsersConfig.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.designer.errorBoundaryEventProperties_jsp</servlet-name>
+        <url-pattern>/webpage/designer/errorBoundaryEventProperties.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.designer.eventProperties_jsp</servlet-name>
+        <url-pattern>/webpage/designer/eventProperties.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.designer.flowListenerConfig_jsp</servlet-name>
+        <url-pattern>/webpage/designer/flowListenerConfig.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.designer.flowProperties_jsp</servlet-name>
+        <url-pattern>/webpage/designer/flowProperties.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.designer.gatewayProperties_jsp</servlet-name>
+        <url-pattern>/webpage/designer/gatewayProperties.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.designer.index_jsp</servlet-name>
+        <url-pattern>/webpage/designer/index.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.designer.listenerList_jsp</servlet-name>
+        <url-pattern>/webpage/designer/listenerList.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.designer.mailTaskProperties_jsp</servlet-name>
+        <url-pattern>/webpage/designer/mailTaskProperties.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.designer.processListenerConfig_jsp</servlet-name>
+        <url-pattern>/webpage/designer/processListenerConfig.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.designer.processpro_jsp</servlet-name>
+        <url-pattern>/webpage/designer/processpro.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.designer.processProperties_jsp</servlet-name>
+        <url-pattern>/webpage/designer/processProperties.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.designer.receiveTaskProperties_jsp</servlet-name>
+        <url-pattern>/webpage/designer/receiveTaskProperties.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.designer.scriptTaskProperties_jsp</servlet-name>
+        <url-pattern>/webpage/designer/scriptTaskProperties.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.designer.serviceTaskProperties_jsp</servlet-name>
+        <url-pattern>/webpage/designer/serviceTaskProperties.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.designer.subProcessProperties_jsp</servlet-name>
+        <url-pattern>/webpage/designer/subProcessProperties.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.designer.taskFormConfig_jsp</servlet-name>
+        <url-pattern>/webpage/designer/taskFormConfig.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.designer.taskListenerConfig_jsp</servlet-name>
+        <url-pattern>/webpage/designer/taskListenerConfig.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.designer.taskProperties_jsp</servlet-name>
+        <url-pattern>/webpage/designer/taskProperties.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.webpage.designer.taskVariableConfig_jsp</servlet-name>
+        <url-pattern>/webpage/designer/taskVariableConfig.jsp</url-pattern>
+    </servlet-mapping>
