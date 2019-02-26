@@ -1,0 +1,1 @@
+update t_s_function set FUNCTIONURL='tBFundsPropertyController.do?tBFundsPropertyNew' where FUNCTIONNAME='经费类型管理'
