@@ -1,0 +1,147 @@
+.icon-blank{
+	background:url('icons/blank.gif') no-repeat center center;
+}
+.icon-add{
+	background:url('icons/edit_add.png') no-repeat center center;
+}
+.icon-edit{
+	background:url('icons/image_edit.png') no-repeat center center;
+}
+.icon-remove{
+	background:url('icons/edit_remove.png') no-repeat center center;
+}
+.icon-save{
+	background:url('icons/filesave.png') no-repeat center center;
+}
+.icon-cut{
+	background:url('icons/cut.png') no-repeat center center;
+}
+.icon-ok{
+	background:url('icons/ok.png') no-repeat center center;
+}
+.icon-no{
+	background:url('icons/no.png') no-repeat center center;
+}
+.icon-cancel{
+	background:url('icons/cancel.png') no-repeat center center;
+}
+.icon-reload{
+	background:url('icons/reload.png') no-repeat center center;
+}
+.icon-search{
+	background:url('icons/search.png') no-repeat center center;
+}
+.icon-print{
+	background:url('icons/print.png') no-repeat center center;
+}
+.icon-help{
+	background:url('icons/help.png') no-repeat center center;
+}
+.icon-undo{
+	background:url('icons/undo.png') no-repeat center center;
+}
+.icon-redo{
+	background:url('icons/redo.png') no-repeat center center;
+}
+.icon-back{
+	background:url('icons/back.png') no-repeat center center;
+}
+.icon-sum{
+	background:url('icons/sum.png') no-repeat center center;
+}
+.icon-tip{
+	background:url('icons/tip.png') no-repeat center center;
+}
+
+.icon-mini-add{
+	background:url('icons/mini_add.png') no-repeat center center;
+}
+.icon-mini-edit{
+	background:url('icons/mini_edit.png') no-repeat center center;
+}
+.icon-mini-refresh{
+	background:url('icons/mini_refresh.png') no-repeat center center;
+}
+
+.icon-put{
+	background:url('icons/basket_put.png') no-repeat center center;
+}
+.icon-putout{
+	background:url('icons/basket_remove.png') no-repeat center center;
+}
+.icon-comturn{
+	background:url('icons/comturn.png') no-repeat center center;
+}
+.icon-exit{
+	background:url('icons/exit.png') no-repeat center center;
+}
+.icon-report{
+	background:url('icons/text.png') no-repeat center center;
+}
+.icon-message{
+	background:url('icons/message.png') no-repeat center center;
+}
+
+/* 项目管理模块菜单图标 */
+.icon-defaultPM{
+	background:url('icons/pm/default.png') no-repeat center center;
+}.icon-basicPM{
+	background:url('icons/pm/basic.png') no-repeat center center;
+}.icon-approvalPM{
+	background:url('icons/pm/approval.png') no-repeat center center;
+}.icon-checkPM{
+	background:url('icons/pm/check.png') no-repeat center center;
+}.icon-controlPM{
+	background:url('icons/pm/control.png') no-repeat center center;
+}.icon-execPM{
+	background:url('icons/pm/exec.png') no-repeat center center;
+}.icon-planPM{
+	background:url('icons/pm/plan.png') no-repeat center center;
+}.icon-resultPM{
+	background:url('icons/pm/result.png') no-repeat center center;
+}.icon-rightPM{
+	background:url('icons/pm/right.png') no-repeat center center;
+}.icon-treeCPM{
+	background:url('icons/pm/tree-contract.png') no-repeat center center;
+}.icon-treeC1PM{
+	background:url('icons/pm/tree-contract1.png') no-repeat center center;
+}.icon-treePPM{
+	background:url('icons/pm/tree-plan.png') no-repeat center center;
+}.icon-treeP1PM{
+	background:url('icons/pm/tree-plan1.png') no-repeat center center;
+}
+
+
+/* 立项管理 */
+.icon-lxlxPM{
+	background:url('icons/pm/lx/lx.png') no-repeat center center;
+}
+.icon-lxcyPM{
+	background:url('icons/pm/lx/cy.png') no-repeat center center;
+}
+.icon-lxbjPM{
+	background:url('icons/pm/lx/bj.png') no-repeat center center;
+}
+.icon-lxktPM{
+	background:url('icons/pm/lx/kt.png') no-repeat center center;
+}
+.icon-lxdzPM{
+	background:url('icons/pm/lx/dz.png') no-repeat center center;
+}
+
+/*其他 */
+.icon-remark{
+	background:url('icons/remark.png') no-repeat center center;
+}
+.icon-hidden{
+	background:url('icons/hidden.png') no-repeat center center;
+}
+.icon-recycle{
+	background:url('icons/recycle.png') no-repeat center center;
+}
+.icon-clock{
+	background:url('icons/clock.png') no-repeat center center;
+}
+.icon-warning{
+	background:url('icons/warning.png') no-repeat center center;
+}
