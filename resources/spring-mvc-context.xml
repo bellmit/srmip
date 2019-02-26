@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+      http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd
+         http://www.springframework.org/schema/mvc
+		http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+	<!-- 使用annotation 自动注册bean, 并保证@Required、@Autowired的属性被注入 -->
+	<context:component-scan base-package="org.jeecgframework.core.aop" />
+
+	<bean id="srmipPropertiesBean"
+		class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+		<property name="location" value="classpath:srmip.properties"></property>
+	</bean>
+
+	<bean id="projectListServiceContext"
+		class="com.kingtake.project.service.manage.ProjectListServiceContext">
+		<property name="serviceMap">
+			<map>
+				<entry key="task" value-ref="tPmTaskService"></entry><!-- 任务书审批 -->
+				<entry key="incomeNode" value-ref="tPmIncomeNodeService"></entry><!-- 来款节点审批 -->
+				<entry key="declare" value-ref="tPmDeclareService"></entry><!-- 申报书审批 -->
+				<entry key="abate" value-ref="tPmAbateService"></entry><!-- 减免审批 -->
+				<entry key="payFirst" value-ref="tPmPayfirstService"></entry><!-- 垫支审批 -->
+				<entry key="incomeContract" value-ref="tPmIncomeContractApprService"></entry><!-- 进账合同审批 -->
+				<entry key="incomeContractConfirm" value-ref="tPmIncomeContractConfirmService"></entry><!-- 进账合同审批 -->
+				<entry key="outcomeContract" value-ref="tPmOutcomeContractApprService"></entry><!-- 出账合同审批 -->
+				<entry key="outcomeContractConfirm" value-ref="tPmOutcomeContractConfirmService"></entry><!-- 出账合同审批 -->
+				<entry key="fundsAppr" value-ref="tPmProjectFundsApprService"></entry><!-- 项目预算审批 -->
+				<entry key="reportReq" value-ref="tBPmReportReqService"></entry><!-- 申报需求审批 -->
+				<entry key="openSubject" value-ref="tPmOpenSubjectService"></entry><!-- 开题报告审批 -->
+				<entry key="appraisalApproval" value-ref="tBAppraisaApprovalService"></entry><!-- 鉴定申请 -->
+				<entry key="outcomeNodeCheck" value-ref="outcomeContractNodeCheckService"></entry><!-- 出账合同节点考核 -->
+				<entry key="projectNodeCheck" value-ref="projectNodeCheckService"></entry><!-- 项目节点考核审批 -->
+				<entry key="payApply" value-ref="tPmPayApplyService"></entry><!-- 支付申请审批 -->
+				<entry key="finishApply" value-ref="tPmFinishApplyService"></entry><!-- 结题申请审批 -->
+				<entry key="incomeApply" value-ref="tPmIncomeApplyService"></entry><!-- 来款申请审批 -->
+				<entry key="incomePlan" value-ref="tPmIncomePlanService"></entry><!-- 计划下达申请审批 -->
+				<entry key="appraisalApply" value-ref="tBAppraisalApplyService"></entry><!-- 鉴定申请审批 -->
+				<entry key="appraisalMeeting" value-ref="tBAppraisalMeetingDepartService"></entry><!-- 鉴定会审批 -->
+				<entry key="appraisalMaterial" value-ref="tBAppraisalReportMaterialService"></entry><!-- 鉴定会材料 -->
+				<entry key="resultReward" value-ref="tBResultRewardService"></entry><!-- 成果奖励 -->
+				<entry key="projectChange" value-ref="tBPmProjectChangeService"></entry><!-- 项目变更 -->
+				<entry key="contractCheck" value-ref="tPmContractCheckService"></entry><!-- 合同验收报告审批 -->
+				<entry key="planDraft" value-ref="tPmPlanDraftService"></entry><!-- 合同验收报告审批 -->
+				<entry key="checkReport" value-ref="tPmCheckReportService"></entry><!-- 合同验收报告审批 -->
+				<entry key="purchasePlan" value-ref="tBPurchasePlanMainService"></entry><!-- 采购计划 -->
+				<entry key="project" value-ref="tPmProjectService"></entry><!-- 采购计划 -->
+			</map>
+		</property>
+	</bean>
+	
+	<bean id="apprFlowServiceContext"
+		class="com.kingtake.project.service.appr.ApprFlowServiceContext">
+		<property name="serviceMap">
+			<map>
+				<entry key="01" value-ref="tPmContractCheckService"></entry><!-- 合同验收报告 -->
+				<entry key="02" value-ref="tPmProjectFundsApprService"></entry><!-- 预算 -->
+				<entry key="03" value-ref="tPmIncomeContractApprService"></entry><!-- 进账合同 -->
+				<entry key="04" value-ref="tPmOutcomeContractApprService"></entry><!-- 出账合同 -->
+				<entry key="05" value-ref="outcomeContractNodeCheckService"></entry><!-- 出账合同节点考核 -->
+				<entry key="08" value-ref="tBResultRewardService"></entry><!-- 成果奖励 -->
+				<entry key="09" value-ref="tPmTaskService"></entry><!-- 任务书 -->
+				<entry key="12" value-ref="tPmFinishApplyService"></entry><!-- 验收报告 -->
+				<entry key="13" value-ref="tPmPlanDraftService"></entry><!-- 计划草案 -->
+				<entry key="14" value-ref="tOSealUseService"></entry><!-- 印章 -->
+				<entry key="15" value-ref="tOTravelLeaveService"></entry><!-- 计划草案 -->
+				<entry key="16" value-ref="tZZlsqService"></entry><!-- 专利申请-->
+				<entry key="17" value-ref="tBPurchasePlanMainService"></entry><!-- 采购计划-->
+				<entry key="07" value-ref="tBAppraisalApplyService"></entry><!-- 鉴定申请-->
+				<entry key="11" value-ref="tPmTaskNodeService"></entry><!-- 任务节点考核-->
+				<entry key="18" value-ref="projectNodeCheckService"></entry><!-- 进账合同节点考核-->
+				<entry key="20" value-ref="tPmProjectService"></entry><!-- 项目申报审批-->
+				<entry key="24" value-ref="tPmIncomePlanService"></entry><!-- 计划下达申请审批 -->
+			</map>
+		</property>
+	</bean>
+	
+
+</beans>
