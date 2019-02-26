@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<td_wxqk count="14">
+  <td_wxqk_row>
+    <guid>ff808081622386db016224830540001e</guid>
+    <xmdm />
+    <xh />
+    <qdrq>2018-03-14 00:00:00.0</qdrq>
+    <htbh>2018C001</htbh>
+    <htmc>testdddd</htmc>
+    <qsrq>2018-03-12 00:00:00.0</qsrq>
+    <zzrq>2018-03-16 00:00:00.0</zzrq>
+    <yf />
+    <cgfs>竞争性谈判采购</cgfs>
+    <htlx />
+    <zjf>1000</zjf>
+    <bz />
+    <khh />
+    <hm />
+    <zh />
+  </td_wxqk_row>
+  <td_wxqk_row>
+    <guid>40288085622e982501622f583de90013</guid>
+    <xmdm />
+    <xh />
+    <qdrq>2018-03-16 00:00:00.0</qdrq>
+    <htbh>2018C002</htbh>
+    <htmc>catt</htmc>
+    <qsrq>2018-03-16 00:00:00.0</qsrq>
+    <zzrq>2018-11-29 00:00:00.0</zzrq>
+    <yf />
+    <cgfs>公开招标采购</cgfs>
+    <htlx />
+    <zjf>100000</zjf>
+    <bz />
+    <khh />
+    <hm />
+    <zh />
+  </td_wxqk_row>
+  <td_wxqk_row>
+    <guid>4028b881623334a80162334cec520013</guid>
+    <xmdm />
+    <xh />
+    <qdrq>2018-03-17 00:00:00.0</qdrq>
+    <htbh>2018C004</htbh>
+    <htmc>sd</htmc>
+    <qsrq>2018-03-09 00:00:00.0</qsrq>
+    <zzrq>2018-03-31 00:00:00.0</zzrq>
+    <yf />
+    <cgfs>公开招标采购</cgfs>
+    <htlx />
+    <zjf>22222</zjf>
+    <bz />
+    <khh />
+    <hm />
+    <zh />
+  </td_wxqk_row>
+  <td_wxqk_row>
+    <guid>ff80808162317c0e016231a8f1ea001f</guid>
+    <xmdm />
+    <xh />
+    <qdrq>2018-03-17 00:00:00.0</qdrq>
+    <htbh>2018C003</htbh>
+    <htmc>33</htmc>
+    <qsrq>2018-03-12 00:00:00.0</qsrq>
+    <zzrq>2018-03-16 00:00:00.0</zzrq>
+    <yf />
+    <cgfs>竞争性谈判采购</cgfs>
+    <htlx />
+    <zjf>20000</zjf>
+    <bz />
+    <khh />
+    <hm />
+    <zh />
+  </td_wxqk_row>
+  <td_wxqk_row>
+    <guid>40288b815dea2123015dea238e8a0000</guid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <qdrq>2017-08-16 00:00:00.0</qdrq>
+    <htbh>2017C011</htbh>
+    <htmc>123123</htmc>
+    <qsrq>2017-08-17 00:00:00.0</qsrq>
+    <zzrq>2017-08-23 00:00:00.0</zzrq>
+    <yf />
+    <cgfs>公开招标采购</cgfs>
+    <htlx />
+    <zjf>4444444</zjf>
+    <bz />
+    <khh />
+    <hm />
+    <zh />
+  </td_wxqk_row>
+  <td_wxqk_row>
+    <guid>40288b815e4babf9015e4caa34c3000a</guid>
+    <xmdm>2017000043</xmdm>
+    <xh />
+    <qdrq>2017-09-04 00:00:00.0</qdrq>
+    <htbh>2017C012</htbh>
+    <htmc>12312323</htmc>
+    <qsrq>2017-09-14 00:00:00.0</qsrq>
+    <zzrq>2017-09-27 00:00:00.0</zzrq>
+    <yf />
+    <cgfs>公开招标采购</cgfs>
+    <htlx />
+    <zjf>123</zjf>
+    <bz />
+    <khh />
+    <hm />
+    <zh />
+  </td_wxqk_row>
+  <td_wxqk_row>
+    <guid>40288b815d728bf3015d729a34670003</guid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <qdrq>2017-07-24 00:00:00.0</qdrq>
+    <htbh>2017C008</htbh>
+    <htmc>1</htmc>
+    <qsrq>2017-07-13 00:00:00.0</qsrq>
+    <zzrq>2017-07-20 00:00:00.0</zzrq>
+    <yf />
+    <cgfs>竞争性谈判采购</cgfs>
+    <htlx />
+    <zjf>111</zjf>
+    <bz />
+    <khh />
+    <hm />
+    <zh />
+  </td_wxqk_row>
+  <td_wxqk_row>
+    <guid>40288b815de9114a015de9205ba3000a</guid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <qdrq>2017-08-16 00:00:00.0</qdrq>
+    <htbh>2017C010</htbh>
+    <htmc>9999</htmc>
+    <qsrq>2017-08-18 00:00:00.0</qsrq>
+    <zzrq>2017-08-23 00:00:00.0</zzrq>
+    <yf />
+    <cgfs>公开招标采购</cgfs>
+    <htlx />
+    <zjf>999</zjf>
+    <bz />
+    <khh />
+    <hm />
+    <zh />
+  </td_wxqk_row>
+  <td_wxqk_row>
+    <guid>8a0a303d5cb9e728015cba83383300ab</guid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <qdrq>2017-06-18 00:00:00.0</qdrq>
+    <htbh>2017C005</htbh>
+    <htmc>2222</htmc>
+    <qsrq>2017-06-20 00:00:00.0</qsrq>
+    <zzrq>2017-06-23 00:00:00.0</zzrq>
+    <yf />
+    <cgfs>公开招标采购</cgfs>
+    <htlx />
+    <zjf>50000</zjf>
+    <bz />
+    <khh />
+    <hm />
+    <zh />
+  </td_wxqk_row>
+  <td_wxqk_row>
+    <guid>8a0a303d5cba969e015cba9b8c2f0000</guid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <qdrq>2017-06-18 00:00:00.0</qdrq>
+    <htbh>2017C006</htbh>
+    <htmc>122</htmc>
+    <qsrq>2017-06-14 00:00:00.0</qsrq>
+    <zzrq>2017-06-29 00:00:00.0</zzrq>
+    <yf />
+    <cgfs>公开招标采购</cgfs>
+    <htlx />
+    <zjf>2222</zjf>
+    <bz />
+    <khh />
+    <hm />
+    <zh />
+  </td_wxqk_row>
+  <td_wxqk_row>
+    <guid>ff8080815cbded85015cbedd79890039</guid>
+    <xmdm>2017000035</xmdm>
+    <xh />
+    <qdrq>2017-06-19 00:00:00.0</qdrq>
+    <htbh>2017C007</htbh>
+    <htmc>某某软件开发</htmc>
+    <qsrq>2017-06-12 00:00:00.0</qsrq>
+    <zzrq>2017-06-29 00:00:00.0</zzrq>
+    <yf />
+    <cgfs>单一来源采购</cgfs>
+    <htlx />
+    <zjf>50000</zjf>
+    <bz />
+    <khh />
+    <hm />
+    <zh />
+  </td_wxqk_row>
+  <td_wxqk_row>
+    <guid>8a0a38e85c71a266015c723520660064</guid>
+    <xmdm>2017000030</xmdm>
+    <xh />
+    <qdrq>2017-06-04 00:00:00.0</qdrq>
+    <htbh>2017C004</htbh>
+    <htmc>1231</htmc>
+    <qsrq>2017-06-20 00:00:00.0</qsrq>
+    <zzrq>2017-06-21 00:00:00.0</zzrq>
+    <yf />
+    <cgfs>询价采购</cgfs>
+    <htlx />
+    <zjf>1111</zjf>
+    <bz />
+    <khh />
+    <hm />
+    <zh />
+  </td_wxqk_row>
+  <td_wxqk_row>
+    <guid>40288b815f1892af015f19a4f71b0013</guid>
+    <xmdm>2017000046</xmdm>
+    <xh />
+    <qdrq>2017-10-14 00:00:00.0</qdrq>
+    <htbh>2017C013</htbh>
+    <htmc>123123</htmc>
+    <qsrq>2017-10-11 00:00:00.0</qsrq>
+    <zzrq>2017-10-26 00:00:00.0</zzrq>
+    <yf />
+    <cgfs>公开招标采购</cgfs>
+    <htlx />
+    <zjf>123</zjf>
+    <bz />
+    <khh />
+    <hm />
+    <zh />
+  </td_wxqk_row>
+  <td_wxqk_row>
+    <guid>ff80808162317c0e01623375a8720077</guid>
+    <xmdm />
+    <xh />
+    <qdrq>2018-03-17 00:00:00.0</qdrq>
+    <htbh>2018C005</htbh>
+    <htmc>333</htmc>
+    <qsrq>2018-03-12 00:00:00.0</qsrq>
+    <zzrq>2018-03-17 00:00:00.0</zzrq>
+    <yf />
+    <cgfs>竞争性谈判采购</cgfs>
+    <htlx />
+    <zjf>12</zjf>
+    <bz />
+    <khh />
+    <hm />
+    <zh />
+  </td_wxqk_row>
+</td_wxqk>
+

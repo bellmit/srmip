@@ -1,0 +1,2344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<td_mxys_mx count="180">
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe6fc30003</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>0</mxdm>
+    <mxmc>合计</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70210004</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>01</mxdm>
+    <mxmc>直接经费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70210005</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>0101</mxdm>
+    <mxmc>设备费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70210006</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>010101</mxdm>
+    <mxmc>专用仪器设备、样品样机购置费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70210007</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>010102</mxdm>
+    <mxmc>专用仪器设备改造、维护费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70210008</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>010103</mxdm>
+    <mxmc>专用仪器设备及相关场地租用费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70210009</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>0102</mxdm>
+    <mxmc>材料费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe7021000a</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>010201</mxdm>
+    <mxmc>原材料</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe7021000b</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>010202</mxdm>
+    <mxmc>辅助材料</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe7021000c</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>010203</mxdm>
+    <mxmc>元器件</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe7021000d</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>010204</mxdm>
+    <mxmc>低值易耗品</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe7021000e</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>0103</mxdm>
+    <mxmc>外部协作费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe7021000f</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>010301</mxdm>
+    <mxmc>设计、试制</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70210010</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>010302</mxdm>
+    <mxmc>加工</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70210011</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>010303</mxdm>
+    <mxmc>试验</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70210012</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>010304</mxdm>
+    <mxmc>技术服务</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70210013</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>010305</mxdm>
+    <mxmc>软件开发</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70210014</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>0104</mxdm>
+    <mxmc>燃料动力费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70210015</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>010401</mxdm>
+    <mxmc>燃料费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70210016</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>010402</mxdm>
+    <mxmc>水电费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70210017</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>0105</mxdm>
+    <mxmc>会议/差旅/国际合作与交流费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70210018</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>010501</mxdm>
+    <mxmc>会议费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70bd0019</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>010502</mxdm>
+    <mxmc>差旅费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70bd001a</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>010503</mxdm>
+    <mxmc>市内交通费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70bd001b</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>010504</mxdm>
+    <mxmc>外国专家来华工作费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70bd001c</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>0106</mxdm>
+    <mxmc>出版/文献/信息传播/知识产权事务</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70bd001d</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>010601</mxdm>
+    <mxmc>出版、印刷费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70bd001e</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>010602</mxdm>
+    <mxmc>图书资料费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70bd001f</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>010603</mxdm>
+    <mxmc>文献检索费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70bd0020</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>010604</mxdm>
+    <mxmc>专用软件购置费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70bd0021</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>010605</mxdm>
+    <mxmc>专利申请、知识产权维护费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70bd0022</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>010606</mxdm>
+    <mxmc>业务通讯费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70bd0023</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>0107</mxdm>
+    <mxmc>劳务费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70bd0024</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>010701</mxdm>
+    <mxmc>聘用人员工资</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70bd0025</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>0108</mxdm>
+    <mxmc>专家咨询费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70bd0026</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>010801</mxdm>
+    <mxmc>咨询、鉴定、评审费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70bd0027</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>0109</mxdm>
+    <mxmc>其他支出</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70bd0028</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>010901</mxdm>
+    <mxmc>办公用品及耗材</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70bd0029</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>02</mxdm>
+    <mxmc>间接经费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70bd002a</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>0201</mxdm>
+    <mxmc>资源成本性补偿</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70bd002b</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>020101</mxdm>
+    <mxmc>学校资源成本性补偿</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe70bd002c</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>020102</mxdm>
+    <mxmc>责任单位资源成本性补偿</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe7159002d</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>020103</mxdm>
+    <mxmc>承研单位资源成本性补偿</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe7159002e</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>0202</mxdm>
+    <mxmc>绩效津贴</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>40288b815de8f5de015de8fe7159002f</guid>
+    <zbid>40288b815de8f5de015de8fe6f320002</zbid>
+    <xmdm>2017000036</xmdm>
+    <xh />
+    <mxdm>020201</mxdm>
+    <mxmc>绩效津贴</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f99f70035</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>0</mxdm>
+    <mxmc>合计</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je>444</je>
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9a170036</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>01</mxdm>
+    <mxmc>直接经费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je>444</je>
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9a260037</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>0101</mxdm>
+    <mxmc>设备费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je>444</je>
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9a260038</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010101</mxdm>
+    <mxmc>专用仪器设备、样品样机购置费</mxmc>
+    <jldw>元</jldw>
+    <dj>222</dj>
+    <sl>2</sl>
+    <je>444</je>
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9a260039</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010102</mxdm>
+    <mxmc>专用仪器设备改造、维护费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9a26003a</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010103</mxdm>
+    <mxmc>专用仪器设备及相关场地租用费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9a26003b</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>0102</mxdm>
+    <mxmc>材料费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9a26003c</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010201</mxdm>
+    <mxmc>原材料</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9a26003d</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010202</mxdm>
+    <mxmc>辅助材料</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9a26003e</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010203</mxdm>
+    <mxmc>元器件</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9a26003f</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010204</mxdm>
+    <mxmc>低值易耗品</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9a260040</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>0103</mxdm>
+    <mxmc>外部协作费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9a260041</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010301</mxdm>
+    <mxmc>设计、试制</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9a360042</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010302</mxdm>
+    <mxmc>加工</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9a360043</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010303</mxdm>
+    <mxmc>试验</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9a360044</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010304</mxdm>
+    <mxmc>技术服务</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9a390045</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010305</mxdm>
+    <mxmc>软件开发</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9a3a0046</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>0104</mxdm>
+    <mxmc>燃料动力费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9a3a0047</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010401</mxdm>
+    <mxmc>燃料费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9a3a0048</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010402</mxdm>
+    <mxmc>水电费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9a3a0049</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>0105</mxdm>
+    <mxmc>会议/差旅/国际合作与交流费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9a3a004a</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010501</mxdm>
+    <mxmc>会议费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9b17004b</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010502</mxdm>
+    <mxmc>差旅费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9b17004c</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010503</mxdm>
+    <mxmc>市内交通费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9b17004d</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010504</mxdm>
+    <mxmc>外国专家来华工作费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9b17004e</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>0106</mxdm>
+    <mxmc>出版/文献/信息传播/知识产权事务</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9b17004f</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010601</mxdm>
+    <mxmc>出版、印刷费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9b170050</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010602</mxdm>
+    <mxmc>图书资料费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9b170051</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010603</mxdm>
+    <mxmc>文献检索费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9b170052</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010604</mxdm>
+    <mxmc>专用软件购置费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9b170053</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010605</mxdm>
+    <mxmc>专利申请、知识产权维护费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9b170054</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010606</mxdm>
+    <mxmc>业务通讯费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9b170055</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>0107</mxdm>
+    <mxmc>劳务费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9b170056</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010701</mxdm>
+    <mxmc>聘用人员工资</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9b170057</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>0108</mxdm>
+    <mxmc>专家咨询费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9b170058</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010801</mxdm>
+    <mxmc>咨询、鉴定、评审费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9b170059</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>0109</mxdm>
+    <mxmc>其他支出</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9b17005a</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010901</mxdm>
+    <mxmc>办公用品及耗材</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9b17005b</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>02</mxdm>
+    <mxmc>间接经费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9b17005c</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>0201</mxdm>
+    <mxmc>资源成本性补偿</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9b17005d</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>020101</mxdm>
+    <mxmc>学校资源成本性补偿</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9b17005e</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>020102</mxdm>
+    <mxmc>责任单位资源成本性补偿</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9bcf005f</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>020103</mxdm>
+    <mxmc>承研单位资源成本性补偿</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9bcf0060</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>0202</mxdm>
+    <mxmc>绩效津贴</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba3f9bcf0061</guid>
+    <zbid>8a0a303d5cb9e728015cba3f99520034</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>020201</mxdm>
+    <mxmc>绩效津贴</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba4481770067</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>0</mxdm>
+    <mxmc>合计</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba4481a10068</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>020201</mxdm>
+    <mxmc>绩效津贴</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba4481aa0069</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>0202</mxdm>
+    <mxmc>绩效津贴</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba4481aa006a</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>020103</mxdm>
+    <mxmc>承研单位资源成本性补偿</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba4481aa006b</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>020102</mxdm>
+    <mxmc>责任单位资源成本性补偿</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba4481aa006c</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>020101</mxdm>
+    <mxmc>学校资源成本性补偿</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba4481aa006d</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>0201</mxdm>
+    <mxmc>资源成本性补偿</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba4481aa006e</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>02</mxdm>
+    <mxmc>间接经费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba4481aa006f</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010901</mxdm>
+    <mxmc>办公用品及耗材</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba4481aa0070</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>0109</mxdm>
+    <mxmc>其他支出</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba4481aa0071</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010801</mxdm>
+    <mxmc>咨询、鉴定、评审费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba4481aa0072</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>0108</mxdm>
+    <mxmc>专家咨询费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba4481aa0073</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010701</mxdm>
+    <mxmc>聘用人员工资</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba4481ab0074</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>0107</mxdm>
+    <mxmc>劳务费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba4481ab0075</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010606</mxdm>
+    <mxmc>业务通讯费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba4481ab0076</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010605</mxdm>
+    <mxmc>专利申请、知识产权维护费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba4481ab0077</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010604</mxdm>
+    <mxmc>专用软件购置费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba4481ab0078</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010603</mxdm>
+    <mxmc>文献检索费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba4481ab0079</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010602</mxdm>
+    <mxmc>图书资料费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba4481ab007a</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010601</mxdm>
+    <mxmc>出版、印刷费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba4481ab007b</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>0106</mxdm>
+    <mxmc>出版/文献/信息传播/知识产权事务</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba4481ab007c</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010504</mxdm>
+    <mxmc>外国专家来华工作费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba44828b007d</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010503</mxdm>
+    <mxmc>市内交通费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba44828b007e</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010502</mxdm>
+    <mxmc>差旅费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba44828b007f</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010501</mxdm>
+    <mxmc>会议费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba44828b0080</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>0105</mxdm>
+    <mxmc>会议/差旅/国际合作与交流费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba44828b0081</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010402</mxdm>
+    <mxmc>水电费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba44828b0082</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010401</mxdm>
+    <mxmc>燃料费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba44828c0083</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>0104</mxdm>
+    <mxmc>燃料动力费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba44828c0084</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010305</mxdm>
+    <mxmc>软件开发</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba44828c0085</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010304</mxdm>
+    <mxmc>技术服务</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba44828c0086</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010303</mxdm>
+    <mxmc>试验</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba44828c0087</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010302</mxdm>
+    <mxmc>加工</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba44828c0088</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010301</mxdm>
+    <mxmc>设计、试制</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba44828c0089</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>0103</mxdm>
+    <mxmc>外部协作费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba44828c008a</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010204</mxdm>
+    <mxmc>低值易耗品</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba44828c008b</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010203</mxdm>
+    <mxmc>元器件</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba44828c008c</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010202</mxdm>
+    <mxmc>辅助材料</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba44828c008d</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010201</mxdm>
+    <mxmc>原材料</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba44828c008e</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>0102</mxdm>
+    <mxmc>材料费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba44828c008f</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010103</mxdm>
+    <mxmc>专用仪器设备及相关场地租用费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba44828c0090</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010102</mxdm>
+    <mxmc>专用仪器设备改造、维护费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba4483390091</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>010101</mxdm>
+    <mxmc>专用仪器设备、样品样机购置费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba4483390092</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>0101</mxdm>
+    <mxmc>设备费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>8a0a303d5cb9e728015cba4483390093</guid>
+    <zbid>8a0a303d5cb9e728015cba4481610066</zbid>
+    <xmdm>2017000033</xmdm>
+    <xh />
+    <mxdm>01</mxdm>
+    <mxmc>直接经费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff13ab0005</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>0</mxdm>
+    <mxmc>合计</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je>197</je>
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff13f10006</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>01</mxdm>
+    <mxmc>直接经费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je>197</je>
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff13fc0007</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>0101</mxdm>
+    <mxmc>设备费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je>197</je>
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff13fd0008</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>010101</mxdm>
+    <mxmc>专用仪器设备、样品样机购置费</mxmc>
+    <jldw />
+    <dj>24</dj>
+    <sl>3</sl>
+    <je>72</je>
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff13fd0009</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>010102</mxdm>
+    <mxmc>专用仪器设备改造、维护费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff13fd000a</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>010103</mxdm>
+    <mxmc>专用仪器设备及相关场地租用费</mxmc>
+    <jldw />
+    <dj>25</dj>
+    <sl>5</sl>
+    <je>125</je>
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff13fd000b</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>0102</mxdm>
+    <mxmc>材料费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff13fd000c</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>010201</mxdm>
+    <mxmc>原材料</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff13fd000d</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>010202</mxdm>
+    <mxmc>辅助材料</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff13fd000e</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>010203</mxdm>
+    <mxmc>元器件</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff13fd000f</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>010204</mxdm>
+    <mxmc>低值易耗品</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff13fd0010</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>0103</mxdm>
+    <mxmc>外部协作费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff13fd0011</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>010301</mxdm>
+    <mxmc>设计、试制</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff13ff0012</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>010302</mxdm>
+    <mxmc>加工</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff13ff0013</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>010303</mxdm>
+    <mxmc>试验</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff13ff0014</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>010304</mxdm>
+    <mxmc>技术服务</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff14010015</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>010305</mxdm>
+    <mxmc>软件开发</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff14020016</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>0104</mxdm>
+    <mxmc>燃料动力费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff14020017</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>010401</mxdm>
+    <mxmc>燃料费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff14020018</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>010402</mxdm>
+    <mxmc>水电费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff14020019</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>0105</mxdm>
+    <mxmc>会议/差旅/国际合作与交流费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff1402001a</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>010501</mxdm>
+    <mxmc>会议费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff14e7001b</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>010502</mxdm>
+    <mxmc>差旅费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff14e7001c</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>010503</mxdm>
+    <mxmc>市内交通费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff14e7001d</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>010504</mxdm>
+    <mxmc>外国专家来华工作费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff14e7001e</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>0106</mxdm>
+    <mxmc>出版/文献/信息传播/知识产权事务</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff14e7001f</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>010601</mxdm>
+    <mxmc>出版、印刷费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff14e70020</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>010602</mxdm>
+    <mxmc>图书资料费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff14e70021</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>010603</mxdm>
+    <mxmc>文献检索费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff14e70022</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>010604</mxdm>
+    <mxmc>专用软件购置费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff14e70023</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>010605</mxdm>
+    <mxmc>专利申请、知识产权维护费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff14e70024</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>010606</mxdm>
+    <mxmc>业务通讯费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff14e70025</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>0107</mxdm>
+    <mxmc>劳务费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff14e70026</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>010701</mxdm>
+    <mxmc>聘用人员工资</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff14e80027</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>0108</mxdm>
+    <mxmc>专家咨询费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff14e80028</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>010801</mxdm>
+    <mxmc>咨询、鉴定、评审费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff14e80029</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>0109</mxdm>
+    <mxmc>其他支出</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff14e8002a</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>010901</mxdm>
+    <mxmc>办公用品及耗材</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff14e8002b</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>02</mxdm>
+    <mxmc>间接经费</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff14e8002c</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>0201</mxdm>
+    <mxmc>资源成本性补偿</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff14e8002d</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>020101</mxdm>
+    <mxmc>学校资源成本性补偿</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff14e8002e</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>020102</mxdm>
+    <mxmc>责任单位资源成本性补偿</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff15e6002f</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>020103</mxdm>
+    <mxmc>承研单位资源成本性补偿</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff15e70030</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>0202</mxdm>
+    <mxmc>绩效津贴</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+  <td_mxys_mx_row>
+    <guid>ff8080815b22fd60015b22ff15e70031</guid>
+    <zbid>ff8080815b22fd60015b22ff131e0004</zbid>
+    <xmdm>20161560</xmdm>
+    <xh />
+    <mxdm>020201</mxdm>
+    <mxmc>绩效津贴</mxmc>
+    <jldw />
+    <dj />
+    <sl />
+    <je />
+    <bz />
+  </td_mxys_mx_row>
+</td_mxys_mx>
+

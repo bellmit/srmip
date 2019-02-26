@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?mso-application progid="Word.Document"?>
+<pkg:package xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage">
+	<pkg:part pkg:name="/_rels/.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml" pkg:padding="512">
+		<pkg:xmlData>
+			<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+				<Relationship Id="rId3" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/extended-properties" Target="docProps/app.xml"/>
+				<Relationship Id="rId2" Type="http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties" Target="docProps/core.xml"/>
+				<Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/>
+			</Relationships>
+		</pkg:xmlData>
+	</pkg:part>
+	<pkg:part pkg:name="/word/_rels/document.xml.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml" pkg:padding="256">
+		<pkg:xmlData>
+			<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+				<Relationship Id="rId8" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme" Target="theme/theme1.xml"/>
+				<Relationship Id="rId3" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/webSettings" Target="webSettings.xml"/>
+				<Relationship Id="rId7" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/fontTable" Target="fontTable.xml"/>
+				<Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/settings" Target="settings.xml"/>
+				<Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/>
+				<Relationship Id="rId6" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/image1.png"/>
+				<Relationship Id="rId5" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/endnotes" Target="endnotes.xml"/>
+				<Relationship Id="rId4" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/footnotes" Target="footnotes.xml"/>
+			</Relationships>
+		</pkg:xmlData>
+	</pkg:part>
+	<pkg:part pkg:name="/word/document.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml">
+		<pkg:xmlData>
+			<w:document mc:Ignorable="w14 w15 wp14" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape">
+				<w:body>
+					<w:p w:rsidR="003E33A5" w:rsidRDefault="006569FE" w:rsidP="006569FE">
+						<w:pPr>
+							<w:pStyle w:val="a3"/>
+						</w:pPr>
+						<w:bookmarkStart w:id="0" w:name="_GoBack"/>
+						<w:bookmarkEnd w:id="0"/>
+						<w:r>
+							<w:rPr>
+								<w:noProof/>
+							</w:rPr>
+							<w:drawing>
+								<wp:anchor distT="0" distB="0" distL="114300" distR="114300" simplePos="0" relativeHeight="251658240" behindDoc="0" locked="0" layoutInCell="1" allowOverlap="0">
+									<wp:simplePos x="0" y="0"/>
+									<wp:positionH relativeFrom="column">
+										<wp:posOffset>7857267</wp:posOffset>
+									</wp:positionH>
+									<wp:positionV relativeFrom="paragraph">
+										<wp:posOffset>-5715</wp:posOffset>
+									</wp:positionV>
+									<wp:extent cx="1922400" cy="572400"/>
+									<wp:effectExtent l="0" t="0" r="1905" b="0"/>
+									<wp:wrapNone/>
+									<wp:docPr id="1" name="图片 1"/>
+									<wp:cNvGraphicFramePr>
+										<a:graphicFrameLocks noChangeAspect="1" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"/>
+									</wp:cNvGraphicFramePr>
+									<a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+										<a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+											<pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+												<pic:nvPicPr>
+													<pic:cNvPr id="1" name="Code39.png"/>
+													<pic:cNvPicPr/>
+												</pic:nvPicPr>
+												<pic:blipFill>
+													<a:blip r:embed="rId6">
+														<a:extLst>
+															<a:ext uri="{28A0092B-C50C-407E-A947-70E740481C1C}">
+																<a14:useLocalDpi val="0" xmlns:a14="http://schemas.microsoft.com/office/drawing/2010/main"/>
+															</a:ext>
+														</a:extLst>
+													</a:blip>
+													<a:stretch>
+														<a:fillRect/>
+													</a:stretch>
+												</pic:blipFill>
+												<pic:spPr>
+													<a:xfrm>
+														<a:off x="0" y="0"/>
+														<a:ext cx="1922400" cy="572400"/>
+													</a:xfrm>
+													<a:prstGeom prst="rect">
+														<a:avLst/>
+													</a:prstGeom>
+												</pic:spPr>
+											</pic:pic>
+										</a:graphicData>
+									</a:graphic>
+									<wp14:sizeRelH relativeFrom="margin">
+										<wp14:pctWidth>0</wp14:pctWidth>
+									</wp14:sizeRelH>
+									<wp14:sizeRelV relativeFrom="margin">
+										<wp14:pctHeight>0</wp14:pctHeight>
+									</wp14:sizeRelV>
+								</wp:anchor>
+							</w:drawing>
+						</w:r>
+						<w:r w:rsidR="002964D6">
+							<w:rPr>
+								<w:rFonts w:hint="eastAsia"/>
+							</w:rPr>
+							<w:t>垫支</w:t>
+						</w:r>
+						<w:r w:rsidR="00C71BAD">
+							<w:t>分配通知书</w:t>
+						</w:r>
+					</w:p>
+					<w:tbl>
+						<w:tblPr>
+							<w:tblStyle w:val="a4"/>
+							<w:tblW w:w="15246" w:type="dxa"/>
+							<w:tblLayout w:type="fixed"/>
+							<w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+						</w:tblPr>
+						<w:tblGrid>
+							<w:gridCol w:w="755"/>
+							<w:gridCol w:w="1368"/>
+							<w:gridCol w:w="3192"/>
+							<w:gridCol w:w="1829"/>
+							<w:gridCol w:w="912"/>
+							<w:gridCol w:w="1514"/>
+							<w:gridCol w:w="1514"/>
+							<w:gridCol w:w="1216"/>
+							<w:gridCol w:w="1063"/>
+							<w:gridCol w:w="1883"/>
+						</w:tblGrid>
+						<w:tr w:rsidR="00793568" w:rsidRPr="002B0589" w:rsidTr="00793568">
+							<w:trPr>
+								<w:trHeight w:val="314"/>
+							</w:trPr>
+							<w:tc>
+								<w:tcPr>
+									<w:tcW w:w="755" w:type="dxa"/>
+								</w:tcPr>
+								<w:p w:rsidR="00793568" w:rsidRPr="002B0589" w:rsidRDefault="00793568" w:rsidP="008B59D2">
+									<w:pPr>
+										<w:jc w:val="center"/>
+										<w:rPr>
+											<w:sz w:val="18"/>
+											<w:szCs w:val="18"/>
+										</w:rPr>
+									</w:pPr>
+									<w:r w:rsidRPr="002B0589">
+										<w:rPr>
+											<w:rFonts w:hint="eastAsia"/>
+											<w:sz w:val="18"/>
+											<w:szCs w:val="18"/>
+										</w:rPr>
+										<w:t>序号</w:t>
+									</w:r>
+								</w:p>
+							</w:tc>
+							<w:tc>
+								<w:tcPr>
+									<w:tcW w:w="1368" w:type="dxa"/>
+								</w:tcPr>
+								<w:p w:rsidR="00793568" w:rsidRPr="002B0589" w:rsidRDefault="00793568" w:rsidP="008B59D2">
+									<w:pPr>
+										<w:jc w:val="center"/>
+										<w:rPr>
+											<w:sz w:val="18"/>
+											<w:szCs w:val="18"/>
+										</w:rPr>
+									</w:pPr>
+									<w:r>
+										<w:rPr>
+											<w:rFonts w:hint="eastAsia"/>
+											<w:sz w:val="18"/>
+											<w:szCs w:val="18"/>
+										</w:rPr>
+										<w:t>项目代码</w:t>
+									</w:r>
+								</w:p>
+							</w:tc>
+							<w:tc>
+								<w:tcPr>
+									<w:tcW w:w="3192" w:type="dxa"/>
+								</w:tcPr>
+								<w:p w:rsidR="00793568" w:rsidRPr="002B0589" w:rsidRDefault="00793568" w:rsidP="008B59D2">
+									<w:pPr>
+										<w:jc w:val="center"/>
+										<w:rPr>
+											<w:sz w:val="18"/>
+											<w:szCs w:val="18"/>
+										</w:rPr>
+									</w:pPr>
+									<w:r w:rsidRPr="002B0589">
+										<w:rPr>
+											<w:rFonts w:hint="eastAsia"/>
+											<w:sz w:val="18"/>
+											<w:szCs w:val="18"/>
+										</w:rPr>
+										<w:t>项目名称</w:t>
+									</w:r>
+								</w:p>
+							</w:tc>
+							<w:tc>
+								<w:tcPr>
+									<w:tcW w:w="1829" w:type="dxa"/>
+								</w:tcPr>
+								<w:p w:rsidR="00793568" w:rsidRPr="002B0589" w:rsidRDefault="00793568" w:rsidP="008B59D2">
+									<w:pPr>
+										<w:jc w:val="center"/>
+										<w:rPr>
+											<w:sz w:val="18"/>
+											<w:szCs w:val="18"/>
+										</w:rPr>
+									</w:pPr>
+									<w:r w:rsidRPr="002B0589">
+										<w:rPr>
+											<w:rFonts w:hint="eastAsia"/>
+											<w:sz w:val="18"/>
+											<w:szCs w:val="18"/>
+										</w:rPr>
+										<w:t>研制部门</w:t>
+									</w:r>
+								</w:p>
+							</w:tc>
+							<w:tc>
+								<w:tcPr>
+									<w:tcW w:w="912" w:type="dxa"/>
+								</w:tcPr>
+								<w:p w:rsidR="00793568" w:rsidRPr="002B0589" w:rsidRDefault="00793568" w:rsidP="008B59D2">
+									<w:pPr>
+										<w:jc w:val="center"/>
+										<w:rPr>
+											<w:sz w:val="18"/>
+											<w:szCs w:val="18"/>
+										</w:rPr>
+									</w:pPr>
+									<w:r w:rsidRPr="002B0589">
+										<w:rPr>
+											<w:rFonts w:hint="eastAsia"/>
+											<w:sz w:val="18"/>
+											<w:szCs w:val="18"/>
+										</w:rPr>
+										<w:t>负责人</w:t>
+									</w:r>
+								</w:p>
+							</w:tc>
+							<w:tc>
+								<w:tcPr>
+									<w:tcW w:w="1514" w:type="dxa"/>
+								</w:tcPr>
+								<w:p w:rsidR="00793568" w:rsidRPr="002B0589" w:rsidRDefault="00793568" w:rsidP="008B59D2">
+									<w:pPr>
+										<w:jc w:val="center"/>
+										<w:rPr>
+											<w:sz w:val="18"/>
+											<w:szCs w:val="18"/>
+										</w:rPr>
+									</w:pPr>
+									<w:r>
+										<w:rPr>
+											<w:rFonts w:hint="eastAsia"/>
+											<w:sz w:val="18"/>
+											<w:szCs w:val="18"/>
+										</w:rPr>
+										<w:t>垫支日期</w:t>
+									</w:r>
+								</w:p>
+							</w:tc>
+							<w:tc>
+								<w:tcPr>
+									<w:tcW w:w="1514" w:type="dxa"/>
+								</w:tcPr>
+								<w:p w:rsidR="00793568" w:rsidRPr="002B0589" w:rsidRDefault="00793568" w:rsidP="008B59D2">
+									<w:pPr>
+										<w:jc w:val="center"/>
+										<w:rPr>
+											<w:sz w:val="18"/>
+											<w:szCs w:val="18"/>
+										</w:rPr>
+									</w:pPr>
+									<w:r>
+										<w:rPr>
+											<w:rFonts w:hint="eastAsia"/>
+											<w:sz w:val="18"/>
+											<w:szCs w:val="18"/>
+										</w:rPr>
+										<w:t>垫支</w:t>
+									</w:r>
+									<w:r w:rsidRPr="002B0589">
+										<w:rPr>
+											<w:rFonts w:hint="eastAsia"/>
+											<w:sz w:val="18"/>
+											<w:szCs w:val="18"/>
+										</w:rPr>
+										<w:t>金额</w:t>
+									</w:r>
+								</w:p>
+							</w:tc>
+							<w:tc>
+								<w:tcPr>
+									<w:tcW w:w="1216" w:type="dxa"/>
+								</w:tcPr>
+								<w:p w:rsidR="00793568" w:rsidRPr="002B0589" w:rsidRDefault="00793568" w:rsidP="008B59D2">
+									<w:pPr>
+										<w:jc w:val="center"/>
+										<w:rPr>
+											<w:sz w:val="18"/>
+											<w:szCs w:val="18"/>
+										</w:rPr>
+									</w:pPr>
+									<w:r>
+										<w:rPr>
+											<w:rFonts w:hint="eastAsia"/>
+											<w:sz w:val="18"/>
+											<w:szCs w:val="18"/>
+										</w:rPr>
+										<w:t>批准人</w:t>
+									</w:r>
+								</w:p>
+							</w:tc>
+							<w:tc>
+								<w:tcPr>
+									<w:tcW w:w="1063" w:type="dxa"/>
+								</w:tcPr>
+								<w:p w:rsidR="00793568" w:rsidRPr="002B0589" w:rsidRDefault="00793568" w:rsidP="008B59D2">
+									<w:pPr>
+										<w:jc w:val="center"/>
+										<w:rPr>
+											<w:sz w:val="18"/>
+											<w:szCs w:val="18"/>
+										</w:rPr>
+									</w:pPr>
+									<w:r>
+										<w:rPr>
+											<w:rFonts w:hint="eastAsia"/>
+											<w:sz w:val="18"/>
+											<w:szCs w:val="18"/>
+										</w:rPr>
+										<w:t>归垫金额</w:t>
+									</w:r>
+								</w:p>
+							</w:tc>
+							<w:tc>
+								<w:tcPr>
+									<w:tcW w:w="1883" w:type="dxa"/>
+								</w:tcPr>
+								<w:p w:rsidR="00793568" w:rsidRPr="002B0589" w:rsidRDefault="00793568" w:rsidP="008B59D2">
+									<w:pPr>
+										<w:jc w:val="center"/>
+										<w:rPr>
+											<w:sz w:val="18"/>
+											<w:szCs w:val="18"/>
+										</w:rPr>
+									</w:pPr>
+									<w:r>
+										<w:rPr>
+											<w:rFonts w:hint="eastAsia"/>
+											<w:sz w:val="18"/>
+											<w:szCs w:val="18"/>
+										</w:rPr>
+										<w:t>未归垫金额</w:t>
+									</w:r>
+								</w:p>
+							</w:tc>
+						</w:tr>
+						<w:tr w:rsidR="00793568" w:rsidRPr="002B0589" w:rsidTr="00793568">
+							<w:trPr>
+								<w:trHeight w:val="932"/>
+							</w:trPr>
+							<w:tc>
+								<w:tcPr>
+									<w:tcW w:w="755" w:type="dxa"/>
+								</w:tcPr>
+								<w:p w:rsidR="00793568" w:rsidRPr="002B0589" w:rsidRDefault="00793568" w:rsidP="008B59D2">
+									<w:pPr>
+										<w:jc w:val="center"/>
+										<w:rPr>
+											<w:sz w:val="18"/>
+											<w:szCs w:val="18"/>
+										</w:rPr>
+									</w:pPr>
+									<w:r w:rsidRPr="002B0589">
+										<w:rPr>
+											<w:rFonts w:hint="eastAsia"/>
+											<w:sz w:val="18"/>
+											<w:szCs w:val="18"/>
+										</w:rPr>
+										<w:t>1</w:t>
+									</w:r>
+								</w:p>
+							</w:tc>
+							<w:tc>
+								<w:tcPr>
+									<w:tcW w:w="1368" w:type="dxa"/>
+								</w:tcPr>
+								<w:p w:rsidR="00793568" w:rsidRPr="002B0589" w:rsidRDefault="00793568" w:rsidP="00E0297B">
+									<w:pPr>
+										<w:jc w:val="left"/>
+										<w:rPr>
+											<w:sz w:val="18"/>
+											<w:szCs w:val="18"/>
+										</w:rPr>
+									</w:pPr>
+									<w:r w:rsidRPr="002B0589">
+										<w:rPr>
+											<w:rFonts w:hint="eastAsia"/>
+											<w:sz w:val="18"/>
+											<w:szCs w:val="18"/>
+										</w:rPr>
+										<w:t>
+Expression projectNo is undefined on line 403, column 88 in dzfptzs.ftl.
+The problematic instruction:
+----------
+==> ${projectNo} [on line 403, column 86 in dzfptzs.ftl]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.core.InvalidReferenceException: Expression projectNo is undefined on line 403, column 88 in dzfptzs.ftl.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:125)
+	at freemarker.core.Expression.getStringValue(Expression.java:118)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:221)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:221)
+	at freemarker.core.Environment.process(Environment.java:199)
+	at freemarker.template.Template.process(Template.java:259)
+	at com.kingtake.project.controller.abatepay.TPmPayfirstController.createWord(TPmPayfirstController.java:555)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:176)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:436)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:424)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:923)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:852)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:882)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:789)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:641)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:722)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:304)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.jeecgframework.core.aop.GZipFilter.doFilter(GZipFilter.java:163)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:140)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.orm.hibernate4.support.OpenSessionInViewFilter.doFilterInternal(OpenSessionInViewFilter.java:119)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:240)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:164)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:462)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:164)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:563)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:399)
+	at org.apache.coyote.http11.Http11AprProcessor.process(Http11AprProcessor.java:306)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:322)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:1732)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
