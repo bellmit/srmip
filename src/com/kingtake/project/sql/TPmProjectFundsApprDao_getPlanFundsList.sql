@@ -1,0 +1,6 @@
+SELECT t.*, level
+  FROM T_PM_PLAN_FUNDS t
+ WHERE t.T_P_ID = '${tpId}'
+ START WITH t.PARENT IS NULL
+CONNECT BY PRIOR ID = PARENT
+ ORDER BY NUM asc Nulls first
