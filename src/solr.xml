@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+	<entity>
+		<id>id</id>
+		<table>com.kingtake.office.entity.memo.TOPrivateMemoEntity</table>
+		<tableName>备忘录</tableName>
+		<title></title>
+		<content>memoContent</content>
+	</entity>
+	
+	<entity>
+		<id>id</id>
+		<table>com.kingtake.office.entity.schedule.TOScheduleEntity</table>
+		<tableName>日程</tableName>
+		<title>title</title>
+		<content>content</content>
+	</entity>
+</root>

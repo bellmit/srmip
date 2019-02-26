@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 预算sql脚本 -->
+<SqlMapper>
+	<!-- 合同类项目：查询预算树 -->
+	<sql key="contractTree">
+		SELECT ID, LEVEL, PARENT, NUM, CONTENT, 
+        HISTORY_MONEY AS HISTORYMONEY, MONEY, ADD_CHILD_FLAG  AS ADDCHILDFLAG, REMARK ,UNIT,PRICE,AMOUNT
+        FROM T_PM_CONTRACT_FUNDS 
+        WHERE T_P_ID = :apprId 
+        START WITH PARENT IS NULL CONNECT BY PRIOR ID = PARENT 
+        ORDER BY LEVEL, PARENT DESC, NUM
+	</sql>
+	
+	<!-- 计划类项目：查询预算树 -->
+	<sql key="planTree">
+		SELECT ID, LEVEL, PARENT, NUM, EQUIPMENT_ID AS CONTENTID, EQUIPMENT_NAME AS CONTENT, 
+        MODEL, UNIT, AMOUNT, PRICE, 
+        HISTORY_MONEY AS HISTORYMONEY, MONEY, ADD_CHILD_FLAG AS ADDCHILDFLAG, REMARK 
+        FROM T_PM_PLAN_FUNDS 
+        WHERE T_P_ID = :apprId 
+        START WITH PARENT IS NULL CONNECT BY PRIOR ID = PARENT 
+        ORDER BY LEVEL, PARENT DESC, NUM
+	</sql>
+
+	<!-- 合同类项目：统计固定预算的历史金额 -->
+	<sql key="contractFixedHistory">
+		 UPDATE T_PM_CONTRACT_FUNDS T1 SET T1.HISTORY_MONEY = ( 
+		 	SELECT T2.MONEY FROM ( 
+				SELECT CONTENT_ID, CONTENT, SUM(MONEY) AS MONEY FROM T_PM_CONTRACT_FUNDS 
+				WHERE T_P_ID IN ( 
+					SELECT ID FROM T_PM_PROJECT_FUNDS_APPR 
+					WHERE T_P_ID = :projectId AND ID != :apprId AND FINISH_FLAG = :finishFlag) 
+		       	AND (CONTENT_ID IS NOT NULL OR PARENT IS NULL) GROUP BY CONTENT_ID, CONTENT)T2 
+	    	WHERE (T1.CONTENT_ID = T2.CONTENT_ID) OR (T1.CONTENT = T2.CONTENT AND T1.CONTENT = '合计'))
+      	WHERE T1.T_P_ID = :apprId
+	</sql>
+
+	<!-- 合同类项目：统计可变预算的历史金额 -->
+	<sql key="contractVariableHistory">
+		SELECT SUM(T1.MONEY) AS HISTORYMONEY, T1.CONTENT, T1.NUM AS NUM, :apprId AS APPRID, '3' AS ADDCHILDFLAG
+        FROM T_PM_CONTRACT_FUNDS T1, T_PM_CONTRACT_FUNDS T2
+       	WHERE T1.T_P_ID IN (
+       		SELECT ID FROM T_PM_PROJECT_FUNDS_APPR
+        	WHERE T_P_ID = :projectId AND ID != :apprId AND FINISH_FLAG = :finishFlag) 
+        AND T1.CONTENT_ID IS NULL AND T1.PARENT = T2.ID 
+        GROUP BY T1.CONTENT, T1.NUM 
+	</sql>
+	
+	<!-- 计划类项目：统计固定预算的历史金额 -->
+	<sql key="planFixedHistory">
+		 UPDATE T_PM_PLAN_FUNDS T1 SET T1.HISTORY_MONEY = ( 
+		 	SELECT T2.MONEY FROM ( 
+				SELECT EQUIPMENT_ID, EQUIPMENT_NAME, SUM(MONEY) AS MONEY FROM T_PM_PLAN_FUNDS 
+				WHERE T_P_ID IN ( 
+					SELECT ID FROM T_PM_PROJECT_FUNDS_APPR 
+					WHERE T_P_ID = :projectId AND ID != :apprId AND FINISH_FLAG = :finishFlag) 
+		       	AND (EQUIPMENT_ID IS NOT NULL OR PARENT IS NULL) GROUP BY EQUIPMENT_ID, EQUIPMENT_NAME)T2 
+	    	WHERE (T1.EQUIPMENT_ID = T2.EQUIPMENT_ID) OR (T1.EQUIPMENT_NAME = T2.EQUIPMENT_NAME AND T1.EQUIPMENT_NAME = '合计'))
+      	WHERE T1.T_P_ID = :apprId
+	</sql>
+
+	<!-- 计划类项目：统计可变预算的历史金额 -->
+	<sql key="planVariableHistory">
+		SELECT SUM(T1.MONEY) AS HISTORYMONEY, T1.EQUIPMENT_NAME AS CONTENT, 
+		T1.NUM AS NUM, :apprId AS APPRID, '3' AS ADDCHILDFLAG
+        FROM T_PM_PLAN_FUNDS T1, T_PM_PLAN_FUNDS T2
+       	WHERE T1.T_P_ID IN (
+       		SELECT ID FROM T_PM_PROJECT_FUNDS_APPR
+        	WHERE T_P_ID = :projectId AND ID != :apprId AND FINISH_FLAG = :finishFlag) 
+        AND T1.EQUIPMENT_ID IS NULL AND T1.PARENT = T2.ID 
+        GROUP BY T1.EQUIPMENT_NAME, T1.NUM 
+	</sql>
+	
+	<!-- 合同类、计划类项目：还未生成预算时统计主页面金额 -->
+	<sql key="statistics">
+		SELECT BUDGET_NAE AS NAME, 0 AS MONEY 
+		FROM t_B_Approval_Budget_Rela
+		WHERE PROJ_APPROVAL = :type AND SHOW_FLAG = :flag
+		ORDER BY SORT_CODE
+	</sql>
+	
+	<!-- 合同类项目：统计主页面金额 -->
+	<sql key="contractStatistics">
+		SELECT BUDGET_NAE AS NAME, T2.MONEY 
+		FROM t_B_Approval_Budget_Rela T1, T_PM_CONTRACT_FUNDS T2 
+        WHERE T1.ID = T2.CONTENT_ID AND T1.PROJ_APPROVAL = :type 
+        AND T1.SHOW_FLAG = :flag AND T2.T_P_ID = :fundsId 
+        ORDER BY T1.SORT_CODE
+	</sql>
+	
+	<!-- 计划类项目：统计主页面金额 -->
+	<sql key="planStatistics">
+		SELECT BUDGET_NAE AS NAME, T2.MONEY 
+		FROM t_B_Approval_Budget_Rela T1, T_PM_PLAN_FUNDS T2
+        WHERE T1.ID = T2.EQUIPMENT_ID AND T1.PROJ_APPROVAL = :type 
+        AND T1.SHOW_FLAG = :flag AND T2.T_P_ID = :fundsId 
+        ORDER BY T1.SORT_CODE
+	</sql>
+	
+	<!-- 预算金额限制 -->
+	<sql key="fundsLimit">
+		SELECT T1.ID, T1.BUDGET_NAE AS NAME, T2.MILLION_DOWN AS DOWN, T2.MILLION_UP AS UP
+		FROM T_B_APPROVAL_BUDGET_RELA T1, T_B_FUNDS_BUDGET_RELA T2
+		WHERE T1.PROJ_APPROVAL = :projectType AND T1.SCALE_FLAG = :isScale
+		AND T2.FUNDS_PROPERTY_CODE = :feeType AND T2.APPROVAL_BUDGET_RELA_ID = T1.ID
+		ORDER BY T1.SORT_CODE
+	</sql>
+
+</SqlMapper>
