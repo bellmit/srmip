@@ -88,7 +88,11 @@ $(function() {
 			 	{id: '4',text: '合同直接约定间接费'},
 			 	{id: '5',text: '科研管理部门下拨'},
 			 	{id: '6',text: '总经费的1/21'}
-		 ]
+		 ],
+         onChange : function() {
+             var jjfjsfs = $("#jjfjsfs").combobox('getValue');
+             $("#jjfjsfs").val(jjfjsfs);
+         }
 	 });
 	 
 	//经费类型
