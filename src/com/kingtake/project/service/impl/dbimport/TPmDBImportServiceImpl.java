@@ -464,17 +464,12 @@ public class TPmDBImportServiceImpl extends CommonServiceImpl implements TPmDBIm
 
 	@Override
 	public List exportXmlToXnmx(String year) {
-			String sql = "select a.zbid, a.guid, '' as id,'' as sxh,t_pm_project.project_no as xmbm, 13 as mxdm,a.je, a.dxyl, a.yyl,a.xyl,a.sy ,a.gdje,a.kmdm,'' as bz "
-                     + " from (select t_pm_income_apply.id as zbid, t_pm_income_apply.id as guid,university_amount as dxyl,academy_amount as yyl, "		
-			         + " department_amount as xyl,performance_amount as sy,payfirst_funds as gdje,PAY_SUBJECTCODE as kmdm, "
-                     + " income_amount as je,t_pm_income_apply.T_P_ID as xmid, t_pm_income_apply.CW_STATUS,t_pm_income_apply.apply_year as year "
-                     + " from t_pm_income_apply left join t_b_pm_payfirst on t_b_pm_payfirst.id = t_pm_income_apply.payfirst_id"
-                     + " union "
-                     + " select t_pm_income_plan.id as zbid,t_pm_income_plan.id as guid, university_amount as dxyl,academy_amount as yyl, "
-                     + " department_amount as xyl,performance_amount as sy,payfirst_funds as gdje,PAY_SUBJECTCODE as kmdm, "
-			         + " plan_amount as je, T_PM_INCOME_PLAN.T_P_ID as xmid , T_PM_INCOME_PLAN.CW_STATUS, T_PM_INCOME_PLAN.plan_year as year "
-                     + " from T_PM_INCOME_PLAN left join t_b_pm_payfirst on t_b_pm_payfirst.id = T_PM_INCOME_PLAN.payfirst_id) a left join t_pm_project on a.xmid = t_pm_project.id "
-                     + " where t_pm_project.parent_project is not null and a.CW_STATUS is null and a.year = '" + year + "'";
+			String sql = "select d.id as zbid,d.id as guid,'' as id,'' as sxh,c.project_no as xmbm,d.apply_amount as je, "
+                     + " '' as gdje,'' as kmdm,'' as bz from t_pm_project A "
+			         + " left join t_pm_project B on A.GLXM=B.PARENT_PROJECT or A.ID=B.PARENT_PROJECT "
+                     + " left join t_pm_project C on C.GLXM=B.ID "
+                     + " left join t_pm_income_apply D on D.T_P_ID=C.ID"
+                     + " where a.project_no is not null order by C.PROJECT_NO ";
     	List list = this.findForJdbc(sql);
 		return list;
 	}
