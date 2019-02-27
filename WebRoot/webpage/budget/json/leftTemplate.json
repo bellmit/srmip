@@ -1,0 +1,27 @@
+{
+  "code": 0,
+  "msg": "成功",
+  "count": 9,
+  "data": [
+    {
+      "ID": "01",
+      "CATEGORY_CODE": "01",
+      "CATEGORY_NAME": "科研发展基金(2018版)预算"
+    },
+    {
+      "ID": "02",
+      "CATEGORY_CODE": "02",
+      "CATEGORY_NAME": "科研项目预算"
+    },
+    {
+      "ID": "03",
+      "CATEGORY_CODE": "03",
+      "CATEGORY_NAME": "装备项目预算"
+    },
+    {
+      "ID": "04",
+      "CATEGORY_CODE": "04",
+      "CATEGORY_NAME": "大学科研健康基金"
+    }
+  ]
+}

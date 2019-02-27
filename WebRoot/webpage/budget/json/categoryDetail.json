@@ -1,0 +1,108 @@
+{
+  "code": 0,
+  "msg": "成功",
+  "count": 9,
+  "data": [
+    {
+      "ID": "1",
+      "DETAIL_NAME": "业务费",
+      "CATEGORY_CODE": "01",
+      "CATEGORY_CODE_DTL": "1",
+      "DETAIL_SYMBOL": "",
+      "DETAIL_DESC": "描述一下",
+      "NODE": null,
+      "PID": "0",
+      "lay_is_checked": true
+    },
+    {
+      "ID": "2",
+      "DETAIL_NAME": "办公用品/耗材",
+      "CATEGORY_CODE": "02",
+      "CATEGORY_CODE_DTL": "2",
+      "DETAIL_SYMBOL": "是",
+      "DETAIL_DESC": "描述一下",
+      "NODE": null,
+      "PID": "1"
+    },
+    {
+      "ID": "111",
+      "DETAIL_NAME": "办公用品/耗材",
+      "CATEGORY_CODE": "02",
+      "CATEGORY_CODE_DTL": "2",
+      "DETAIL_SYMBOL": "是",
+      "DETAIL_DESC": "描述一下",
+      "NODE": null,
+      "PID": "2"
+    },
+    {
+      "ID": "3",
+      "DETAIL_NAME": "出版印刷费",
+      "CATEGORY_CODE": "03",
+      "CATEGORY_CODE_DTL": "3",
+      "DETAIL_SYMBOL": "否",
+      "DETAIL_DESC": "描述一下",
+      "NODE": null,
+      "PID": "1"
+    },
+    {
+      "ID": "4",
+      "DETAIL_NAME": "图书资料费",
+      "CATEGORY_CODE": "04",
+      "CATEGORY_CODE_DTL": "4",
+      "DETAIL_SYMBOL": "否",
+      "DETAIL_DESC": "描述一下",
+      "NODE": null,
+      "PID": "1"
+    },
+    {
+      "ID": "5",
+      "DETAIL_NAME": "文献检索/数据采集费",
+      "CATEGORY_CODE": "05",
+      "CATEGORY_CODE_DTL": "5",
+      "DETAIL_SYMBOL": "否",
+      "DETAIL_DESC": "描述一下",
+      "NODE": null,
+      "PID": "1"
+    },
+    {
+      "ID": "6",
+      "DETAIL_NAME": "业务通信费",
+      "CATEGORY_CODE": "06",
+      "CATEGORY_CODE_DTL": "6",
+      "DETAIL_SYMBOL": "否",
+      "DETAIL_DESC": "描述一下",
+      "NODE": null,
+      "PID": "1"
+    },
+    {
+      "ID": "7",
+      "DETAIL_NAME": "科研活动费",
+      "CATEGORY_CODE": "07",
+      "CATEGORY_CODE_DTL": "7",
+      "DETAIL_SYMBOL": "否",
+      "DETAIL_DESC": "描述一下",
+      "NODE": null,
+      "PID": "0"
+    },
+    {
+      "ID": "8",
+      "DETAIL_NAME": "差旅费",
+      "CATEGORY_CODE": "08",
+      "CATEGORY_CODE_DTL": "8",
+      "DETAIL_SYMBOL": "否",
+      "DETAIL_DESC": "描述一下",
+      "NODE": null,
+      "PID": "7"
+    },
+    {
+      "ID": "9",
+      "DETAIL_NAME": "业务会议费",
+      "CATEGORY_CODE": "09",
+      "CATEGORY_CODE_DTL": "9",
+      "DETAIL_SYMBOL": "是",
+      "DETAIL_DESC": "描述一下",
+      "NODE": null,
+      "PID": "7"
+    }
+  ]
+}

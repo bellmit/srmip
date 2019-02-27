@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+
+    <base href="">
+    <title>预算编制</title>
+    <meta name="keywords" content="预算编制">
+    <meta name="description" content="预算编制">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <link rel="stylesheet" href="../../static/common/layui/css/layui.css">
+    </head>
+<body>
+<form class="layui-form" action="">
+  <div class="layui-form-item">
+    <label class="layui-form-label">可分配金额:</label>
+    <div class="layui-input-block">
+      <input type="text" id="schoolMenoy" name="schoolMenoy" lay-verify="title" disabled="disabled" autocomplete="off"  class="layui-input">
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">分配金额:</label>
+    <div class="layui-input-block">
+      <input type="text" id="allotMenoy" name="allotMenoy" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <button class="layui-btn" lay-submit="" lay-filter="demo2">跳转式提交</button>
+  </div>
+</form>
+<script src="../../static/common/layui/layui.js"></script>
+<script src="../../static/common/jquery.min.js"></script>
+<script type="text/javascript" src="../../static/common/uri.js"></script>
+</body>
+</html>

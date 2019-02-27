@@ -1,0 +1,145 @@
+/* lyz*/
+* {
+    font-size: 14px;
+    font-family: Tahoma,Verdana,微软雅黑,新宋体;
+    color: Black;
+}
+.layui-table-view .layui-table[lay-size=sm] .layui-table-cell {
+    height: 21px;
+    line-height: 21px;
+}
+
+.budgetInfoTable .layui-table-box .layui-table-main {
+}
+#dashbord .dashbordForm{
+    position: absolute;
+    z-index: 1000;
+    left: 15px;
+    top: 4px
+}
+#dashbord .dashbordForm .layui-form-item,
+#dashbord .layui-form-item .layui-inline {
+    margin-bottom: 0;
+}
+#dashbord .dashbordForm .layui-input,
+#dashbord .dashbordForm .layui-select,
+#dashbord .dashbordForm .layui-textarea {
+    height: 30px;
+}
+#dashbord .layui-card-body,
+#dashbord .layui-tab-content {
+    padding: 0;
+}
+#dashbord .layui-card {
+    margin: 0;
+}
+#dashbord .layui-col-space15,
+#totalDudget {
+    margin: 0;
+}
+#dashbord .layui-col-space15 > * {
+    padding: 0 4px;
+}
+#dashbord .layui-table-view,
+#totalDudget .layui-table-view {
+    margin: 2px 0 0;
+}
+#dashbord .layui-table-tool {
+    background: #d5e8f1;
+    min-height: 38px;
+    line-height: 24px;
+    padding: 5px 15px;
+}
+#dashbord .layui-table-tool-self {
+    top: 5px;
+}
+.layui-table-page {
+     text-align: right;
+}
+.budgetBtn {
+    text-align: right;
+    margin-bottom: 8px;
+}
+#totalDudget .layui-card-body {
+    padding: 0 2px;
+}
+#totalDudget .layui-col-space15 > * {
+    padding: 0;
+}
+#totalDudget .layui-table-view,
+#totalDudget .layui-table-main,
+.budgetInfoTable .layui-table-view,
+.budgetInfoTable .layui-table-main,
+.BudgetRightTable .layui-table-view,
+.BudgetRightTable .layui-table-main {
+    height: auto!important;
+}
+
+#tableStyle .layui-table tbody tr:hover {
+    background-color: #fff;
+}
+#tableStyle .layui-table tbody td {
+    display: block;
+    border-bottom: none;
+    border-right: none;
+    background-color:#f7fbfa;
+}
+.ht57 {
+    height: 57px;
+    line-height: 57px;
+}
+.ht59 {
+    height: 59px;
+}
+.lh40 {
+    line-height: 40px!important;
+}
+.ht79 {
+    height: 79px;
+    line-height: 79px;
+}
+.textcenter {
+    text-align: right!important;
+}
+.textright {
+    text-align: right!important;
+    padding-right: 10px;
+}
+.blnone {
+    border-left: none!important;
+}
+.btnone {
+    border-top: none!important;
+}
+.rb {
+    border-right: 1px solid #ddd!important;
+}
+.bb {
+    border-bottom: 1px solid #ddd!important;
+}
+#tableStyle .inputStyle {
+    padding: 0;
+}
+#tableStyle .inputStyle input,
+#tableStyle .inputStyle textarea {
+    border: none;
+}
+#tableStyle .table_two,
+#tableStyle .table_three {
+    margin: 0
+}
+#tableStyle .kyxmTr input,
+#tableStyle .zbxmTr input,
+#tableStyle .kxfzjjTr input {
+	border-bottom: 1px dashed #0a86e2!important; 
+}
+#tableStyle .kyxmTr input:focus,
+#tableStyle .zbxmTr input:focus,
+#tableStyle .kxfzjjTr input:focus{
+	border-bottom: 1px dashed #0a86e2!important; 
+}
+
+.yearBudgetTableHover .layui-table tbody tr:hover,
+.yearBudgetTableHover .layui-table-click {
+    /*background-color: #fff!important;*/
+}

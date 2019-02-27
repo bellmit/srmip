@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <title>计算规则</title>
+    <meta name="keywords" content="计算规则">
+    <meta name="description" content="计算规则">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html"/>
+    <![endif]-->
+    <link rel="stylesheet" href="../../static/common/layui/css/layui.css">
+    <link rel="stylesheet" href="../../static/css/index.css">
+</head>
+<body>
+    <div class="layui-row layui-col-space15" id="totalDudget">
+        <div class="layui-col-md12">
+            <div class="layui-card">
+                <div class="layui-card-body">
+                    <table class="layui-table">
+                        <thead>
+                            <tr>
+                                <th style="text-align: center">间接费计算方式</th>
+                                <th style="text-align: center">具体计算规则</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th rowspan="3">根据直接费计算间接费</th>
+                                <th>直接费小于  5000000 时，间接费 等于 直接费(除去设备费和外协费)的20%</th>
+                            </tr>
+                            <tr>
+                                <th>直接费大于  5000000 小于 10000000 时，间接费 等于 直接费(除去设备费和外协费)的15% </th>
+                            </tr>
+                            <tr>
+                                <th>直接费大于 10000000 时，间接费 等于 直接费(除去设备费和外协费)的13%</th>
+                            </tr>
+                            <tr>
+                                <th rowspan="3">根据总经费计算绩效</th>
+                                <th>总经费小于500000 时，间接费 等于 总经费(除去校内协作&指定分承包)的30%</th>
+                            </tr>
+                            <tr>
+                                <th>总经费大于500000 小于 5000000 时，间接费 等于 总经费(除去校内协作&指定分承包)的20% </th>
+                            </tr>
+                            <tr>
+                                <th>总经费大于5000000 时，间接费 等于 总经费(除去校内协作&指定分承包)的13%</th>
+                            </tr>
+
+                            <tr>
+                                <th>无间接费</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <th>合同直接约定间接费</th>
+                                <th>根据合同手动输入间接费</th>
+                            </tr>
+                            <tr>
+                                <th>科研管理部门下拨</th>
+                                <th>根据下拨金额手动输入间接费</th>
+                            </tr>
+                            <tr>
+                                <th>总经费的1/21</th>
+                                <th>间接费等于总经费(除去校内协作&指定分承包)的1/21 </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 全局js -->
+    <script src="../../static/common/layui/layui.js"></script>
+    <script src="../../static/common/jquery.min.js"></script>
+</body>
+</html>

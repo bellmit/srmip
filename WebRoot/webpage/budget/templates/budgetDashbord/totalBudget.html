@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <title>总预算</title>
+    <meta name="keywords" content="总预算">
+    <meta name="description" content="总预算">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html"/>
+    <![endif]-->
+    <link rel="stylesheet" href="../../static/common/layui/css/layui.css">
+    <link rel="stylesheet" href="../../static/css/index.css">
+</head>
+<body>
+    <div class="layui-row layui-col-space15" id="totalDudget">
+        <div class="layui-col-md12">
+            <div class="layui-card">
+                <div class="layui-card-body" id="tableStyle">
+                    <form class="layui-form" action="" lay-filter="formBudget">
+                        <div class="budgetBtn">
+                            <button class="layui-btn layui-btn-sm layui-btn-normal" lay-submit="" lay-filter="save">保存</button>
+                            <button class="layui-btn layui-btn-sm layui-btn-primary" onclick="cancel()" type="button">取消</button>
+                        </div>
+                        <table class="layui-table" cellpadding="0" cellspacing="0">
+                            <tbody class="layui-row">
+                            <tr>
+                                <td class="layui-col-xs2 textcenter">承研单位</td>
+                                <td class="layui-col-xs4 inputStyle">
+                                    <input type="text" id="DEVELOPER_DEPART_EN" name="DEVELOPER_DEPART_EN" class="layui-input" disabled>
+                                </td>
+                                <td class="layui-col-xs2 textcenter">负责人</td>
+                                <td class="layui-col-xs4 inputStyle rb">
+                                    <input type="text" id="PROJECT_MANAGER" name="PROJECT_MANAGER" class="layui-input" disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="layui-col-xs2 textcenter">项目名称</td>
+                                <td class="layui-col-xs4 inputStyle">
+                                    <input type="text" id="PROJECT_NAME" name="PROJECT_NAME" class="layui-input" disabled>
+                                </td>
+                                <td class="layui-col-xs2 textcenter">经费性质</td>
+                                <td class="layui-col-xs4 inputStyle rb">
+                                    <input type="text" id="FUNDS_NAME" name="FUNDS_NAME" class="layui-input" disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="layui-col-xs2 textcenter">项目来源</td>
+                                <td class="layui-col-xs4 inputStyle">
+                                    <input type="text" id="SOURCE_UNIT" name="SOURCE_UNIT" class="layui-input" disabled>
+                                </td>
+                                <td class="layui-col-xs2 textcenter">起止年度</td>
+                                <td class="layui-col-xs4 inputStyle rb">
+                                    <input type="text" id="QZND" name="QZND" class="layui-input" disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="layui-col-xs2 ht59 lh40 textcenter">项目组成员名称</td>
+                                <td class="layui-col-xs10 inputStyle rb">
+                                    <textarea rows="4" id="MEMBERNAME" name="MEMBERNAME" class="layui-input ht59" disabled></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="layui-col-xs2 textcenter">项目的主要内容及技术指标</td>
+                                <td class="layui-col-xs10 inputStyle rb">
+                                    <textarea rows="4" id="FUNDS_NAME2" name="FUNDS_NAME2" class="layui-input ht59" disabled></textarea>
+                                </td>
+                            </tr>
+                            <tr class ="kyxmTr" style="display:none;">
+                               <td rowspan="9" class="layui-col-xs2 textcenter" style="height:436px; line-height: 436px;">经费预算</td>
+                                <td class="layui-col-xs10 inputStyle rb" colspan="2">
+                                    <table class="layui-table table_two" cellpadding="0" cellspacing="0">
+                                        <tbody class="layui-row">
+                                         <tr>
+                                            <td class="layui-col-xs2 blnone btnone textcenter" >总经费</td>
+                                            <td class="layui-col-xs4 inputStyle btnone" >
+                                                <input type="text" id="19-ZJE" name="19-ZJE" class="layui-input textcenter" style="font-weight: bold" disabled>
+                                            </td>
+                                            <td class="layui-col-xs2 blnone btnone textcenter">可编辑</td>
+                                            <td class="layui-col-xs4 inputStyle btnone">
+                                                <input type="text" id="19-KBJ" name="19-KBJ" class="layui-input textcenter" style="font-weight: bold" disabled>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="layui-col-xs2 blnone textcenter" style="height:236px; line-height: 236px;">直接经费</td>
+                                            <td class="layui-col-xs10 inputStyle">
+                                                <table class="layui-table table_three" cellpadding="0" cellspacing="0">
+                                                    <tbody class="layui-row">
+                                                    <tr>
+                                                        <td class="layui-col-xs2 blnone btnone textcenter">设备费</td>
+                                                        <td class="layui-col-xs4 inputStyle btnone">
+                                                            <input type="text" id="19-01" name="19-01" class="layui-input textright inputBlur">
+                                                        </td>
+                                                        <td class="layui-col-xs2 btnone textcenter">材料费</td>
+                                                        <td class="layui-col-xs4 inputStyle btnone">
+                                                            <input type="text" id="19-02" name="19-02" class="layui-input textright inputBlur">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="layui-col-xs2 blnone textcenter">外部协作费</td>
+                                                        <td class="layui-col-xs4 inputStyle">
+                                                            <input type="text" id="19-03" name="19-03" class="layui-input textright inputBlur">
+                                                        </td>
+                                                        <td class="layui-col-xs2 textcenter">燃料动力费</td>
+                                                        <td class="layui-col-xs4 inputStyle">
+                                                            <input type="text" id="19-04" name="19-04" class="layui-input textright inputBlur">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="layui-col-xs2 blnone ht79 textcenter">会议/差旅/国际/合作与交流</td>
+                                                        <td class="layui-col-xs4 inputStyle">
+                                                            <input type="text" id="19-05" name="19-05" class="layui-input ht79 textright inputBlur">
+                                                        </td>
+                                                        <td class="layui-col-xs2 ht79 textcenter">出版/文献/信息传播/知识产权事物费</td>
+                                                        <td class="layui-col-xs4 inputStyle">
+                                                            <input type="text" id="19-06" name="19-06" class="layui-input ht79 textright inputBlur">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="layui-col-xs2 blnone textcenter">劳务费</td>
+                                                        <td class="layui-col-xs4 inputStyle">
+                                                            <input type="text" id="19-07" name="19-07" class="layui-input textright inputBlur">
+                                                        </td>
+                                                        <td class="layui-col-xs2 textcenter">专家咨询费</td>
+                                                        <td class="layui-col-xs4 inputStyle">
+                                                            <input type="text" id="19-08" name="19-08" class="layui-input textright inputBlur">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="layui-col-xs2 blnone textcenter">其他支出</td>
+                                                        <td class="layui-col-xs4 inputStyle">
+                                                            <input type="text" id="19-09" name="19-09" class="layui-input textright inputBlur">
+                                                        </td>
+                                                        <td class="layui-col-xs2 textcenter">小计</td>
+                                                        <td class="layui-col-xs4 inputStyle">
+                                                            <input type="text" id="19-XJ" name="19-XJ" class="layui-input textcenter" style="font-weight: bold" disabled>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="layui-col-xs2 blnone textcenter" style="height:159px; line-height: 159px;">间接经费</td>
+                                            <td class="layui-col-xs10 inputStyle">
+                                                <table class="layui-table table_three" cellpadding="0" cellspacing="0">
+                                                    <tbody class="layui-row">
+                                                    <tr>
+                                                        <td class="layui-col-xs2 blnone btnone textcenter ht59" style="line-height: 45px;">学校管理费</td>
+                                                        <td class="layui-col-xs4 inputStyle btnone">
+                                                            <input type="text" id="19-1001" name="19-1001" class="layui-input ht59 textright inputBlurJJ" disabled>
+                                                        </td>
+                                                        <td class="layui-col-xs2 btnone textcenter ht59">责任单位管理费</td>
+                                                        <td class="layui-col-xs4 inputStyle btnone">
+                                                            <input type="text" id="19-1002" name="19-1002" class="layui-input ht59 textright inputBlurJJ" disabled>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="layui-col-xs2 blnone textcenter ht59">承研单位管理费</td>
+                                                        <td class="layui-col-xs4 inputStyle">
+                                                            <input type="text" id="19-1003" name="19-1003" class="layui-input ht59 textright inputBlurJJ" disabled>
+                                                        </td>
+                                                        <td class="layui-col-xs2 textcenter ht59">项目组绩效津贴</td>
+                                                        <td class="layui-col-xs4 inputStyle">
+                                                            <input type="text" id="19-1004" name="19-1004" class="layui-input ht59 textright inputBlurJJ" disabled>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="layui-col-xs2 blnone textcenter">小计</td>
+                                                        <td class="layui-col-xs10 inputStyle">
+                                                            <input type="text" id="19-JJXJ" name="19-JJXJ" class="layui-input textcenter" style="font-weight: bold" disabled>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr class ="kyxmTr" style="display:none;">
+                               <td class="layui-col-xs2 bb ht59 lh40 textcenter">不可预见费</td>
+                                <td class="layui-col-xs2 inputStyle bb ht59" style="width: 13.9%;">
+                                    <input type="text" id="19-12" name="19-12" class="layui-input ht57 textcenter" >
+                                </td>
+                                <td class="layui-col-xs2 bb ht59 lh40 textcenter" style="width: 11.7%;">校内协作费</td>
+                                <td class="layui-col-xs2 inputStyle bb ht59" style="width: 23%;">
+                                    <input type="text" id="19-13" name="19-13" class="layui-input ht57 textright inputBlurUnBudget">
+                                </td>
+                                <td class="layui-col-xs2 bb inputStyle ht59 textcenter" style="width: 11.7%;line-height: 59px">指定分承包经费</td>
+                                <td class="layui-col-xs2 inputStyle bb rb ht59" style="width: 23%;">
+                                    <input type="text" id="19-11" name="19-11" class="layui-input ht57 textright inputBlurUnBudget">
+                                </td>
+                            </tr>
+                            <tr class ="zbxmTr" style="display:none;">
+                               <td rowspan="6" class="layui-col-xs2 textcenter" style="height:276px; line-height: 276px;">经费预算</td>
+                                <td class="layui-col-xs10 inputStyle rb" >
+                                    <table class="layui-table table_two" cellpadding="0" cellspacing="0">
+                                        <tbody class="layui-row">
+                                        <tr>
+                                            <td class="layui-col-xs2 blnone btnone textcenter" >总经费</td>
+                                            <td class="layui-col-xs4 inputStyle btnone" >
+                                                <input type="text" id="20-ZJE" name="20-ZJE" class="layui-input textcenter" style="font-weight: bold" disabled>
+                                            </td>
+                                            <td class="layui-col-xs2 blnone btnone textcenter">可编辑</td>
+                                            <td class="layui-col-xs4 inputStyle btnone">
+                                                <input type="text" id="20-KBJ" name="20-KBJ" class="layui-input textcenter" style="font-weight: bold" disabled>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="layui-col-xs2 blnone textcenter" style="height:236px; line-height: 236px;">直接经费</td>
+                                            <td class="layui-col-xs10 inputStyle">
+                                                <table class="layui-table table_three" cellpadding="0" cellspacing="0">
+                                                    <tbody class="layui-row">
+                                                    <tr>
+                                                        <td class="layui-col-xs2 blnone btnone textcenter">设备费</td>
+                                                        <td class="layui-col-xs4 inputStyle btnone">
+                                                            <input type="text" id="20-01" name="20-01" class="layui-input textright inputBlur">
+                                                        </td>
+                                                        <td class="layui-col-xs2 btnone textcenter">材料费</td>
+                                                        <td class="layui-col-xs4 inputStyle btnone">
+                                                            <input type="text" id="20-02" name="20-02" class="layui-input textright inputBlur">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="layui-col-xs2 blnone textcenter">外部协作费</td>
+                                                        <td class="layui-col-xs4 inputStyle">
+                                                            <input type="text" id="20-03" name="20-03" class="layui-input textright inputBlur">
+                                                        </td>
+                                                        <td class="layui-col-xs2 textcenter">燃料动力费</td>
+                                                        <td class="layui-col-xs4 inputStyle">
+                                                            <input type="text" id="20-04" name="20-04" class="layui-input textright inputBlur">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="layui-col-xs2 blnone ht79 textcenter">会议/差旅/国际合作与交流费</td>
+                                                        <td class="layui-col-xs4 inputStyle">
+                                                            <input type="text" id="20-05" name="20-05" class="layui-input ht79 textright inputBlur">
+                                                        </td>
+                                                        <td class="layui-col-xs2 ht79 textcenter">出版/文献/信息传播/知识产权事务费</td>
+                                                        <td class="layui-col-xs4 inputStyle">
+                                                            <input type="text" id="20-06" name="20-06" class="layui-input ht79 textright inputBlur">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="layui-col-xs2 blnone textcenter">劳务费</td>
+                                                        <td class="layui-col-xs4 inputStyle">
+                                                            <input type="text" id="20-07" name="20-07" class="layui-input textright inputBlur">
+                                                        </td>
+                                                        <td class="layui-col-xs2 textcenter">专家咨询费</td>
+                                                        <td class="layui-col-xs4 inputStyle">
+                                                            <input type="text" id="20-08" name="20-08" class="layui-input textright inputBlur">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="layui-col-xs2 blnone textcenter">其他支出</td>
+                                                        <td class="layui-col-xs4 inputStyle">
+                                                            <input type="text" id="20-09" name="20-09" class="layui-input textright inputBlur">
+                                                        </td>
+                                                        <td class="layui-col-xs2 textcenter">小计</td>
+                                                        <td class="layui-col-xs4 inputStyle">
+                                                            <input type="text" id="20-XJ" name="20-XJ" class="layui-input textcenter" style="font-weight: bold" disabled>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr class ="zbxmTr" style="display:none;">
+                                <td class="layui-col-xs2 bb ht59 lh40 textcenter" >校内协作费</td>
+                                <td class="layui-col-xs10 inputStyle rb">
+                                   <input type="text" id="20-10" name="20-10" class="layui-input ht57 textright inputBlurUnBudget">
+                                </td>
+                            </tr>
+                            <tr class ="kxfzjjTr" style="display:none;">
+                               <td rowspan="6" class="layui-col-xs2 textcenter" style="height:326px; line-height: 326px;">经费预算</td>
+                                <td class="layui-col-xs10 inputStyle rb" >
+                                    <table class="layui-table table_two" cellpadding="0" cellspacing="0">
+                                        <tbody class="layui-row">
+                                         <tr>
+                                            <td class="layui-col-xs2 blnone btnone textcenter" >总经费</td>
+                                            <td class="layui-col-xs4 inputStyle btnone" >
+                                                <input type="text" id="09-ZJE" name="09-ZJE" class="layui-input textcenter" style="font-weight: bold" disabled>
+                                            </td>
+                                            <td class="layui-col-xs2 blnone btnone textcenter">可编辑</td>
+                                            <td class="layui-col-xs4 inputStyle btnone">
+                                                <input type="text" id="09-KBJ" name="09-KBJ" class="layui-input textcenter" style="font-weight: bold" disabled>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="layui-col-xs2 blnone textcenter" style="height:286px; line-height: 286px;">直接经费</td>
+                                            <td class="layui-col-xs10 inputStyle">
+                                                <table class="layui-table table_three" cellpadding="0" cellspacing="0">
+                                                    <tbody class="layui-row">
+                                                    <tr>
+                                                        <td class="layui-col-xs2 blnone btnone textcenter">业务费</td>
+                                                        <td class="layui-col-xs4 inputStyle btnone">
+                                                            <input type="text" id="09-01" name="09-01" class="layui-input textright inputBlur">
+                                                        </td>
+                                                        <td class="layui-col-xs2 btnone textcenter">科研活动费</td>
+                                                        <td class="layui-col-xs4 inputStyle btnone">
+                                                            <input type="text" id="09-02" name="09-02" class="layui-input textright inputBlur">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="layui-col-xs2 blnone textcenter">科技人员培养费</td>
+                                                        <td class="layui-col-xs4 inputStyle">
+                                                            <input type="text" id="09-04" name="09-04" class="layui-input textright inputBlur">
+                                                        </td>
+                                                        <td class="layui-col-xs2 textcenter">设备购置维护费</td>
+                                                        <td class="layui-col-xs4 inputStyle">
+                                                            <input type="text" id="09-05" name="09-05" class="layui-input textright inputBlur">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="layui-col-xs2 blnone ht79 textcenter">场所建设维护费</td>
+                                                        <td class="layui-col-xs4 inputStyle">
+                                                            <input type="text" id="09-06" name="09-06" class="layui-input ht79 textright inputBlur">
+                                                        </td>
+                                                        <td class="layui-col-xs2 ht79 textcenter">自主立项科研费</td>
+                                                        <td class="layui-col-xs4 inputStyle">
+                                                            <input type="text" id="09-07" name="09-07" class="layui-input ht79 textright inputBlur">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        
+                                                         <td class="layui-col-xs2 blnone textcenter">知识产权和法律事务费</td>
+                                                        <td class="layui-col-xs4 inputStyle">
+                                                            <input type="text" id="09-09" name="09-09" class="layui-input textright inputBlur">
+                                                        </td>
+                                                        <td class="layui-col-xs2 textcenter">创新成果奖励费</td>
+                                                        <td class="layui-col-xs4 inputStyle">
+                                                            <input type="text" id="09-08" name="09-08" class="layui-input textright inputBlur">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                       <td class="layui-col-xs2 blnone textcenter">劳务费</td>
+                                                        <td class="layui-col-xs4 inputStyle">
+                                                            <input type="text" id="09-03" name="09-03" class="layui-input textright inputBlur">
+                                                        </td>
+                                                        <td class="layui-col-xs2 textcenter">小计</td>
+                                                        <td class="layui-col-xs4 inputStyle">
+                                                            <input type="text" id="09-XJ" name="09-XJ" class="layui-input textcenter" style="font-weight: bold" disabled>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            
+                            
+                            
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 全局js -->
+    <script src="../../static/common/layui/layui.js"></script>
+    <script src="../../static/common/jquery.min.js"></script>
+	<script type="text/javascript" src="../../static/common/uri.js"></script>
+    <!-- 自定义js -->
+    <script src="../../static/js/budgetDashbord/totalBudget.js"></script>
+</body>
+</html>

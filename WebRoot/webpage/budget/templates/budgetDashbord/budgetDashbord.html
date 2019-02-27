@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+
+    <base href="">
+    <title>预算编制</title>
+    <meta name="keywords" content="预算编制">
+    <meta name="description" content="预算编制">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    
+    <link rel="stylesheet" href="../../static/common/layui/css/layui.css">
+    <link rel="stylesheet" href="../../static/css/index.css">
+    
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html"/>
+    <![endif]-->
+    <!--
+    <link rel="stylesheet" href="webpage/budget/static/common/layui/css/layui.css">
+    <link rel="stylesheet" href="webpage/budget/static/css/index.css">
+    -->
+
+</head>
+<body>
+    <div id="dashbord" style="background: rgb(60, 126, 216);">
+        <div class="layui-row layui-col-space15">
+            <div class="layui-col-md12" style="padding: 2px 4px 0;">
+                <div class="layui-card">
+                    <div class="layui-card-body " style="position: relative">
+                        <form class="layui-form dashbordForm">
+                            <div class="layui-form-item">
+                                <div class="layui-inline">
+                                    <div class="layui-input-inline">
+                                        <select id="condition" name="condition">
+                                            <option value=""></option>
+                                            <option value="projectNo">项目编码</option>
+                                            <option value="projectName">项目名称</option>
+                                            <option value="devDepart">承建单位</option>
+                                            <option value="projectType">项目类型</option>
+                                            <option value="xmlb">项目类别</option>
+                                        </select>
+                                    </div>
+                                    <div class="layui-input-inline">
+                                        <input id="queryValue" type="text" name="value" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                <button class="layui-btn layui-btn-sm layui-btn-normal" data-type="reload" type="button">查询</button>
+                                <button class="layui-btn layui-btn-sm layui-btn-normal" type="button" data-type="addTotal">新增总预算</button>
+                                <button class="layui-btn layui-btn-sm layui-btn-normal" type="button" data-type="addYear">新增年度预算</button>
+                                <button class="layui-btn layui-btn-sm layui-btn-normal" type="button" data-type="adjustYsApply">调整预算申请</button>
+                                <button class="layui-btn layui-btn-sm layui-btn-normal" type="button" data-type="checkSubmit">发送审核</button>
+                            </div>
+                        </form>
+                        <table class="layui-hide" id="budgetDashbordTable" lay-filter="budgetDashbordTable"></table>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-md12">
+                <div class="layui-card">
+                    <div class="layui-card-body">
+                        <div class="layui-tab layui-tab-card" lay-filter="docDemoTabBrief">
+                            <ul class="layui-tab-title">
+                                <li class="layui-this">总预算</li>
+                                <li>年度预算</li>
+                                <li>总预算合计</li>
+                                <li>年度预算合计</li>
+                                <li>分配金额</li>
+                                <li>项目执行情况</li>
+                                <li>校内协助项目</li>
+                            </ul>
+                            <div class="layui-tab-content">
+                                <div class="layui-tab-item layui-show">
+                                    <div class="layui-row layui-col-space15">
+                                        <div class="layui-col-md7">
+                                            <table class="layui-hide" id="budgetLeftTable" lay-filter="budgetLeftTable"></table>
+                                        </div>
+                                        <div class="layui-col-md5 BudgetRightTable">
+                                            <table class="layui-hide" id="BudgetRightTable" lay-filter="BudgetRightTable"></table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="layui-tab-item">
+                                    <div class="layui-row layui-col-space15">
+                                        <div class="layui-col-md7">
+                                            <table class="layui-hide" id="yearBudgetLeftTable" lay-filter="yearBudgetLeftTable"></table>
+                                        </div>
+                                        <div class="layui-col-md5 BudgetRightTable">
+                                            <table class="layui-hide" id="yearBudgetRightTable" lay-filter="yearBudgetRightTable"></table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="layui-tab-item">
+                                    <table class="layui-hide" id="totalBudgetTable" lay-filter="totalBudgetTable"></table>
+                                </div>
+                                <div class="layui-tab-item">
+                                    <table class="layui-hide" id="yearBudgetTotalTable" lay-filter="yearBudgetTotalTable"></table>
+                                </div>
+                                <div class="layui-tab-item">
+                                    <table class="layui-hide" id="distributionMoneyTable" lay-filter="distributionMoneyTable"></table>
+                                </div>
+                                <div class="layui-tab-item">
+                                    <table class="layui-hide" id="projectExecTable" lay-filter="projectExecTable"></table>
+                                </div>
+                                <div class="layui-tab-item">
+                                    <table class="layui-hide" id="projectSchoolTable" lay-filter="projectSchoolTable"></table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/html" id="toolbarDemo"></script>
+    <script>
+	    var projectName = "";
+	    if(location.href.indexOf("srmip")>=0){
+	        projectName = "srmip/";
+	    }
+	    document.getElementsByTagName('base')[0].href=window.location.origin+"/"+projectName;
+
+        var jsArray = [
+            'webpage/budget/static/common/jquery.min.js',
+            'webpage/budget/static/common/layui/layui.js',
+            'webpage/budget/static/common/uri.js',
+            'plug-in/tools/curdtools_zh-cn.js',
+            'plug-in/lhgDialog/lhgdialog.min.js',
+            'webpage/budget/static/js/budgetDashbord/auditor.js',
+            'webpage/budget/static/js/budgetDashbord/budgetDashbord.js'
+        ];
+        //加载js
+        dynamicLoadJsList(jsArray);
+       	
+       	/**
+       	 * 批量加载js
+       	 */
+       	function dynamicLoadJsList(jsList,callback){
+       		
+       		dynamicLoadJs(jsList[0],function(){
+           		loadJsCallback(0);
+    		})
+    		function loadJsCallback(num){
+       			num++;
+           		if(num < jsList.length){
+           			dynamicLoadJs(jsList[num],function(){
+               			loadJsCallback(num);
+               		});
+           		}else{
+           			load();
+           		}
+           	}
+       	}
+        /**
+         * 动态加载JS
+         * @param {string} url 脚本地址
+         * @param {function} callback  回调函数
+         */
+        function dynamicLoadJs(url, callback) {
+            var head = document.getElementsByTagName('head')[0];
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = url;
+            if(typeof(callback)=='function'){
+                script.onload = script.onreadystatechange = function () {
+                    if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete"){
+                        callback();
+                        script.onload = script.onreadystatechange = null;
+                    }
+                };
+            }
+            head.appendChild(script);
+        }
+    </script>
+    <!-- 全局js -->
+    <!--<script src="../../static/common/layui/layui.all.js"></script>-->
+
+    <!--
+    <script src="webpage/budget/static/common/layui/layui.js"></script>
+    <script src="webpage/budget/static/common/jquery.min.js"></script>
+	<script type="text/javascript" src="webpage/budget/static/common/uri.js"></script>
+    <script src="plug-in/tools/curdtools_zh-cn.js"></script>
+    <script src="plug-in/lhgDialog/lhgdialog.min.js"></script>
+    -->
+    <!-- 自定义js -->
+    <!--
+    <script src="webpage/budget/static/js/budgetDashbord/budgetDashbord.js"></script>
+-->
+
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <title>总预算</title>
+    <meta name="keywords" content="总预算">
+    <meta name="description" content="总预算">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html"/>
+    <![endif]-->
+    <link rel="stylesheet" href="../../static/common/layui/css/layui.css">
+    <link rel="stylesheet" href="../../static/css/index.css">
+</head>
+<body>
+    <div class="layui-row layui-col-space15" id="totalDudget">
+        <div class="layui-col-md12">
+            <div class="layui-card">
+                <div class="layui-card-body">
+                    <div class="budgetBtn">
+                        <button class="layui-btn layui-btn-sm layui-btn-normal" data-type="save" type="button">保存</button>
+                        <button class="layui-btn layui-btn-sm layui-btn-primary" data-type="cancel" type="button">取消</button>
+                        <i class="layui-icon" onclick="completRule()" style="font-size: 20px; margin:0 8px; vertical-align: middle; cursor: pointer;">&#xe60b;</i>
+                    </div>
+                    <table class="layui-hide" id="totalBudgetTable" lay-filter="totalBudgetTable"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 全局js -->
+    <script src="../../static/common/layui/layui.js"></script>
+    <script src="../../static/common/jquery.min.js"></script>
+    <script type="text/javascript" src="../../static/common/uri.js"></script>
+    <script type="text/javascript" src="../../static/common/base.js"></script>
+
+    <!-- 自定义js -->
+    <script src="../../static/js/budgetDashbord/totalBudget2.js"></script>
+</body>
+</html>
