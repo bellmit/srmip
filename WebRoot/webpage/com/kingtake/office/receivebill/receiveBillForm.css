@@ -1,0 +1,55 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.title2 {
+    color: #FF0000; 
+    font-size: 14px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #FF0000;
+	border-right-color: #FF0000;
+	border-bottom-color: #FF0000;
+	border-left-color: #FF0000;
+}
+
+.title3 {
+        color: #000000; 
+        font-size: 14px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #FF0000;
+	border-right-color: #FF0000;
+	border-bottom-color: #FF0000;
+	border-left-color: #FF0000;
+}
+
+.title4 {
+	font-size: 24px;
+	line-height: 150%;
+	color: #ff0000;
+	font-weight: bold;
+}
+.style1 {
+	font-size: 14px;
+	line-height: 150%;
+    color: #FF0000
+}
+body,td,th {
+	font-size: 14px;
+	color: #FF0000;
+}

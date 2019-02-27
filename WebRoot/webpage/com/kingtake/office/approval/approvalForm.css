@@ -1,0 +1,22 @@
+.STYLE1 {
+	color: #339966;
+	font-size: 14px;
+	line-height:120%
+}
+
+.STYLE2 {
+	color: #339966;
+	font-size: 60px;
+	font-weight: bold;
+}
+
+.STYLE3 {
+	color: #000000;
+	font-size: 30px;
+	font-weight: bold;
+	line-height:180%
+}
+body,td,th {
+	font-size: 14px;
+	line-height:180%
+}
