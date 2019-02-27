@@ -1,0 +1,114 @@
+.text {
+	font-size: 20px;
+	font-family: 'Microsoft YaHei' ! important;
+	vertical-align: middle;
+	cursor: pointer;
+	line-height: 3;
+	color:#fff;
+}
+
+.titleDiv1 {
+	width: 210px;
+	border: solid 1px gray;
+	background-color: red;
+	text-align: center;
+	-moz-border-radius: 15px; /* Gecko browsers */
+	-webkit-border-radius: 15px; /* Webkit browsers */
+	border-radius: 15px; /* W3C syntax */
+}
+
+.titleDiv2 {
+	width: 210px;
+	border: solid 1px gray;
+	background-color: yellow;
+	text-align: center;
+	-moz-border-radius: 15px; /* Gecko browsers */
+	-webkit-border-radius: 15px; /* Webkit browsers */
+	border-radius: 15px; /* W3C syntax */
+}
+
+.titleDiv3 {
+	width: 210px;
+	border: solid 1px gray;
+	background-color: blue;
+	text-align: center;
+	-moz-border-radius: 15px; /* Gecko browsers */
+	-webkit-border-radius: 15px; /* Webkit browsers */
+	border-radius: 15px; /* W3C syntax */
+}
+
+.titleDiv4 {
+  width: 210px;
+  border: solid 1px gray;
+  background-color: blue;
+  text-align: center;
+  -moz-border-radius: 15px; /* Gecko browsers */
+  -webkit-border-radius: 15px; /* Webkit browsers */
+  border-radius: 15px; /* W3C syntax */
+}
+
+.hr {
+	border: solid 1px black;
+}
+
+.pbtn {
+	font-size: 16px;
+	color: #337ab7;
+	cursor: pointer;
+	text-align: right;
+	line-height: 2.5;
+	padding-right: 10px;
+	background-color: #f5f5f5;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	height: 38px;
+}
+
+.sb {
+	background: url('../img/xm_01.png') no-repeat center top;
+}
+
+.sb_active {
+	background: url('../img/xm_01s.png') no-repeat left top;
+}
+.lx {
+	background: url('../img/xm_02.png') no-repeat center top;
+}
+
+.lx_active {
+	background: url('../img/xm_02s.png') no-repeat center top;
+}
+.zx{
+	background: url('../img/xm_03.png') no-repeat left top;
+}
+.zx_active{
+	background: url('../img/xm_03s.png') no-repeat left top;
+}
+.ysjt{
+	background: url('../img/xm_04.png') no-repeat left top;
+}
+.ysjt_active{
+	background: url('../img/xm_04s.png') no-repeat left top;
+}
+.cgjd{
+	background: url('../img/xm_05.png') no-repeat left top;
+}
+.cgjd_active{
+	background: url('../img/xm_05s.png') no-repeat left top;
+}
+.menuTxt{
+	position: relative;
+	bottom: -50px;
+	font-size: 15px;
+	font-family: "Microsoft YaHei", "微软雅黑", "Microsoft JhengHei";
+	color: #444444;
+	font-weight: bold;
+}
+.menuTxt_active{
+	position: relative;
+	bottom: -50px;
+	font-size: 15px;
+	font-family: "Microsoft YaHei", "微软雅黑", "Microsoft JhengHei";
+	color: #FFFFFF;
+	font-weight: bold;
+}

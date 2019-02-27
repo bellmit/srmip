@@ -1,0 +1,36 @@
+#sideToolbar {
+    position: fixed;
+    /* padding: 10px; */
+    left:15px;
+    top:20px;
+    background: #fff;
+}
+#sideToolbar-btn {
+	position: fixed;
+    display: block;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    background: url("../img/sideToolbar.png") no-repeat scroll 0 0 transparent;
+    top: 12px;
+    left: 160px;
+}
+#sideToolbar-btn.disable {
+    background: url("../img/sideToolbar.png") no-repeat scroll -104px 0 transparent;
+}
+#sideToolbar-btn.disable:hover {
+    background: url("../img/sideToolbar.png") no-repeat scroll -154px 0 transparent;
+}
+#sideToolbar-up {
+	position: fixed;
+    right: 22px;
+	bottom: 22px;
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 2px;
+    background: url("../img/sideToolbar.png") no-repeat scroll -1px -62px transparent;    
+}
+#sideToolbar-up:hover {
+    background: url("../img/sideToolbar.png") no-repeat scroll -74px -62px transparent;
+}
