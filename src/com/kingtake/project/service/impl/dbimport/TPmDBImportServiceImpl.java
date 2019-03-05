@@ -386,7 +386,7 @@ public class TPmDBImportServiceImpl extends CommonServiceImpl implements TPmDBIm
 					+ " from t_pm_income_apply a left join t_pm_project b on a.t_p_id=b.id left join t_pm_project d on d.glxm=b.id left join t_b_pm_payfirst c on c.id = a.payfirst_id  "
 					+ " where a.audit_status is not null or a.audit_status <> '0' and (a.cw_status is null or a.cw_status=0) and b.parent_project is null  "
 					+ " AND A.ID IN ( SELECT INCOME_APPLY_ID FROM t_pm_income_rel_apply T1 "
-					+ " LEFT JOIN t_pm_income T2 ON T1.INCOME_ID = T2.ID WHERE T1.INCOME_APPLY_ID = A.ID AND  T2.INCOME_YEAR =  '" + year + "' )";
+					+ " LEFT JOIN t_pm_income T2 ON T1.INCOME_ID = T2.ID WHERE T1.INCOME_APPLY_ID = A.ID )";
 		
 		List list = this.findForJdbc(sql);
 		return list;
@@ -416,7 +416,7 @@ public class TPmDBImportServiceImpl extends CommonServiceImpl implements TPmDBIm
 		sb.append(" left join t_pm_income_apply a on a.id=rel.INCOME_APPLY_ID ");
 		sb.append(" left join t_pm_project b on a.t_p_id=b.id ");
 		sb.append(" where a.audit_status is not null and a.audit_status <> '0'  ");
-        sb.append(" and (a.cw_status is null or a.cw_status=0) and b.parent_project is null and c.INCOME_YEAR ='" + year + "' ");
+        sb.append(" and (a.cw_status is null or a.cw_status=0) and b.parent_project is null ");
 	  	List list = this.findForJdbc(sb.toString());
 		return list;
 	}

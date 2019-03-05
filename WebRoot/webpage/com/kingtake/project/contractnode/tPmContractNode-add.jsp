@@ -207,11 +207,11 @@
 					<td align="right">
 						<label class="Validform_label">
 							<!--附&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;件:&nbsp;&nbsp;-->
-							合同节点附件:<font color="red">*</font>
+							合同节点附件:
 						</label>
 					</td>
       				<td colspan="3" class="value">
-      					<input type="hidden" value="" id="filetitle" name="filetitle" datatype="*"/>
+      					<input type="hidden" value="" id="filetitle" name="filetitle" datatype="n" ignore="ignore"/>
 						<span class="Validform_checktip"></span>
 						<label class="Validform_label" style="display: none;">合同节点附件</label>
 						

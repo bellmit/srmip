@@ -11,6 +11,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.NotFound;
+import org.hibernate.annotations.NotFoundAction;
 import org.jeecgframework.core.common.entity.IdEntity;
 
 /**
@@ -42,8 +44,13 @@ public class TSFunction extends IdEntity implements java.io.Serializable {
     //        update-end--Author:zhangguoming  Date:20140509 for：添加云桌面图标实体
 
 	private List<TSFunction> TSFunctions = new ArrayList<TSFunction>();
+
+
+
+
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "iconid")
+	@NotFound(action=NotFoundAction.IGNORE)
 	public TSIcon getTSIcon() {
 		return TSIcon;
 	}

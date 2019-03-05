@@ -396,9 +396,15 @@ function countIndirect(mapList) {
         if(newMap[i].NODE === "1") {
             if(FUNDS_TYPE !== "7") {
                 if(newMap[i].MONEY < 0){
+                    if(newMap[i].DETAIL_NAME == "间接费") {
+                        continue;
+                    }
                     var sum = -newMap[i].MONEY || 0 + newMap[i].XE || 0;
                     directTotal += toMoneyNumber(sum) || 0; // 直接费总额
                 }else{
+                    if(newMap[i].DETAIL_NAME == "间接费") {
+                        continue;
+                    }
                     directTotal += toMoneyNumber(newMap[i].MONEY) || 0; // 直接费总额
                 }
                 // if(newMap[i].ID !== "19-01" && newMap[i].ID !== "19-03"){ // 直接费除设备、外协总额（第二种计算方法）
@@ -409,6 +415,9 @@ function countIndirect(mapList) {
                     directFee1 += toMoneyNumber(newMap[i].MONEY) || 0;
                 }
             } else {
+                if(newMap[i].DETAIL_NAME == "间接费") {
+                    continue;
+                }
                 var _all = newMap[i].MONEY || 0 + newMap[i].HISTORY_MONEY || 0;
                 directTotal += toMoneyNumber(_all) || 0; // 直接费总额
                 directTotal2 += toMoneyNumber(newMap[i].MONEY) || 0; // 预算金额列合计
@@ -423,12 +432,17 @@ function countIndirect(mapList) {
     }
 
     if(FUNDS_TYPE !== "7") {
-
-
-
         var indirect = 0;
+        if(parent.budgetTotalObj.hasOwnProperty("DNJF")) {
+            directFee = parent.budgetTotalObj.DNJF - directFee1; // 直接费 - 直接费除设备 - 外协总额
+        } else {
+            var ndxe = layui.treeGrid.cache.yearBudgetTable.data.list[0].XE;
+            directFee = ndxe - directFee1;// 直接费 - 直接费除设备 - 外协总额
+        }
+
+
         //directFee = parent.budgetTotalObj.ALL_FEE - directFee1; // 直接费 - 直接费除设备 - 外协总额
-        directFee = parent.budgetTotalObj.DNJF - directFee1; // 直接费 - 直接费除设备 - 外协总额
+        //directFee = parent.budgetTotalObj.DNJF - directFee1; // 直接费 - 直接费除设备 - 外协总额
         switch (parent.budgetTotalObj.JJFJSFS) {
             case '1':
                 if (Number(parent.budgetTotalObj.ALL_FEE) < 5000000) {

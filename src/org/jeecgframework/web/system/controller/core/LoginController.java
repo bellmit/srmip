@@ -468,18 +468,22 @@ public class LoginController extends BaseController{
 	 */
 	@RequestMapping(params = "shortcut_top")
 	public ModelAndView shortcut_top(HttpServletRequest request) {
-		TSUser user = ResourceUtil.getSessionUserName();
-		HttpSession session = ContextHolderUtils.getSession();
-		// 登陆者的权限
-		if (user.getId() == null) {
-			session.removeAttribute(Globals.USER_SESSION);
-			return new ModelAndView(
-					new RedirectView("loginController.do?login"));
-		}
-		request.setAttribute("menuMap", getFunctionMap(user));
-		List<TSConfig> configs = userService.loadAll(TSConfig.class);
-		for (TSConfig tsConfig : configs) {
-			request.setAttribute(tsConfig.getCode(), tsConfig.getContents());
+		try {
+			TSUser user = ResourceUtil.getSessionUserName();
+			HttpSession session = ContextHolderUtils.getSession();
+			// 登陆者的权限
+			if (user.getId() == null) {
+				session.removeAttribute(Globals.USER_SESSION);
+				return new ModelAndView(
+						new RedirectView("loginController.do?login"));
+			}
+			request.setAttribute("menuMap", getFunctionMap(user));
+			List<TSConfig> configs = userService.loadAll(TSConfig.class);
+			for (TSConfig tsConfig : configs) {
+				request.setAttribute(tsConfig.getCode(), tsConfig.getContents());
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 		return new ModelAndView("main/shortcut_top");
 	}

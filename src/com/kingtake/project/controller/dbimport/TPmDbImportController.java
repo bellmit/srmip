@@ -939,7 +939,7 @@ public class TPmDbImportController extends BaseController {
      */
     @RequestMapping(params = "ImportCw")
     public ModelAndView importDkxx(HttpServletRequest req) {
-        return new ModelAndView("com/kingtake/project/dbimport/dbimport-xml");
+        return new ModelAndView("com/kingtake/project/dbimport/dbimport-xml-ajax");
     }
     
     /**
@@ -959,8 +959,8 @@ public class TPmDbImportController extends BaseController {
      */
     @RequestMapping(params = "importXml", method = RequestMethod.POST)
     @ResponseBody
-    public AjaxJson importXml(HttpServletRequest request, HttpServletResponse response) {
-        AjaxJson j = new AjaxJson();
+    public String importXml(HttpServletRequest request, HttpServletResponse response) {
+        //AjaxJson j = new AjaxJson();
         try {
         	List list = this.tPmDBImportService.importXml(request);
         	//到账信息每次都是全额导入，所以要先把以前的数据清掉
@@ -1004,18 +1004,20 @@ public class TPmDbImportController extends BaseController {
                 		this.tPmDBImportService.saveXml(xmlList,cwnd);
                 	}
         		}else{
-        			j.setMsg("请勿重复导入交互编号为"+jhbh+"的数据！");
-        			return j;
+        			//j.setMsg("请勿重复导入交互编号为"+jhbh+"的数据！");
+        			return "请勿重复导入交互编号为"+jhbh+"的数据！";
         		}
         	}
        	
-            j.setMsg("导入数据成功,交互编号为："+jhbh);
+            //j.setMsg("导入数据成功,交互编号为："+jhbh);
+        	return "导入数据成功,交互编号为："+jhbh;
         } catch (Exception e) {
             e.printStackTrace();
-            j.setSuccess(false);
-            j.setMsg("导入数据失败！");
+            //.setSuccess(false);
+            //j.setMsg("导入数据失败！");
+            return "导入数据失败！";
         }
-        return j;
+        //return j;
     }
     
     /**
