@@ -222,7 +222,6 @@ function addTableEvent(){
                 {icon: 3, title:'提示'},
                 function(index){ // 确定回调
                     obj.del();
-
                     if(obj.data.NODE !== '0' && obj.data.NODE !== '1') {
                         var mapList = treeGrid.getDataMap("yearBudgetTable"); // 获取表格所有数据map格式
                         var arrList = treeGrid.getDataList("yearBudgetTable"); // 获取表格所有数据[{}]格式
@@ -263,7 +262,7 @@ function addTableEvent(){
                             treeGrid.updateRow("yearBudgetTable", newObj1); // 将第二级(NODE='2')汇总赋值给第一级(NODE='1')
                         }
                     }
-                    countIndirect();
+                    countIndirect(mapList);
                     var arrList2 = treeGrid.getDataList("yearBudgetTable"); // 获取表格所有数据[{}]格式
                     editColsBg(arrList2);
                     layer.close(index);
