@@ -24,7 +24,7 @@
                 processData: false,
                 success: function (result) {
                     $("#fileName").html("上传成功");
-                    $("#uploadfileName").val(result);
+                    $("#uploadFileName").val(result);
                 },
                 error: function () {
 
@@ -95,7 +95,7 @@
             </tr>
             <tr>
                 <td align="right" width="120px"><label class="Validform_label"></label></td>
-                <td><div id ="fileName"></div><input id="uploadfileName" name="uploadfileName" type="text" style="display: none;" class="inputxt"></td>
+                <td><div id ="fileName"></div><input id="uploadFileName" name="uploadFileName" type="text" style="display: none;" class="inputxt"></td>
             </tr>
         </table>
     </t:formvalid>

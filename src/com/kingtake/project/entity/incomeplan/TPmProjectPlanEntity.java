@@ -120,6 +120,11 @@ public class TPmProjectPlanEntity implements java.io.Serializable {
      */
     private String dybh;
 
+    /**
+     * excel文件名称
+     */
+    private String uploadFileName;
+
     
     @Column(name = "YS_STATUS")
     public String getYsStatus() {
@@ -382,5 +387,14 @@ public class TPmProjectPlanEntity implements java.io.Serializable {
 
     public void setDybh(String dybh) {
         this.dybh = dybh;
+    }
+
+    @Column(name = "upload_file_name")
+    public String getUploadFileName() {
+        return uploadFileName;
+    }
+
+    public void setUploadFileName(String uploadFileName) {
+        this.uploadFileName = uploadFileName;
     }
 }

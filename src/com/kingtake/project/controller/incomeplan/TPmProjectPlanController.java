@@ -221,7 +221,11 @@ public class TPmProjectPlanController extends BaseController {
         		TPmProjectPlanEntity t = tBPmProjectPlanService.get(TPmProjectPlanEntity.class, tPmProjectPlan.getId());
                 MyBeanUtils.copyBeanNotNull2Bean(tPmProjectPlan, t);
                 tBPmProjectPlanService.saveOrUpdate(t);
-        	}        	                        
+        	}
+
+        	//解析excel
+            String fileName = tPmProjectPlan.getUploadFileName();
+            System.out.println("=====" + fileName);
         } catch (Exception e) {
             e.printStackTrace();
             j.setSuccess(false);
