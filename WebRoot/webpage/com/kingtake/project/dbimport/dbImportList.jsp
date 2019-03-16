@@ -286,7 +286,7 @@ function ExportXmlToCw() {
 
 //导入到款信息
 function ImportCw() {
-	openuploadwin('数据导入', 'dbImportController.do?ImportCw', "dbImportList");
+    openwindow('数据导入', 'dbImportController.do?ImportCw', "dbImportList");
 }
 
 //导出数据给财务

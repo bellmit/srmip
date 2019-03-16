@@ -16,8 +16,8 @@
 <body style="overflow-y: hidden" scroll="no">
 		<form action="dbImportController.do?importXml"
 			  enctype="multipart/form-data" method="POST">
-			<input type="file" name="file1" />
-			<input type="submit" value="提交" />
+			<input type="file" name="file1" style="width:230px!important;"/>
+			<input type="submit" value="上传" style="height:30px;"/>
 		</form>
 
 </body>
