@@ -1,13 +1,13 @@
 package com.kingtake.project.service.impl.incomeplan;
 
+import java.io.File;
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.kingtake.common.util.ReadExcel;
 import org.apache.commons.lang3.StringUtils;
 import org.jeecgframework.core.common.exception.BusinessException;
 import org.jeecgframework.core.common.hibernate.qbc.CriteriaQuery;
@@ -60,7 +60,7 @@ public class TPmProjectPlanServiceImpl extends CommonServiceImpl implements TPmP
     /**
      * 默认按钮-sql增强-新增操作
      * 
-     * @param id
+     * @param t
      * @return
      */
     @Override
@@ -71,7 +71,7 @@ public class TPmProjectPlanServiceImpl extends CommonServiceImpl implements TPmP
     /**
      * 默认按钮-sql增强-更新操作
      * 
-     * @param id
+     * @param t
      * @return
      */
     @Override
@@ -82,7 +82,7 @@ public class TPmProjectPlanServiceImpl extends CommonServiceImpl implements TPmP
     /**
      * 默认按钮-sql增强-删除操作
      * 
-     * @param id
+     * @param t
      * @return
      */
     @Override
@@ -106,5 +106,51 @@ public class TPmProjectPlanServiceImpl extends CommonServiceImpl implements TPmP
         cq.add();
         List<TPmIncomePlanEntity> incomePlanList = this.commonDao.getListByCriteriaQuery(cq, false);
         return incomePlanList.size();
+    }
+
+    /**
+     * 导入计划下达项目信息
+     * @param fileName
+     */
+    @Override
+    public void importExcelProject(String fileName) {
+        String uploadPath = System.getProperty("catalina.home")+"\\webapps\\excelFile\\";
+        String filePath = uploadPath + fileName;
+
+        ReadExcel obj = new ReadExcel();
+        // 此处为我创建Excel路径：E:/zhanhj/studysrc/jxl下
+        File file = new File(filePath);
+        List excelList = obj.readExcel(file);
+
+        List<Map> dataList = new ArrayList<Map>();
+        Map data = null;
+        String[] arr = {"","","","","","","","","","",""};
+        int size = excelList.size();
+        for (int i = 0; i < size; i++) {
+            List list = (List) excelList.get(i);
+            data = new HashMap();
+            int size2 = list.size();
+            for (int j = 0; j < size2; j++) {
+                //System.out.print(list.get(j));
+                data.put(arr[i], list.get(j));
+            }
+            //System.out.println();
+            dataList.add(data);
+        }
+
+        batchAddProject(dataList);
+
+    }
+
+    private void batchAddProject(List<Map> dataList){
+        int size = dataList.size();
+        for(int i = 0;i < size;i++){
+            Map data = dataList.get(i);
+
+            String uuid = UUID.randomUUID().toString().replace("-", "");
+
+
+
+        }
     }
 }

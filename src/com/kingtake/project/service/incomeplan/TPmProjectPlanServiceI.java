@@ -19,13 +19,13 @@ public interface TPmProjectPlanServiceI extends CommonService {
  	
  	/**
 	 * 默认按钮-sql增强-新增操作
-	 * @param id
+	 * @param t
 	 * @return
 	 */
     public boolean doAddSql(TPmProjectPlanEntity t);
  	/**
 	 * 默认按钮-sql增强-更新操作
-	 * @param id
+	 * @param t
 	 * @return
 	 */
     public boolean doUpdateSql(TPmProjectPlanEntity t);
@@ -33,8 +33,14 @@ public interface TPmProjectPlanServiceI extends CommonService {
     /**
      * 默认按钮-sql增强-删除操作
      * 
-     * @param id
+     * @param t
      * @return
      */
-    public boolean doDelSql(TPmProjectPlanEntity t);  
+    public boolean doDelSql(TPmProjectPlanEntity t);
+
+
+	/**
+	 * 导入计划下达项目信息
+	 */
+	public void importExcelProject(String fileName);
 }

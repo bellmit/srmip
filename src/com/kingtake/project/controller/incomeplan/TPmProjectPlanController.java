@@ -226,6 +226,7 @@ public class TPmProjectPlanController extends BaseController {
         	//解析excel
             String fileName = tPmProjectPlan.getUploadFileName();
             System.out.println("=====" + fileName);
+            tBPmProjectPlanService.importExcelProject(fileName);
         } catch (Exception e) {
             e.printStackTrace();
             j.setSuccess(false);
@@ -636,9 +637,12 @@ public class TPmProjectPlanController extends BaseController {
             {
                 //一次遍历所有文件
                 MultipartFile file=multiRequest.getFile(iter.next().toString());
-                if(file!=null)
-                {
+                if(file!=null) {
                     String uploadPath = System.getProperty("catalina.home")+"\\webapps\\excelFile\\";
+                    File dir = new File(uploadPath);
+                    if(!dir.exists()){
+                        dir.createNewFile();//不存在就创建
+                    }
                     SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHMMSS");
                     fileName = sdf.format(new Date()) + "_" + file.getOriginalFilename();
                     String path = uploadPath + fileName;
