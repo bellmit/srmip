@@ -192,4 +192,11 @@ public interface YsDaoService {
 	 * @param param
 	 */
 	Map adjustYsApply(Map param);
+
+	/**
+	 * 调整预算申请结果
+	 * @param map
+	 * @return
+	 */
+	Object getTzyssqRessult(Map map);
 }

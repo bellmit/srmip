@@ -916,4 +916,19 @@ public class YsDaoServiceImpl extends CommonServiceImpl implements YsDaoService{
 		return result;
 	}
 
+	/**
+	 * 调整预算申请结果
+	 * @param map
+	 * @return
+	 */
+	@Override
+	public Object getTzyssqRessult(Map map) {
+		Object tpId = map.get("T_P_ID");
+		String sql = " select t.tzys_status from t_pm_project t WHERE t.id='"+ tpId +"' ";
+		List<Map<String,Object>> list = this.findForJdbc(sql);
+		if(list.size() > 0) {
+			return list.get(0).get("tzys_status");
+		}
+		return null;
+	}
 }

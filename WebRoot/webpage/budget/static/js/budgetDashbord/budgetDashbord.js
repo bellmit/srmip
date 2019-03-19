@@ -601,6 +601,10 @@ function load(){
 	                type : "post",
 	                data : {T_P_ID: budgetTotalObj.ID},
 	                success : function(backData) {
+                        if(backData.code == 8 || backData.code == 9 || backData.code == 10){
+                            layer.alert(backData.value);
+                            return;
+                        }
 	                	budgetTotalObj = $.extend({}, budgetTotalObj, backData);
 	                	var index = layer.open({
 	                        type : 2,

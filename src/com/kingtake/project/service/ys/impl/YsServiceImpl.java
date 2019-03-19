@@ -42,8 +42,21 @@ public class YsServiceImpl extends CommonServiceImpl implements YsService{
 			dataMap.put("code", YsEnum.TZ_BUDGET.getKey());
 			dataMap.put("value", YsEnum.TZ_BUDGET.getValue());
 		}else{//调整
-			dataMap.put("code", YsEnum.TZH_BUDGET.getKey());
-			dataMap.put("value", YsEnum.TZH_BUDGET.getValue());
+			Object tzyssq = ysDaoService.getTzyssqRessult(param);
+			if("3".equals(tzyssq)){
+				dataMap.put("code", YsEnum.TZH_BUDGET.getKey());
+				dataMap.put("value", YsEnum.TZH_BUDGET.getValue());
+			} else if("4".equals(tzyssq)){
+				dataMap.put("code", "8");
+				dataMap.put("value", "调整预算审核未通过！");
+			} else if(tzyssq == null || tzyssq == ""){
+				dataMap.put("code", "9");
+				dataMap.put("value", "请先进行调整预算申请！");
+			} else {
+				dataMap.put("code", "10");
+				dataMap.put("value", "调整预算申请审核未通过！");
+			}
+
 		}
 		
 		return dataMap;
