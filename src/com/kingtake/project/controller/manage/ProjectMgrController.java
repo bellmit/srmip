@@ -355,6 +355,7 @@ public class ProjectMgrController extends BaseController {
             String[] idArr = ids.split(",");
             projIdSet.addAll(Arrays.asList(idArr));
         }
+        logger.info("projIdSet:"+projIdSet.toString());
         String sortKey = request.getParameter("sortKey");
         //1、计划合同标志  2、年度  3、类别  4、性质
         Map<String, Map<String, String>> valueMap = new HashMap<String, Map<String, String>>();

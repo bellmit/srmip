@@ -27,7 +27,7 @@ import com.kingtake.project.service.ys.YsService;
 public class YsServiceImpl extends CommonServiceImpl implements YsService{
 	@Autowired
 	private YsDaoService ysDaoService;
-	
+
 	@Override
 	public Map<String, Object> getZysType(Map<String, Object> param) {
 		Map<String,Object> dataMap = new HashMap<String, Object>();
@@ -58,7 +58,7 @@ public class YsServiceImpl extends CommonServiceImpl implements YsService{
 			}
 
 		}
-		
+
 		return dataMap;
 	}
 
@@ -87,7 +87,7 @@ public class YsServiceImpl extends CommonServiceImpl implements YsService{
 		double rl_Ys_1 = MapUtils.getDoubleValue(ysDaoService.getRlFunds(param), "RL_FUNDS");	//认领合计
 		double fpje_Ys_1 = MapUtils.getDoubleValue(ysDaoService.getFpFunds(param), "FP_JE");	//分配合计
 		double yys_je = dz_Ys_1 + rl_Ys_1 + fpje_Ys_1;
-		
+
 		if(ys_je <= 0){
 			dataMap.put("code", -1);
 			dataMap.put("value", "项目还没有到款，无法做预算");
@@ -105,7 +105,7 @@ public class YsServiceImpl extends CommonServiceImpl implements YsService{
 			dataMap.put("code", -1);
 			dataMap.put("value", "数据异常无法完成预算，请核查数据");
 		}
-		
+
 		return dataMap;
 	}
 
@@ -140,7 +140,7 @@ public class YsServiceImpl extends CommonServiceImpl implements YsService{
 
 	@Override
 	public List<Map<String, Object>>  getNdysDetailList(Map<String, Object> param) {
-		
+
 		return ysDaoService.getYsDetailList(param);
 	}
 
@@ -219,11 +219,11 @@ public class YsServiceImpl extends CommonServiceImpl implements YsService{
 					!CW_STATUS.equals(YsEnum.CW_STATUS_1.getKey())) ){
 				data.put("code", -1);
 				data.put("msg", yslx + "没有通过审核");
-				
+
 				return data;
 			}
 		}
-			
+
 		Map<String, Object> xmFund = ysDaoService.getXmFund(param);
 		if(FUNDS_TYPE == -1){
 			xmFund.put("FP_FUNDS", 0);
@@ -250,7 +250,7 @@ public class YsServiceImpl extends CommonServiceImpl implements YsService{
 		if(StringUtil.isNotEmpty(MapUtils.getString(param, "pageType"))){
 			param.put("FUNDS_TYPE", -1);
 		}
-		
+
 		Map<String,Object> ndData = ysDaoService.getYsData(param);//判断预算是否审核
 		if(ndData.size() > 0 && MapUtils.getIntValue(param, "FUNDS_TYPE") > 0){
 			String HT_STATUS = "HT_" + MapUtils.getString(ndData, "FINISH_FLAG","0");
@@ -273,7 +273,7 @@ public class YsServiceImpl extends CommonServiceImpl implements YsService{
 			List<Map<String,Object>> detailTree = ysDaoService.getDetailFunds(param);//明细
 			ndTree.addAll(detailTree);
 		}
-		
+
 		//总预算树
 		param.put("FUNDS_CATEGORY", 1);
 		Map<String,Object> zysData = ysDaoService.getYsData(param);
@@ -281,7 +281,7 @@ public class YsServiceImpl extends CommonServiceImpl implements YsService{
 		param.put("ysId", MapUtils.getString(zysData, "ID"));
 		param.put("PID", "19-10");
 		List<Map<String,Object>> zysTree = ysDaoService.getPmTemplate(param);//总预算树
-		
+
 		param.put("FUNDS_STATUS", 0);	//未做预算
 		double dz_Ys_0 = MapUtils.getDoubleValue(ysDaoService.getDzFunds(param), "DZ_FUNDS");	//垫支合计
 		double rl_Ys_0 = MapUtils.getDoubleValue(ysDaoService.getRlFunds(param), "RL_FUNDS");	//认领合计
@@ -306,13 +306,13 @@ public class YsServiceImpl extends CommonServiceImpl implements YsService{
 				}
 			}
 		}
-		
+
 		data = TagUtil.getDataJson(ndTree);
 		Map<String, Object> xmFund = ysDaoService.getXmFund(param);
 		data.putAll(xmFund);
 		return data;
 	}
-	
+
 	/**
 	 * 新增、编辑预算
 	 * @param param
@@ -350,7 +350,7 @@ public class YsServiceImpl extends CommonServiceImpl implements YsService{
 		}
 		return num;
 	}
-	
+
 	/**
 	 * 组装预算信息
 	 * @param param
@@ -424,9 +424,9 @@ public class YsServiceImpl extends CommonServiceImpl implements YsService{
 		}
 		return rList;
 	}
-	
+
 	/**
-	 * 
+	 *
 	 * delZysContractFunds:(删除预算)
 	 * @author liangzhe
 	 *
@@ -459,7 +459,7 @@ public class YsServiceImpl extends CommonServiceImpl implements YsService{
 		}
 		return list;
 	}
-	
+
 	@Override
 	public List<Map<String, Object>> getDzTotalList(Map<String, Object> param) {
 		List<Map<String, Object>> list = ysDaoService.getDzTotalList(param);
@@ -483,8 +483,8 @@ public class YsServiceImpl extends CommonServiceImpl implements YsService{
 		}
 		//获取预算数据
 		List<Map<String,Object>> ndTree = getNdysTotalList(param);
-		
-		
+
+
 		//获取开支数据
 		List<Map<String, Object>> spendingList = ysDaoService.getSpendingList(param);
 		Map<String,List> nodeMap = getPnodeMap(spendingList);//获取父节点数据集合
@@ -494,7 +494,7 @@ public class YsServiceImpl extends CommonServiceImpl implements YsService{
 		for(int i=0;i<size;i++){
 			Map map = ndTree.get(i);
 			//result.add(map);
-			
+
 			Object key = map.get("CATEGORY_CODE_DTL");
 			Object pid = map.get("ID");
 			List<Map<String,Object>> childList = nodeMap.get(key);
@@ -503,22 +503,25 @@ public class YsServiceImpl extends CommonServiceImpl implements YsService{
 				int jdje = 0;//借贷金额
 				int hkje = 0;//还款金额
 				//int ye = 0;//余额 = 预算金额 - 总开支金额
-				int money = map.get("MONEY") == null ? 0 : Integer.parseInt(map.get("MONEY").toString());
+				int money = map.get("MONEY") == null ? 0 : Integer.parseInt(map.get("MONEY").toString().replaceAll(",", ""));
 				for(int j=0;j<childList.size();j++){
 					Map child = childList.get(j);
 					child.put("PID",pid);
 					Object kzlx = child.get("KZLX");
 					if("1".equals(kzlx)){//开支
-						int kz = child.get("KZJE")==null ? 0:Integer.parseInt(child.get("KZJE").toString());
+					    int kz = child.get("KZJE")==null ? 0:Double.valueOf(child.get("KZJE").toString().replaceAll(",", "")).intValue();
+						//int kz = child.get("KZJE")==null ? 0:Integer.parseInt(child.get("KZJE").toString().replaceAll(",", ""));
 						kzje+=kz;
 					}else if("2".equals(kzlx)){//借贷
-						int jd = child.get("KZJE")==null ? 0:Integer.parseInt(child.get("KZJE").toString());
+                        int jd = child.get("KZJE")==null ? 0:Double.valueOf(child.get("KZJE").toString().replaceAll(",", "")).intValue();
+						//int jd = child.get("KZJE")==null ? 0:Integer.parseInt(child.get("KZJE").toString().replaceAll(",", ""));
 						jdje+=jd;
 						child.put("JDJE",child.get("KZJE"));
 						child.put("KZJE",null);
 
 					}else if("3".equals(kzlx)){//还款
-						int hk = child.get("KZJE")==null ? 0:Integer.parseInt(child.get("KZJE").toString().split(".")[0]);
+                        int hk = child.get("KZJE")==null ? 0:Double.valueOf(child.get("KZJE").toString().replaceAll(",", "")).intValue();
+						//int hk = child.get("KZJE")==null ? 0:Integer.parseInt(child.get("KZJE").toString().replaceAll(",", "").split(".")[0]);
 						hkje+=hk;
 						child.put("JDJE","-"+child.get("KZJE"));
 						child.put("KZJE",null);
@@ -535,10 +538,10 @@ public class YsServiceImpl extends CommonServiceImpl implements YsService{
 			}
 
 		}
-		
+
 		return result;
 	}
-	
+
 	/**
 	 * 新增、修改协作费
 	 * @param param
@@ -552,7 +555,7 @@ public class YsServiceImpl extends CommonServiceImpl implements YsService{
 		String realName = user.getRealName();
 		param.put("USER_NAME", userName);
 		param.put("REAL_NAME", realName);
-		
+
 		if(MapUtils.getBooleanValue(param, "isExdit",false)){//编辑
 			int flg = ysDaoService.updateXZFunds(param);
 			map.put("code", flg);
@@ -571,7 +574,7 @@ public class YsServiceImpl extends CommonServiceImpl implements YsService{
 	public Map<String,Object> saveOrUpdateKz(Map param){
 		Map<String,Object> map = new HashMap<>();
 		if(MapUtils.getBooleanValue(param, "isExdit",false)){//编辑
-			
+
 		}else{//新增
 			ysDaoService.addBudetAddendum(param);
 		}
@@ -595,7 +598,7 @@ public class YsServiceImpl extends CommonServiceImpl implements YsService{
 		xzYSFunds.put("APPLY_YEAR", MapUtils.getString(ysData, "START_YEAR"));
 		return xzYSFunds;
 	}
-	
+
 	/**
 	 * 关联协作项目
 	 * @param param
@@ -654,7 +657,7 @@ public class YsServiceImpl extends CommonServiceImpl implements YsService{
 		}
 		return list;
 	}
-	
+
 	/**
 	 * 组装父节点数据集合
 	 * key：父节点ID； value：开支list
@@ -671,7 +674,7 @@ public class YsServiceImpl extends CommonServiceImpl implements YsService{
 			if(value == null){
 				value = new ArrayList();
 			}
-			
+
 			value.add(map);
 			result.put(key, value);
 		}

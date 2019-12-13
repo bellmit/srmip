@@ -6,6 +6,7 @@
 <script type="text/javascript" src="plug-in/uploadify/jquery.uploadify-3.1.js"></script>
 <script type="text/javascript" src="plug-in/tools/Map.js"></script>
 <script type="text/javascript" src="webpage/com/kingtake/apprUtil/apprUtil.js"></script>
+<script type="text/javascript" src="webpage/com/kingtake/common/upload/fileUpload.js"></script>
 <style>
 .btn {
   display: inline-block;

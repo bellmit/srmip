@@ -426,15 +426,18 @@ public class TBXmlbController extends BaseController {
         				+ "(select id from t_b_funds_property k where k.FUNDS_NAME='"+jflx.getId()+"')";
         		list = systemService.findForJdbc(sql2);
         	}
-        	Map data = list.get(0);
-    		map.put("msg", "0");
-    		map.put("yslx", data.get("BUDGET_CATEGORY"));
-    		map.put("jjfjsfs", data.get("INDIRECT_FEE_CALU"));
-    		map.put("dxbl", data.get("UNIVERSITY_PROP"));
-    		map.put("zrdwbl", data.get("UNIT_PROP"));
-    		map.put("cydwbl", data.get("DEV_UNIT_PROP"));
-    		map.put("xmzbl", data.get("PROJECTGROUP_PROP"));
-    		map.put("msg", "0");
+        	if (list.size() > 0) {
+                Map data = list.get(0);
+                map.put("msg", "0");
+                map.put("yslx", data.get("BUDGET_CATEGORY"));
+                map.put("jjfjsfs", data.get("INDIRECT_FEE_CALU"));
+                map.put("dxbl", data.get("UNIVERSITY_PROP"));
+                map.put("zrdwbl", data.get("UNIT_PROP"));
+                map.put("cydwbl", data.get("DEV_UNIT_PROP"));
+                map.put("xmzbl", data.get("PROJECTGROUP_PROP"));
+                map.put("msg", "0");
+            }
+
         }else{
         	map.put("msg", "1");
         }

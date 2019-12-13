@@ -14,7 +14,7 @@ import org.apache.commons.pool.PoolableObjectFactory;
 * 实现了一个FTPClient连接池
 * @author heaven
 */
-public class FTPClientPool implements ObjectPool<FTPClient>{
+public class FTPClientPool{
  private static final int DEFAULT_POOL_SIZE = 10;
  private final BlockingQueue<FTPClient> pool;
  private final FtpClientFactory factory;
@@ -106,7 +106,7 @@ public class FTPClientPool implements ObjectPool<FTPClient>{
       }
  }
 
- public void setFactory(PoolableObjectFactory<FTPClient> factory) throws IllegalStateException, UnsupportedOperationException {
+ public void setFactory(PoolableObjectFactory factory) throws IllegalStateException, UnsupportedOperationException {
 
  }
 }

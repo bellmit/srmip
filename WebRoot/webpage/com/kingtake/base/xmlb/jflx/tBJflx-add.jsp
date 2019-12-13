@@ -33,7 +33,7 @@
 					<font color="red">*</font>
 				</td>
 				<td class="value">
-					<input id="jflxmc" name="jflxmc" type="text" style="width: 150px" class="inputxt" validType="t_b_jflx,JFLXMC,id" datatype="*1-25">
+					<input id="jflxmc" name="jflxmc" type="text" style="width: 150px" class="inputxt" validType="t_b_jflx,JFLXMC,id">
 					<span class="Validform_checktip"></span>
 					<label class="Validform_label" style="display: none;">经费类型名称</label>
 				</td>
@@ -53,7 +53,7 @@
 					<label class="Validform_label">排&nbsp;序&nbsp;&nbsp;码：<font color="red">*</font></label>
 				</td>
 				<td class="value">
-					<input id="code" name="code" type="text" style="width: 150px" class="inputxt" datatype="n1-6">
+					<input id="code" name="code" type="text" style="width: 150px" class="inputxt" datatype="n1-10">
 					<span class="Validform_checktip"></span> 
 					<label class="Validform_label" style="display: none;">排序码</label>
 				</td>

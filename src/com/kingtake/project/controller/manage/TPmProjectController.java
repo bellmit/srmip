@@ -922,7 +922,7 @@ public class TPmProjectController extends BaseController {
             }
         	tPmProject.setLsh(mr);
         	
-            if(tPmProject.getLxStatus().equals("1")){
+            if("1".equals(tPmProject.getLxStatus())){
         		List<TBXmlbEntity> xmlb = this.systemService.findByProperty(TBXmlbEntity.class, "id", tPmProject.getXmlb().getId());
                 tPmProject.setXmml(xmlb.get(0).getParentType().getXmlb());
                 tPmProject.setZgdw(xmlb.get(0).getZgdw());

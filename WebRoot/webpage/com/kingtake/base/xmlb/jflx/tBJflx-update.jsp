@@ -40,7 +40,7 @@
 					<label class="Validform_label">经费类型名称：<font color="red">*</font></label>
 				</td>
 				<td class="value">
-					<input id="jflxmc" name="jflxmc" type="text" class="inputxt" datatype="*1-25" value="${tBJflx.jflxmc}">
+					<input id="jflxmc" name="jflxmc" type="text" class="inputxt" value="${tBJflx.jflxmc}">
 					<span class="Validform_checktip"></span> 
 					<label class="Validform_label" style="display: none;">项目类型</label>
 				</td>
@@ -61,7 +61,7 @@
 					<label class="Validform_label">排&nbsp;序&nbsp;&nbsp;码：<font color="red">*</font></label>
 				</td>
 				<td class="value">
-					<input id="code" name="code" type="text" style="width: 150px" class="inputxt" datatype="n1-6" value="${tBJflx.code}">
+					<input id="code" name="code" type="text" style="width: 150px" class="inputxt" datatype="n1-10" value="${tBJflx.code}">
 					<span class="Validform_checktip"></span>
 					<label class="Validform_label" style="display: none;">排序码</label>
 				</td>

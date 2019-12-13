@@ -9,10 +9,10 @@ import org.jeecgframework.core.util.FtpClientUtil;
 
 /**
  * FTPClient工厂类，通过FTPClient工厂提供FTPClient实例的创建和销毁
- * 
+ *
  * @author heaven
  */
-public class FtpClientFactory implements PoolableObjectFactory<FTPClient> {
+public class FtpClientFactory {
 
 
     //给工厂传入一个参数对象，方便配置FTPClient的相关参数
@@ -59,7 +59,7 @@ public class FtpClientFactory implements PoolableObjectFactory<FTPClient> {
         }
     }
 
-    
+
     public boolean validateObject(FTPClient ftpClient) {
         try {
             return ftpClient.sendNoOp();

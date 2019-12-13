@@ -225,8 +225,10 @@ public class TPmProjectPlanController extends BaseController {
 
         	//解析excel
             String fileName = tPmProjectPlan.getUploadFileName();
-            System.out.println("=====" + fileName);
-            tBPmProjectPlanService.importExcelProject(fileName);
+            logger.info("=====" + fileName);
+            if(StringUtils.isNotEmpty(fileName)) {
+                tBPmProjectPlanService.importExcelProject(fileName);
+            }
         } catch (Exception e) {
             e.printStackTrace();
             j.setSuccess(false);

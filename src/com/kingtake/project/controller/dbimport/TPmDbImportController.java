@@ -76,9 +76,9 @@ import freemarker.template.TemplateException;
 
 /**
  * 数据导入
- * 
+ *
  * @author admin
- * 
+ *
  */
 @SuppressWarnings("CheckStyle")
 @Scope("prototype")
@@ -92,22 +92,22 @@ public class TPmDbImportController extends BaseController {
 
     @Autowired
     private SystemService systemService;
-    
+
     @Autowired
     private ExportXmlServiceI exportXmlServiceI;
-    
+
     @Autowired
     private ImportXmlServiceI importXmlServiceI;
 
     @Autowired
     private TPmDBImportServiceI tPmDBImportService;
-    
+
     @Autowired
     private TPmProjectServiceI tPmProjectService;
-    
+
     @Autowired
     private TPmOutcomeContractApprServiceI tPmOutcomeContractApprService;
-    
+
     @Autowired
     private TPmOutContractNodeCheckServiceI tPmOutContractNodeCheckService;
 
@@ -120,12 +120,12 @@ public class TPmDbImportController extends BaseController {
     public void setMessage(String message) {
         this.message = message;
     }
-    
-    private static BASE64Encoder encoder = new sun.misc.BASE64Encoder(); 
+
+    private static BASE64Encoder encoder = new sun.misc.BASE64Encoder();
 
     /**
      * 跳转到数据导入界面
-     * 
+     *
      * @param request 请求
      * @return ModelAndView 结果
      */
@@ -158,7 +158,7 @@ public class TPmDbImportController extends BaseController {
 
     /**
      * 删除合同节点信息
-     * 
+     *
      * @return
      */
     @RequestMapping(params = "doDel")
@@ -181,7 +181,7 @@ public class TPmDbImportController extends BaseController {
 
     /**
      * 合同节点信息编辑页面跳转
-     * 
+     *
      * @return
      */
     @RequestMapping(params = "goUpdate")
@@ -210,17 +210,17 @@ public class TPmDbImportController extends BaseController {
 
     /**
      * 导入功能跳转
-     * 
+     *
      * @return
      */
     @RequestMapping(params = "upload")
     public ModelAndView upload(HttpServletRequest req) {
         return new ModelAndView("com/kingtake/project/dbimport/dbimport-upload");
     }
-    
+
     /**
      * 导出项目基本信息excel
-     * 
+     *
      * @param request
      * @param response
      */
@@ -240,11 +240,11 @@ public class TPmDbImportController extends BaseController {
             throw new BusinessException("导出模板失败", e);
         }
     }
-    
-    
+
+
     /**
      * 导出excel
-     * 
+     *
      * @param request
      * @param response
      */
@@ -258,10 +258,10 @@ public class TPmDbImportController extends BaseController {
         modelMap.put(NormalExcelConstants.DATA_LIST, tpmProjects);
         return NormalExcelConstants.JEECG_EXCEL_VIEW;
     }
-    
+
     /**
      * 导出excel
-     * 
+     *
      * @param request
      * @param response
      */
@@ -278,10 +278,10 @@ public class TPmDbImportController extends BaseController {
         modelMap.put(NormalExcelConstants.DATA_LIST, tpmProjects);
         return NormalExcelConstants.JEECG_EXCEL_VIEW;
     }
-    
+
     /**
      * 导出excel
-     * 
+     *
      * @param request
      * @param response
      */
@@ -298,10 +298,10 @@ public class TPmDbImportController extends BaseController {
         modelMap.put(NormalExcelConstants.DATA_LIST, tpmProjects);
         return NormalExcelConstants.JEECG_EXCEL_VIEW;
     }
-    
+
     /**
      * 导出预算主表信息给财务
-     * 
+     *
      * @param request
      * @param classPath
      */
@@ -317,7 +317,7 @@ public class TPmDbImportController extends BaseController {
 //            		map.put("xh", "");
 //            		map.put("dqzt", "0");
 //            	}
-        		
+
         		int x = this.exportXmlServiceI.toXmlService(list, "td_mxys_zb", classPath);
             	if (x > 0) {
             	    j.setMsg("已成功导出致D盘exportCw目录下！");
@@ -325,17 +325,17 @@ public class TPmDbImportController extends BaseController {
             		j.setSuccess(false);
             		j.setMsg("导出失败！");
             	}
-        	}        	        
+        	}
         } catch (Exception e) {
             logger.error("导出模板失败", e);
             throw new BusinessException("导出模板失败", e);
         }
         return j;
     }
-    
+
     /**
      * 导出预算明细信息给财务
-     * 
+     *
      * @param request
      * @param classPath
      */
@@ -351,7 +351,7 @@ public class TPmDbImportController extends BaseController {
 //            		map.put("xh", "");
 //            		map.put("bz", "");
 //            	}
-        		
+
         		int x = this.exportXmlServiceI.toXmlService(list, "td_mxys_mx", classPath);
             	if (x > 0) {
             		j.setMsg("已成功导出致D盘exportCw目录下！");
@@ -359,17 +359,17 @@ public class TPmDbImportController extends BaseController {
             		j.setSuccess(false);
             		j.setMsg("导出失败！");
             	}
-        	}        	        
+        	}
         } catch (Exception e) {
             logger.error("导出模板失败", e);
             throw new BusinessException("导出模板失败", e);
         }
         return j;
     }
-    
+
     /**
      * 导出到款主表给财务
-     * 
+     *
      * @param request
      * @param classPath
      */
@@ -387,7 +387,7 @@ public class TPmDbImportController extends BaseController {
 //            		map.put("htbh", "");
 //            		map.put("bz", "0");
 //            	}
-        		
+
         		int x = this.exportXmlServiceI.toXmlService(list, "td_dkrl_zb", classPath);
         		if (x > 0) {
             		j.setMsg("已成功导出致D盘exportCw目录下！");
@@ -395,17 +395,17 @@ public class TPmDbImportController extends BaseController {
             		j.setSuccess(false);
             		j.setMsg("导出失败！");
             	}
-        	}        	        
+        	}
         } catch (Exception e) {
             logger.error("导出模板失败", e);
             throw new BusinessException("导出模板失败", e);
         }
         return j;
     }
-    
+
     /**
      * 导出到款明细信息给财务
-     * 
+     *
      * @param request
      * @param classPath
      */
@@ -421,7 +421,7 @@ public class TPmDbImportController extends BaseController {
 //            		map.put("id", "");
 //            		map.put("sxh", "");
 //            	}
-        		
+
         		int x = this.exportXmlServiceI.toXmlService(list, "td_dkrl_mx", classPath);
             	if (x > 0) {
             		j.setMsg("已成功导出致D盘exportCw目录下！");
@@ -429,17 +429,17 @@ public class TPmDbImportController extends BaseController {
             		j.setSuccess(false);
             		j.setMsg("导出失败！");
             	}
-        	}        	        
+        	}
         } catch (Exception e) {
             logger.error("导出模板失败", e);
             throw new BusinessException("导出模板失败", e);
         }
         return j;
     }
-    
+
     /**
      * 导出到款发票明细给财务
-     * 
+     *
      * @param request
      * @param classPath
      */
@@ -464,13 +464,13 @@ public class TPmDbImportController extends BaseController {
 //            			map.put("pjh", fp1+","+fp2);
 //            		}else{
 //            			map.put("pjh", fp1);
-//            		} 
+//            		}
 //            		map.remove("INVOICE_NUM1");
 //            		map.remove("INVOICE_NUM2");
 //            		map.put("id", "");
 //            		map.put("sxh", "");
 //            	}
-        		
+
         		int x = this.exportXmlServiceI.toXmlService(list, "td_dkrl_pjmx" ,classPath);
             	if(x>0){
             		j.setMsg("已成功导出致D盘exportCw目录下！");
@@ -478,17 +478,17 @@ public class TPmDbImportController extends BaseController {
             		j.setSuccess(false);
             		j.setMsg("导出失败！");
             	}
-        	}        	        
+        	}
         } catch (Exception e) {
             logger.error("导出模板失败", e);
             throw new BusinessException("导出模板失败", e);
         }
         return j;
     }
-    
+
     /**
      * 导出校内协作
-     * 
+     *
      * @param request
      * @param classPath
      */
@@ -497,7 +497,8 @@ public class TPmDbImportController extends BaseController {
     public AjaxJson exportXmlToXnxz(HttpServletRequest request, String classPath,String year) {
     	AjaxJson j = new AjaxJson();
         try {
-        	List list = this.tPmDBImportService.exportXmlToXnxz(year);
+//        	List list = this.tPmDBImportService.exportXmlToXnxz(year);
+            List list = new ArrayList();
         	if(list!=null && list.size()>0){
         		int x = this.exportXmlServiceI.toXmlService(list, "td_xnxz_zb", classPath);
             	if (x > 0) {
@@ -506,17 +507,17 @@ public class TPmDbImportController extends BaseController {
             		j.setSuccess(false);
             		j.setMsg("导出失败！");
             	}
-        	}        	        
+        	}
         } catch (Exception e) {
             logger.error("导出模板失败", e);
             throw new BusinessException("导出模板失败", e);
         }
         return j;
     }
-    
+
     /**
      * 导出校内协作明细
-     * 
+     *
      * @param request
      * @param classPath
      */
@@ -528,7 +529,8 @@ public class TPmDbImportController extends BaseController {
         	List htList = null;
         	List jhList = null;
 			Map flagMap = null;
-        	List list = this.tPmDBImportService.exportXmlToXnmx(year);
+//        	List list = this.tPmDBImportService.exportXmlToXnmx(year);
+            List list = new ArrayList();
 
         	if (list != null && list.size( ) > 0) {
         		int x = this.exportXmlServiceI.toXmlService(list, "td_xnxz_mx", classPath);
@@ -545,10 +547,10 @@ public class TPmDbImportController extends BaseController {
         }
         return j;
     }
-    
+
     /**
      * 导出垫支经费
-     * 
+     *
      * @param request
      * @param classPath
      */
@@ -567,18 +569,18 @@ public class TPmDbImportController extends BaseController {
             		j.setSuccess(false);
             		j.setMsg("导出失败！");
             	}
-        	}        	        
+        	}
         } catch (Exception e) {
             logger.error("导出模板失败", e);
             throw new BusinessException("导出模板失败", e);
         }
         return j;
     }
-    
-    
+
+
     /**
      * 导出垫支经费明细
-     * 
+     *
      * @param request
      * @param classPath
      */
@@ -596,18 +598,18 @@ public class TPmDbImportController extends BaseController {
             		j.setSuccess(false);
             		j.setMsg("导出失败！");
             	}
-        	}        	        
+        	}
         } catch (Exception e) {
             logger.error("导出模板失败", e);
             throw new BusinessException("导出模板失败", e);
         }
         return j;
     }
-    
-    
+
+
     /**
      * 导出会计年度
-     * 
+     *
      * @param request
      * @param classPath
      */
@@ -621,7 +623,7 @@ public class TPmDbImportController extends BaseController {
         	map.put("kjnd", year);
         	map.put("jhbh", String.valueOf(jhbh));
         	ArrayList<Map<String, String>> list = new ArrayList<Map<String, String>>();
-        	list.add(map);        		
+        	list.add(map);
         		int x = this.exportXmlServiceI.toXmlService(list, "td_kjnd", classPath);
             	if (x > 0) {
             		j.setMsg("已成功导出致D盘exportCw目录下！");
@@ -636,10 +638,10 @@ public class TPmDbImportController extends BaseController {
         }
         return j;
     }
-    
+
     /**
      * 导出调整预算
-     * 
+     *
      * @param request
      * @param classPath
      */
@@ -664,10 +666,10 @@ public class TPmDbImportController extends BaseController {
         }
         return j;
     }
-    
+
     /**
      * 导出计划分配
-     * 
+     *
      * @param request
      * @param classPath
      */
@@ -686,7 +688,7 @@ public class TPmDbImportController extends BaseController {
 //            		map.put("bz", "");
 //            		map.put("fppzh", "");
 //            	}
-        		
+
         		int x = this.exportXmlServiceI.toXmlService(list, "td_jhfp_zb",classPath);
             	if(x>0){
             		j.setMsg("已成功导出致D盘exportCw目录下！");
@@ -694,7 +696,7 @@ public class TPmDbImportController extends BaseController {
             		j.setSuccess(false);
             		j.setMsg("导出失败！");
             	}
-        	}        	        	
+        	}
         } catch (Exception e) {
             logger.error("导出模板失败", e);
             throw new BusinessException("导出模板失败", e);
@@ -704,7 +706,7 @@ public class TPmDbImportController extends BaseController {
 
     /**
      * 导出计划明细
-     * 
+     *
      * @param request
      * @param classPath
      */
@@ -721,7 +723,7 @@ public class TPmDbImportController extends BaseController {
 //            		map.put("sxh", "");
 //            		map.put("bz", "");
 //            	}
-        		
+
         		int x = this.exportXmlServiceI.toXmlService(list, "td_jhfp_mx",classPath);
             	if(x>0){
             		j.setMsg("已成功导出致D盘exportCw目录下！");
@@ -729,7 +731,7 @@ public class TPmDbImportController extends BaseController {
             		j.setSuccess(false);
             		j.setMsg("导出失败！");
             	}
-        	}        	        
+        	}
         } catch (Exception e) {
             logger.error("导出模板失败", e);
             throw new BusinessException("导出模板失败", e);
@@ -762,10 +764,10 @@ public class TPmDbImportController extends BaseController {
         }
         return j;
     }
-    
+
     /**
      * 导出项目信息给财务
-     * 
+     *
      * @param request
      * @param classPath
      */
@@ -789,8 +791,8 @@ public class TPmDbImportController extends BaseController {
                         map.put("FPBZ", true);
                     }
                     map.remove("ID");
-            	} 
-        		
+            	}
+
         		int x = this.exportXmlServiceI.toXmlService(list, "td_xmxx" , classPath);
             	if(x>0){
             		j.setMsg("已成功导出致D盘exportCw目录下！");
@@ -798,17 +800,17 @@ public class TPmDbImportController extends BaseController {
             		j.setSuccess(false);
             		j.setMsg("导出失败！");
             	}
-        	}        	        	        
+        	}
         } catch (Exception e) {
             logger.error("导出模板失败", e);
             throw new BusinessException("导出模板失败", e);
         }
         return j;
     }
-    
+
     /**
      * 导出外协信息给财务
-     * 
+     *
      * @param request
      * @param classPath
      */
@@ -836,9 +838,9 @@ public class TPmDbImportController extends BaseController {
             		map.put("bz", "");
             		map.put("khh", map.remove("BANK_B"));
             		map.put("hm", map.remove("ACCOUNT_NAME_B"));
-            		map.put("zh", map.remove("ACCOUNT_ID_B"));            		            	
-            	} 
-        		
+            		map.put("zh", map.remove("ACCOUNT_ID_B"));
+            	}
+
         		int x = this.exportXmlServiceI.toXmlService(list, "td_wxqk" ,classPath);
             	if(x>0){
             		j.setMsg("已成功导出致D盘exportCw目录下！");
@@ -846,7 +848,7 @@ public class TPmDbImportController extends BaseController {
             		j.setSuccess(false);
             		j.setMsg("导出失败！");
             	}
-        	}        	               
+        	}
         } catch (Exception e) {
             logger.error("导出模板失败", e);
             throw new BusinessException("导出模板失败", e);
@@ -881,10 +883,10 @@ public class TPmDbImportController extends BaseController {
         }
         return j;
     }
-    
+
     /**
      * 导出外协合同支付节点信息给财务
-     * 
+     *
      * @param request
      * @param classPath
      */
@@ -916,7 +918,7 @@ public class TPmDbImportController extends BaseController {
             		map.put("wcqk", "");
             		map.put("bz", "");
             	}
-        		
+
         		int x = this.exportXmlServiceI.toXmlService(list, "td_wxqk_zfjd",classPath);
             	if(x>0){
             		j.setMsg("已成功导出致D盘exportCw目录下！");
@@ -924,37 +926,37 @@ public class TPmDbImportController extends BaseController {
             		j.setSuccess(false);
             		j.setMsg("导出失败！");
             	}
-        	}        	        	       
+        	}
         } catch (Exception e) {
             logger.error("导出模板失败", e);
             throw new BusinessException("导出模板失败", e);
         }
         return j;
     }
-    
+
     /**
      * 导入到款信息
-     * 
+     *
      * @return
      */
     @RequestMapping(params = "ImportCw")
     public ModelAndView importDkxx(HttpServletRequest req) {
         return new ModelAndView("com/kingtake/project/dbimport/dbimport-xml-ajax");
     }
-    
+
     /**
      * 导出数据包给财务页面跳转
-     * 
+     *
      * @return
      */
     @RequestMapping(params = "exportXmlToCwOpen")
     public ModelAndView exportXmlToCwOpen(HttpServletRequest req) {
         return new ModelAndView("com/kingtake/project/dbimport/dbexport-xml");
     }
-    
+
     /**
      * 导入xml包
-     * 
+     *
      * @return
      */
     @RequestMapping(params = "importXml", method = RequestMethod.POST)
@@ -968,23 +970,23 @@ public class TPmDbImportController extends BaseController {
         		String sql = "delete from T_PM_INCOME";
 		    	int count = this.systemService.executeSql(sql);
         	}
-        	
+
         	Object jhbh = null;
         	if(list.contains("td_kjnd.xml") == true){
         		String fileV = list.get(0).toString()+"\\td_kjnd.xml";
-        		File dirCwnd = new File(fileV);        		
+        		File dirCwnd = new File(fileV);
         		List kjndList = this.importXmlServiceI.importXml(dirCwnd);
         		Map valMap = this.tPmDBImportService.validateFirst(kjndList);
         		Object cwnd = valMap.get("cwnd");
         		Object isFirst = valMap.get("isFirst");
         		jhbh = valMap.get("jhbh");
-        		
+
         		if("1".equals(isFirst)){
         			List xmlList = new ArrayList<Map>();
                 	String file = "";
                 	for(int a=1;a<list.size();a++){
                 		file = list.get(0).toString()+"\\"+list.get(a).toString();
-                		File dir = new File(file);        		
+                		File dir = new File(file);
                 		xmlList = this.importXmlServiceI.importXml(dir);
                 		//先清空相应项目的项目余额，再导入,把相关调整预算的口子放开
                 		if(dir.getName().equals("td_xmye.xml")){
@@ -997,8 +999,8 @@ public class TPmDbImportController extends BaseController {
                 					if(tPmProjectEntity!=null){
                 						tPmProjectEntity.setTzys_status("3");
                     					this.systemService.save(tPmProjectEntity);
-                					}        					
-                				}        				
+                					}
+                				}
                 			}
                 		}
                 		this.tPmDBImportService.saveXml(xmlList,cwnd);
@@ -1008,7 +1010,7 @@ public class TPmDbImportController extends BaseController {
         			return "请勿重复导入交互编号为"+jhbh+"的数据！";
         		}
         	}
-       	
+
             //j.setMsg("导入数据成功,交互编号为："+jhbh);
         	return "导入数据成功,交互编号为："+jhbh;
         } catch (Exception e) {
@@ -1019,10 +1021,10 @@ public class TPmDbImportController extends BaseController {
         }
         //return j;
     }
-    
+
     /**
      * 导入xml包
-     * 
+     *
      * @return
      */
     @RequestMapping(params = "downloadTemplate")
@@ -1030,12 +1032,12 @@ public class TPmDbImportController extends BaseController {
         OutputStream out = null;
         InputStream templateIs = null;
         try {
-        	String classPath = ContextHolderUtils.getRequest().getSession().getServletContext().getRealPath("/");        	
-        	
+        	String classPath = ContextHolderUtils.getRequest().getSession().getServletContext().getRealPath("/");
+
         	String fileName = "cs.kyd";
-        	String path = classPath + "exportCw\\cs.kyd";        	
-            
-            	templateIs = new FileInputStream(path);                
+        	String path = classPath + "exportCw\\cs.kyd";
+
+            	templateIs = new FileInputStream(path);
                 fileName = POIPublicUtil
                         .processFileName(request, fileName);
             response.setHeader("Content-Disposition", "attachment; filename="
@@ -1049,8 +1051,8 @@ public class TPmDbImportController extends BaseController {
             IOUtils.closeQuietly(templateIs);
             IOUtils.closeQuietly(out);
         }
-    }       
-    
+    }
+
     @RequestMapping(params = "exportXmlToCw", method = RequestMethod.POST)
     @ResponseBody
     public AjaxJson exportXmlToCw(HttpServletRequest request, HttpServletResponse response) {
@@ -1062,7 +1064,7 @@ public class TPmDbImportController extends BaseController {
         	//导出会计年度
         	AjaxJson j1 = exportXmlToKjnd(request,classPath,year);
         	j.setObj(j1.getObj());//财务交互编号
-        	
+
         	//先导出出账合同和出账合同节点，再导项目信息，然后把项目表数据的cw_status设为4，表示已导出
         	exportXmlToOutCome2(request,classPath);
         	exportXmlToOutComeNode(request,classPath);
@@ -1074,13 +1076,13 @@ public class TPmDbImportController extends BaseController {
         	exportXmlToDkmx(request,classPath,year);
         	exportXmlToFpmx(request,classPath,year);
         	exportXmlToDkzb(request,classPath,year);
-        	//校内协作，以到账审批表和计划下达分配表为主表，拼接上项目表联合查询   	
+        	//校内协作，以到账审批表和计划下达分配表为主表，拼接上项目表联合查询
         	exportXmlToXnmx(request,classPath,year);
         	exportXmlToXnxz(request,classPath,year);
         	//垫支,垫支明细
         	exportXmlToDzjf(request,classPath,year);
         	exportXmlToDzjfmx(request,classPath,year);
-        	
+
         	//调整预算申请，根据T_PM_PROJECT表的TZYS_STATUS字段来导出，导出状态为1-正在申请，导出完毕后，更新状态为2-已提交给财务
         	exportXmlToTzys(request,classPath);
 
@@ -1090,17 +1092,17 @@ public class TPmDbImportController extends BaseController {
 
         	//导出归垫明细
             exportXmlToGdmx(request,classPath,year);
-        	        	
+
 //        	OutputStream out = null;
 //            InputStream templateIs = null;
-                                
+
         	MigrateForm.zipXml(classPath + "/exportCw/cs.zip", "", classPath + "/exportCw/");
         	File file = new File(classPath + "/exportCw/cs.zip");
         	file.renameTo(new File(classPath + "/exportCw/cs.kyd"));
-        	
+
 //        	String filename = file.getName();
 //        	String path = classPath + "exportCw\\cs.kyd";
-//        	
+//
 //        	InputStream fis = new BufferedInputStream(new FileInputStream(path));
 //            byte[] buffer = new byte[fis.available()];
 //            fis.read(buffer);
@@ -1115,7 +1117,7 @@ public class TPmDbImportController extends BaseController {
 //            toClient.write(buffer);
 //            toClient.flush();
 //            toClient.close();
-        	
+
 //        	templateIs = new FileInputStream(classPath + "exportCw" + File.separator + "cs.kyd");
 //          fileName = "到账信息导入模板.xls";
 //          fileName = POIPublicUtil
@@ -1124,15 +1126,15 @@ public class TPmDbImportController extends BaseController {
 //              + "cs.kyd");
 //      out = response.getOutputStream();
 //      IOUtils.copy(templateIs, out);
-      
-        	
+
+
 //        	MigrateForm.delAllFile("D:/exportCw/td_dkrl_mx.xml");
 //        	MigrateForm.delFolder("D:/exportCw/td_dkrl_pjmx.xml");
 //        	File file_td_dkrl_mx = new File("D:/exportCw/td_dkrl_mx.xml");
 //        	if(file_td_dkrl_mx.exists()){
 //        		file_td_dkrl_mx.delete();
 //        	}
-//        		
+//
 //        	file_td_dkrl_mx.delete();
 //        	File file_td_dkrl_pjmx = new File("D:/exportCw/td_dkrl_pjmx.xml");
 //        	file_td_dkrl_pjmx.delete();
@@ -1160,7 +1162,7 @@ public class TPmDbImportController extends BaseController {
 //        	file_td_xnxz_mx.delete();
 //        	File file_td_xnxz_zb = new File("D:/exportCw/td_xnxz_zb.xml");
 //        	file_td_xnxz_zb.delete();
-        	
+
         	TSUser user = ResourceUtil.getSessionUserName();
         	TPmDBImportEntity dbImportEntity = new TPmDBImportEntity();
         	dbImportEntity.setFileName("cs.kyd");
@@ -1169,9 +1171,9 @@ public class TPmDbImportController extends BaseController {
         	dbImportEntity.setImpUserName(user.getRealName());
         	dbImportEntity.setFilePath(classPath + "/exportCw/cs.kyd");
         	this.systemService.save(dbImportEntity);
-        	
+
 //            j.setMsg("已成功导出致D盘exportCw目录下！");
-            
+
 //            String downloadurlString = classPath + "\\exportCw\\cs.kyd";
 //            j.setObj(downloadurlString);
         } catch (Exception e) {
@@ -1181,87 +1183,87 @@ public class TPmDbImportController extends BaseController {
         }
         return j;
     }
-    
+
     /**
 	 * 导出word
-	 * 
+	 *
 	 * @param request
 	 * @param response
 	 */
 	@RequestMapping(params = "ExportDkWord")
 	public String exportWord(HttpServletRequest request,HttpServletResponse response,ModelMap modelMap) {
         Map<String, Object> map = new HashMap<String, Object>();
-		
-		try  
-	    {  
-	      JBarcode localJBarcode = new JBarcode(EAN13Encoder.getInstance(), WidthCodedPainter.getInstance(), EAN13TextPainter.getInstance());  
-	      //生成. 欧洲商品条码(=European Article Number)  
-	      //这里我们用作图书条码  
-	      String str = "788515004012";  
-	      BufferedImage localBufferedImage = localJBarcode.createBarcode(str);  
-	      saveToGIF(localBufferedImage, "EAN13.gif");  
-	      localJBarcode.setEncoder(Code39Encoder.getInstance());  
-	      localJBarcode.setPainter(WideRatioCodedPainter.getInstance());  
-	      localJBarcode.setTextPainter(BaseLineTextPainter.getInstance());  
-	      localJBarcode.setShowCheckDigit(false);  
-	      //xx  
-	      str = "JBARCODE-39";  
-	      localBufferedImage = localJBarcode.createBarcode(str);  
-	      saveToPNG(localBufferedImage, "Code39.png");  	
-	      
+
+		try
+	    {
+	      JBarcode localJBarcode = new JBarcode(EAN13Encoder.getInstance(), WidthCodedPainter.getInstance(), EAN13TextPainter.getInstance());
+	      //生成. 欧洲商品条码(=European Article Number)
+	      //这里我们用作图书条码
+	      String str = "788515004012";
+	      BufferedImage localBufferedImage = localJBarcode.createBarcode(str);
+	      saveToGIF(localBufferedImage, "EAN13.gif");
+	      localJBarcode.setEncoder(Code39Encoder.getInstance());
+	      localJBarcode.setPainter(WideRatioCodedPainter.getInstance());
+	      localJBarcode.setTextPainter(BaseLineTextPainter.getInstance());
+	      localJBarcode.setShowCheckDigit(false);
+	      //xx
+	      str = "JBARCODE-39";
+	      localBufferedImage = localJBarcode.createBarcode(str);
+	      saveToPNG(localBufferedImage, "Code39.png");
+
 //	      String imageString = getImageBinary("D:/Code39.png");
 //	      map.put("htbh", imageString);
-	    }  
-	    catch (Exception localException)  
-	    {  
-	      localException.printStackTrace();  
-	    }  
-                
+	    }
+	    catch (Exception localException)
+	    {
+	      localException.printStackTrace();
+	    }
+
         modelMap.put(TemplateWordConstants.FILE_NAME, "科研采购合同签订审批表_" + DateUtils.formatDate());
         modelMap.put(TemplateWordConstants.MAP_DATA, map);
         modelMap.put(TemplateWordConstants.URL, "export/template/sjjh.docx");
-        
-        return TemplateWordConstants.JEECG_TEMPLATE_WORD_VIEW;                   
+
+        return TemplateWordConstants.JEECG_TEMPLATE_WORD_VIEW;
 	}
-	
-	static void saveToJPEG(BufferedImage paramBufferedImage, String paramString)  
-	  {  
-	    saveToFile(paramBufferedImage, paramString, "jpeg");  
-	  }  
-	  
-	  static void saveToPNG(BufferedImage paramBufferedImage, String paramString)  
-	  {  
-	    saveToFile(paramBufferedImage, paramString, "png");  
-	  }  
-	  
-	  static void saveToGIF(BufferedImage paramBufferedImage, String paramString)  
-	  {  
-	    saveToFile(paramBufferedImage, paramString, "gif");  
-	  }  
-	  
-	  static void saveToFile(BufferedImage paramBufferedImage, String paramString1, String paramString2)  
-	  {  
-	    try  
-	    {  
+
+	static void saveToJPEG(BufferedImage paramBufferedImage, String paramString)
+	  {
+	    saveToFile(paramBufferedImage, paramString, "jpeg");
+	  }
+
+	  static void saveToPNG(BufferedImage paramBufferedImage, String paramString)
+	  {
+	    saveToFile(paramBufferedImage, paramString, "png");
+	  }
+
+	  static void saveToGIF(BufferedImage paramBufferedImage, String paramString)
+	  {
+	    saveToFile(paramBufferedImage, paramString, "gif");
+	  }
+
+	  static void saveToFile(BufferedImage paramBufferedImage, String paramString1, String paramString2)
+	  {
+	    try
+	    {
 	      String classPath = ContextHolderUtils.getRequest().getSession().getServletContext().getRealPath("/");
 	      String fileDirectory = classPath + "\\exportWord\\";
-	      FileOutputStream localFileOutputStream = new FileOutputStream(fileDirectory + paramString1);  
-	      ImageUtil.encodeAndWrite(paramBufferedImage, paramString2, localFileOutputStream, 96, 96);  
-	      localFileOutputStream.close();  
-	    }  
-	    catch (Exception localException)  
-	    {  
-	      localException.printStackTrace();  
-	    }  
-	  }  
-	    
+	      FileOutputStream localFileOutputStream = new FileOutputStream(fileDirectory + paramString1);
+	      ImageUtil.encodeAndWrite(paramBufferedImage, paramString2, localFileOutputStream, 96, 96);
+	      localFileOutputStream.close();
+	    }
+	    catch (Exception localException)
+	    {
+	      localException.printStackTrace();
+	    }
+	  }
+
 	    /**
 		 * 导出word
-		 * 
+		 *
 		 * @param request
 		 * @param response
-	     * @throws java.io.IOException 
-	     * @throws TemplateException 
+	     * @throws java.io.IOException
+	     * @throws TemplateException
 		 */
 		@RequestMapping(params = "createWord")
 		@ResponseBody
@@ -1283,22 +1285,22 @@ public class TPmDbImportController extends BaseController {
 
 	        /** 图片路径 **/
 	        String str = "";
-	        try  
-		    {  
-		      JBarcode localJBarcode = new JBarcode(EAN13Encoder.getInstance(), WidthCodedPainter.getInstance(), EAN13TextPainter.getInstance());  
-		      //xx  
-		      localJBarcode.setEncoder(Code39Encoder.getInstance());  
-		      localJBarcode.setPainter(WideRatioCodedPainter.getInstance());  
-		      localJBarcode.setTextPainter(BaseLineTextPainter.getInstance());  
+	        try
+		    {
+		      JBarcode localJBarcode = new JBarcode(EAN13Encoder.getInstance(), WidthCodedPainter.getInstance(), EAN13TextPainter.getInstance());
+		      //xx
+		      localJBarcode.setEncoder(Code39Encoder.getInstance());
+		      localJBarcode.setPainter(WideRatioCodedPainter.getInstance());
+		      localJBarcode.setTextPainter(BaseLineTextPainter.getInstance());
 		      localJBarcode.setShowCheckDigit(false);
-		      str = "KD2017000001";  
-		      BufferedImage localBufferedImage = localJBarcode.createBarcode(str);  
+		      str = "KD2017000001";
+		      BufferedImage localBufferedImage = localJBarcode.createBarcode(str);
 		      saveToPNG(localBufferedImage, "Code" + str + ".png");
-		    }  
-		    catch (Exception localException)  
-		    {  
-		      localException.printStackTrace();  
-		    }  
+		    }
+		    catch (Exception localException)
+		    {
+		      localException.printStackTrace();
+		    }
 	        String imagePath = classPath + "exportWord\\Code" + str + ".png";
 	        /** 将图片转化为**/
 	        InputStream in = null;
@@ -1324,9 +1326,9 @@ public class TPmDbImportController extends BaseController {
 	        dataMap.put("ewmImage",encoder.encode(data));
 
 	        /** 指定输出word文件的路径 **/
-	        Date now = new Date(); 
+	        Date now = new Date();
 	        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");//可以方便地修改日期格式
-	        String exportTime = dateFormat.format( now ); 
+	        String exportTime = dateFormat.format( now );
 	        String outFilePath = classPath + "\\exportWord\\dkdj" + exportTime + ".doc";
 	        File docFile = new File(outFilePath);
 	        FileOutputStream fos = new FileOutputStream(docFile);
@@ -1346,13 +1348,13 @@ public class TPmDbImportController extends BaseController {
 	        if(out != null){
 	            out.close();
 	        }
-	        
+
 	        return j;
 	    }
-	    
+
 	    /**
 	     * 下载word
-	     * 
+	     *
 	     * @return
 	     */
 	    @RequestMapping(params = "downloadWord")
@@ -1361,11 +1363,11 @@ public class TPmDbImportController extends BaseController {
 	        OutputStream out = null;
 	        InputStream templateIs = null;
 	        try {
-	        	String classPath = ContextHolderUtils.getRequest().getSession().getServletContext().getRealPath("/");        	
-	        	
-	        	String path = classPath + "exportWord\\" + fileName;        	
-	            
-	            	templateIs = new FileInputStream(path);                
+	        	String classPath = ContextHolderUtils.getRequest().getSession().getServletContext().getRealPath("/");
+
+	        	String path = classPath + "exportWord\\" + fileName;
+
+	            	templateIs = new FileInputStream(path);
 	                fileName = POIPublicUtil
 	                        .processFileName(request, fileName);
 	            response.setHeader("Content-Disposition", "attachment; filename="
@@ -1379,5 +1381,5 @@ public class TPmDbImportController extends BaseController {
 	            IOUtils.closeQuietly(templateIs);
 	            IOUtils.closeQuietly(out);
 	        }
-	    }       
+	    }
 }

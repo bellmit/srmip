@@ -40,9 +40,9 @@ public class FtpClientUtil {
             String username = (String) getFtpProps("FTP.SERVER.USERNAME");
             String password = (String) getFtpProps("FTP.SERVER.PASSWORD");
             //读入文件    
-            FileInputStream fis = new FileInputStream("D:/迅雷下载/win32_11gR2_database_1of2.zip");
+            FileInputStream fis = new FileInputStream("E:/工具/【研发二科】checkstyle代码检查工具idea集成.docx");
 //            传送文件到FTP服务器  
-            FtpClientUtil.sendFile("win32_11gR2_database_1of2.zip", fis);
+            FtpClientUtil.sendFile("E:/", fis);
             //deleteFile(ip, port, username, password, "hahaha.txt");
             //从FTP服务器取得文件    
             //FileOutputStream fos = new FileOutputStream("localfile");

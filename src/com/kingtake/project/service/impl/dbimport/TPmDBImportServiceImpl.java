@@ -47,7 +47,7 @@ public class TPmDBImportServiceImpl extends CommonServiceImpl implements TPmDBIm
 
     /**
      * 默认按钮-sql增强-新增操作
-     * 
+     *
      * @param
      * @return
      */
@@ -57,7 +57,7 @@ public class TPmDBImportServiceImpl extends CommonServiceImpl implements TPmDBIm
 
     /**
      * 默认按钮-sql增强-更新操作
-     * 
+     *
      * @param
      * @return
      */
@@ -67,7 +67,7 @@ public class TPmDBImportServiceImpl extends CommonServiceImpl implements TPmDBIm
 
     /**
      * 默认按钮-sql增强-删除操作
-     * 
+     *
      * @param
      * @return
      */
@@ -82,7 +82,7 @@ public class TPmDBImportServiceImpl extends CommonServiceImpl implements TPmDBIm
         Map<String, MultipartFile> fileMap = multipartRequest.getFileMap();
         for (Map.Entry<String, MultipartFile> entity : fileMap.entrySet()) {
             MultipartFile file = entity.getValue();// 获取上传文件对象
-            //取得当前上传文件的文件名称  
+            //取得当前上传文件的文件名称
             String myFileName = file.getOriginalFilename();
             String extend = myFileName.substring(myFileName.lastIndexOf("."));
             String timeStr = DateUtils.formatDate(new Date(), "yyyyMMddHHmmssSSS");
@@ -124,7 +124,7 @@ public class TPmDBImportServiceImpl extends CommonServiceImpl implements TPmDBIm
 
     /**
      * 导入数据到数据库
-     * 
+     *
      * @param realPath
      */
     private void importDB(String realPath) {
@@ -155,7 +155,7 @@ public class TPmDBImportServiceImpl extends CommonServiceImpl implements TPmDBIm
 
     /**
      * 插入数据库
-     * 
+     *
      * @param file
      */
     private void insertDB(File file) {
@@ -196,7 +196,7 @@ public class TPmDBImportServiceImpl extends CommonServiceImpl implements TPmDBIm
 
     /**
      * 获取日期字段列表
-     * 
+     *
      * @param tableName
      * @return
      */
@@ -206,11 +206,11 @@ public class TPmDBImportServiceImpl extends CommonServiceImpl implements TPmDBIm
         List<Map<String, Object>> dataList = this.commonDao.findForJdbc(sql);
         return dataList;
     }
-    
+
 
     /**
      * 生成更新语句
-     * 
+     *
      * @param
      * @param tableName
      * @return
@@ -252,7 +252,7 @@ public class TPmDBImportServiceImpl extends CommonServiceImpl implements TPmDBIm
 
     /**
      * 生成insert语句
-     * 
+     *
      * @param columnMap
      * @param tableName
      * @param json
@@ -322,7 +322,7 @@ public class TPmDBImportServiceImpl extends CommonServiceImpl implements TPmDBIm
         File dir = dbFile.getParentFile();
         dir.delete();//删除文件夹
     }
-    
+
     @Override
 	public List exportXmlToYszb() {
 		String sql = "select a.id as guid,b.project_no as xmdm,'' as xh, a.create_date as bzrq,"
@@ -384,14 +384,14 @@ public class TPmDBImportServiceImpl extends CommonServiceImpl implements TPmDBIm
 		 String sql = "select a.id as guid,'' as id ,d.project_no as xmbm,to_char(a.create_date, 'yyyy-MM-dd HH:mm:ss') as rlrq,'' as fppzh, '' as htbh, a.university_amount as dxyl,"
 					+ " a.academy_amount as yyl,a.department_amount as xyl,a.performance_amount as sy,a.payfirst_funds as gdje,d.kmdm as kmdm, '0' as shbz, '' as bz "
 					+ " from t_pm_income_apply a left join t_pm_project b on a.t_p_id=b.id left join t_pm_project d on d.glxm=b.id left join t_b_pm_payfirst c on c.id = a.payfirst_id  "
-					+ " where a.audit_status is not null or a.audit_status <> '0' and (a.cw_status is null or a.cw_status=0) and b.parent_project is null  "
+					+ " where a.audit_status is not null and a.audit_status <> '0' and (a.cw_status is null or a.cw_status=0) and b.parent_project is null  "
 					+ " AND A.ID IN ( SELECT INCOME_APPLY_ID FROM t_pm_income_rel_apply T1 "
 					+ " LEFT JOIN t_pm_income T2 ON T1.INCOME_ID = T2.ID WHERE T1.INCOME_APPLY_ID = A.ID )";
-		
+
 		List list = this.findForJdbc(sql);
 		return list;
 	}
-	
+
 	@Override
 	public List exportXmlToDkmx(String year) {
 	/*	String sql = "select a.id as zbid,a.id as guid,'' as id, '' as sxh, c.income_year as dknd,a.voucher_no dkpzh,c.income_no as dksxh,"
@@ -424,7 +424,7 @@ public class TPmDBImportServiceImpl extends CommonServiceImpl implements TPmDBIm
 	@Override
 	public List exportXmlToFpmx(String year,String projectId) {
 		// TODO Auto-generated method stub
-/*		
+/*
 		String sql = "select b.id as zbid,a.id as guid,'' as id,'' as sxh,a.invoice_year as pjnd,a.invoice_num1 as pjh,"
 				+ " a.invoice_amount as je "
 				+ " from t_b_pm_invoice a "
@@ -473,7 +473,7 @@ public class TPmDBImportServiceImpl extends CommonServiceImpl implements TPmDBIm
     	List list = this.findForJdbc(sql);
 		return list;
 	}
-	
+
 	@Override
 	public List exportXmlToXnmxHt(String id) {
 		// TODO Auto-generated method stub
@@ -485,7 +485,7 @@ public class TPmDBImportServiceImpl extends CommonServiceImpl implements TPmDBIm
     	List list = this.findForJdbc(sql);
 		return list;
 	}
-	
+
 	@Override
 	public List exportXmlToXnmxJh(String id) {
 		// TODO Auto-generated method stub
@@ -508,8 +508,8 @@ public class TPmDBImportServiceImpl extends CommonServiceImpl implements TPmDBIm
     	List list = this.findForJdbc(sql);
 		return list;
 	}
-	
-	
+
+
 	@Override
 	public List exportXmlToDzjfmx(String year) {
 		// TODO Auto-generated method stub
@@ -522,13 +522,13 @@ public class TPmDBImportServiceImpl extends CommonServiceImpl implements TPmDBIm
     	List list = this.findForJdbc(sql);
 		return list;
 	}
-	
+
 	@Override
 	public List exportXmlToTzys() {
 		String sql = "select project_no as xmdm"
 				+ " from t_pm_project"
 				+ " where tzys_status = '1' and project_no is not null ";
-    	List list = this.findForJdbc(sql);   
+    	List list = this.findForJdbc(sql);
     	if(list!=null && list.size()>0){
     		for(int a=0;a<list.size();a++){
     			Map map = (Map) list.get(a);
@@ -600,7 +600,7 @@ public class TPmDBImportServiceImpl extends CommonServiceImpl implements TPmDBIm
 
         return list;
     }
-	
+
 	@Override
 	public List selectProject() {
 		String sql = "select a.id,a.project_no as xmdm,a.project_name as xmmc,c.id as cybm,a.project_manager as fzr,"
@@ -612,7 +612,7 @@ public class TPmDBImportServiceImpl extends CommonServiceImpl implements TPmDBIm
     	List projectList = this.findForJdbc(sql);
 		return projectList;
 	}
-	
+
 	@Override
 	public List selectOutCome() {
 		String sql = "select b.id,a.project_no,b.CONTRACT_SIGNING_TIME,b.contract_Code,b.contract_Name,b.start_Time,b.end_Time,"
@@ -638,7 +638,7 @@ public class TPmDBImportServiceImpl extends CommonServiceImpl implements TPmDBIm
         List outComeList = this.findForJdbc(sql);
         return outComeList;
     }
-	
+
 	@Override
 	public List selectOutComeNode() {
 		String sql = "select b.id as zbid,c.id as guid,c.complete_Date,c.pay_amount,d.finish_time"
@@ -649,7 +649,7 @@ public class TPmDBImportServiceImpl extends CommonServiceImpl implements TPmDBIm
     	List outComeNodeList = this.findForJdbc(sql);
 		return outComeNodeList;
 	}
-	
+
 	@Override
     public List importXml(HttpServletRequest request) {
         TSUser user = ResourceUtil.getSessionUserName();
@@ -658,7 +658,7 @@ public class TPmDBImportServiceImpl extends CommonServiceImpl implements TPmDBIm
         List list = new ArrayList();
         for (Map.Entry<String, MultipartFile> entity : fileMap.entrySet()) {
             MultipartFile file = entity.getValue();// 获取上传文件对象
-            //取得当前上传文件的文件名称  
+            //取得当前上传文件的文件名称
             String myFileName = file.getOriginalFilename();
         	TPmDBImportEntity dbImportEntity = new TPmDBImportEntity();
         	dbImportEntity.setFileName(myFileName);
@@ -734,7 +734,7 @@ public class TPmDBImportServiceImpl extends CommonServiceImpl implements TPmDBIm
 				//导入到款信息
 				if(tableName.equals("td_jzpzzb")){
 					TPmIncomeEntity tPmIncomeEntity = new TPmIncomeEntity();
-					SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");//小写的mm表示的是分钟  
+					SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");//小写的mm表示的是分钟
 					Date date=null;
 					try {
 						date = sdf.parse(map.get("dzrq").toString());
@@ -792,7 +792,7 @@ public class TPmDBImportServiceImpl extends CommonServiceImpl implements TPmDBIm
 					String sql = "update t_pm_income_apply set cw_status='"+map.get("shbz")
 							+"',dybh='"+dybh+"' where id='"+map.get("guid")+"'";
 			    	int count = this.updateBySqlString(sql);
-			    	
+
 			    	String sql1 = "update t_b_pm_payfirst set GD_STATUS='2' where PROJECT_ID='"+map.get("xmbm")+"'";
 			    	this.updateBySqlString(sql);
 				}
@@ -819,9 +819,9 @@ public class TPmDBImportServiceImpl extends CommonServiceImpl implements TPmDBIm
 	    	        	updateSql = "update t_pm_income_apply set cw_status='"+map.get("shbz")+"',dybh='"+dybh+"' where id='"+guid+"'";
 	    	        }else{
 	    	        	updateSql = "update T_PM_INCOME_PLAN set cw_status='"+map.get("shbz")+"',dybh='"+dybh+"' where id='"+guid+"'";
-	    	        }    	        
+	    	        }
 			    	this.updateBySqlString(updateSql);
-						
+
 //					String sql = "update t_pm_project set cw_status='"+map.get("shbz").toString()+"' where id='"+map.get("guid").toString()+"'";
 //			    	int count = this.updateBySqlString(sql);
 				}
@@ -834,7 +834,7 @@ public class TPmDBImportServiceImpl extends CommonServiceImpl implements TPmDBIm
 					String sql = "update t_b_pm_payfirst set cw_status='"+map.get("dqzt")+"',dybh='"+dybh+"' where id='"+map.get("guid")+"'";
 			    	int count = this.updateBySqlString(sql);
 				}
-				
+
 				//导入项目执行情况
 				if(tableName.equals("td_xmkz_yqnd")){
 					TPmFundsBudgetAddendumEntity entity = new TPmFundsBudgetAddendumEntity();
@@ -893,7 +893,7 @@ public class TPmDBImportServiceImpl extends CommonServiceImpl implements TPmDBIm
                             " where t_p_id=(SELECT a.id FROM t_pm_project a WHERE a.project_no='"+xmdm+"') ";
                     this.updateBySqlString(sql);*/
                 }
-				
+
 			}
 		}
 	}
@@ -928,7 +928,7 @@ public class TPmDBImportServiceImpl extends CommonServiceImpl implements TPmDBIm
 		String id = UUID.randomUUID().toString().replaceAll("-", "");
 		String sql = " insert into T_B_CWJHBH(id,cwnd,jhbh,re_status) "
 				+ "values('"+id+"','"+year+"','"+jhbh+"','0') ";
-		this.updateBySqlString(sql);	
+		this.updateBySqlString(sql);
 	}
 
 	@Override
@@ -956,12 +956,12 @@ public class TPmDBImportServiceImpl extends CommonServiceImpl implements TPmDBIm
 								isFirst = "0";
 							}
 						}
-						
+
 					}
 				}
 			}
 		}
-		
+
 		Map map = new HashMap();
 		map.put("isFirst", isFirst);
 		map.put("cwnd", cwnd);

@@ -86,7 +86,7 @@
                                          value='${tPmProjectPlanPage.amount}'> <span class="Validform_checktip"></span>
                     <label class="Validform_label" style="display: none;">金额</label></td>
             </tr>
-            <tr>
+            <%--<tr>
                 <td align="right" width="120px"><label class="Validform_label"> 项目批量导入: </label></td>
                 <td class="value">
                     <input id="file" type="file" name="file">
@@ -96,7 +96,7 @@
             <tr>
                 <td align="right" width="120px"><label class="Validform_label"></label></td>
                 <td><div id ="fileName"></div><input id="uploadFileName" name="uploadFileName" type="text" style="display: none;" class="inputxt"></td>
-            </tr>
+            </tr>--%>
         </table>
     </t:formvalid>
 </div>

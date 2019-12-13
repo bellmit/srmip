@@ -17,27 +17,28 @@ var active = {
     		 "FUNDS_TYPE": parent.budgetTotalObj.code,
     		 "FUNDS_CATEGORY": 2
 		 },true);
-    	 
-    	 if(!isSave || data[0].MONEY !== 0){
+
+    	 /*if(!isSave || data[0].MONEY !== 0){
     		 layer.msg('预算金额不合规');
     	 }else if(data.length <= 0){
     		 layer.msg('请添加数据');
     	 }else{
-    		 $.ajax({
-                 url : path + "ysController.do?saveOrUpdateFund",
-                 type : "post",
-                 data : $.extend(parent.budgetTotalObj,{"list" : JSON.stringify(data),"FUNDS_TYPE": parent.budgetTotalObj.code}, true),
-                 success : function(r) {
-                     if (r.code === 0) {
-                         layer.msg(r.msg);
-                         var index = parent.layer.getFrameIndex(window.name);
-                         parent.layer.close(index);
-                     }else{
-                         layer.msg(r.msg);
-                     }
-                 }
-             });
-    	 }
+
+    	 }*/
+        $.ajax({
+            url : path + "ysController.do?saveOrUpdateFund",
+            type : "post",
+            data : $.extend(parent.budgetTotalObj,{"list" : JSON.stringify(data),"FUNDS_TYPE": parent.budgetTotalObj.code}, true),
+            success : function(r) {
+                if (r.code === 0) {
+                    layer.msg(r.msg);
+                    var index = parent.layer.getFrameIndex(window.name);
+                    parent.layer.close(index);
+                }else{
+                    layer.msg(r.msg);
+                }
+            }
+        });
     },// 保存
     cancel: function(){
         var index = parent.layer.getFrameIndex(window.name);
@@ -46,11 +47,11 @@ var active = {
 };
 
 layui.use(['treeGrid', 'layer'], function () {
-	
+
     treeGrid = layui.treeGrid;
     layer = layui.layer;
     var params = getParam();
-    
+
     if(params.pageType){
     	$(".budgetBtn").hide();
     }
