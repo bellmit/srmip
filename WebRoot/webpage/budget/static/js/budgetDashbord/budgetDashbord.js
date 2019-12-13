@@ -106,7 +106,7 @@ function load(){
 	            height: 350
 	        });
 	    };
-	
+
 	    // 渲染总预算左侧表格
 	    budgetLeftTable = function (params) {
 	        layer.load(2);
@@ -159,7 +159,7 @@ function load(){
 	            }
 	        });
 	    };
-	
+
 	    // 渲染总预算右侧表格
 	    var BudgetRightTable = function (params) {
 	        layer.load(2);
@@ -205,7 +205,7 @@ function load(){
 	            }
 	        });
 	    };
-	
+
 	    // 渲染年度预算左侧表格
 	    yearBudgetLeftTable = function (params) {
 	        layer.load(2);
@@ -257,7 +257,7 @@ function load(){
 	            }
 	        });
 	    };
-	
+
 	    // 渲染年度预算右侧表格
 	    var yearBudgetRightTable = function (params) {
 	        layer.load(2);
@@ -303,7 +303,7 @@ function load(){
 	            }
 	        });
 	    };
-	
+
 	    // 渲染总预算合计表格
 	    var totalBudgetTable = function (params) {
 	        layer.load(2);
@@ -343,7 +343,7 @@ function load(){
 	            }
 	        });
 	    };
-	
+
 	    // 渲染年度预算合计表格
 	    var yearBudgetTotalTable = function (params) {
 	        layer.load(2);
@@ -380,7 +380,7 @@ function load(){
 	            }
 	        });
 	    };
-	
+
 	    // 渲染分配金额表格
 	    var distributionMoneyTable = function (params) {
 	        layer.load(2);
@@ -410,7 +410,7 @@ function load(){
 	                }},
 	                {field: 'ADUIT_STATUS_TEXT', align: 'center', title: '科研审核状态', width: 140},
 	                {field: 'CW_STATUS_TEXT', align: 'center', title: '财务审核状态', width: 140}
-	                
+
 	            ]],
 	            id: 'distributionMoneyTable',
 	            page: false,
@@ -425,7 +425,7 @@ function load(){
 	            }
 	        });
 	    };
-	
+
 	    // 渲染项目执行情况表格
 	    var projectExecTable = function (params) {
 	        layer.load(2);
@@ -448,10 +448,19 @@ function load(){
 	                {field: 'DETAIL_NAME', minWidth: 180, title: '项目名称', templet: function(d) {
 	                        var html = "<span></span>";
 	                        if(!d.KZ){
-	                            html = '<span>'+ d.DETAIL_NAME + '</span>';
+	                            if (d.DETAIL_NAME) {
+                                    html = '<span>'+ d.DETAIL_NAME + '</span>';
+                                } else {
+                                    html = '<span>开支</span>';
+                                }
+
 	                        }
 	                        if(d.KZ == 1) {
-	                            html = '<span style="font-family: SimHei;color:darkgreen;font-weight: bold">'+ d.DETAIL_NAME + '</span>';
+	                            if (d.DETAIL_NAME) {
+                                    html = '<span style="font-family: SimHei;color:darkgreen;font-weight: bold">'+ d.DETAIL_NAME + '</span>';
+                                } else {
+                                    html = '<span style="font-family: SimHei;color:darkgreen;font-weight: bold">开支</span>';
+	                            }
 	                        }
 	                        return html;
 	                    }},
@@ -460,7 +469,7 @@ function load(){
 	                {field: 'KZJE', width: 150, align: 'right', title: '执行金额'},
 	                {field: 'JDJE', width: 150, align: 'right', title: '借款金额'},
 	                {field: 'YE', width: 150, align: 'right', title: '余额'},
-	                {field: 'SXH', width: 120, align: 'right', title: '审核序号'},
+	                {field: 'ZXH', width: 120, align: 'right', title: '审核序号'},
 	                {field: 'KJPZH', width: 120, align: 'left',title: '会计凭证号'}
 	            ]],
 	            isPage: false,
@@ -482,7 +491,7 @@ function load(){
 	                    return '';
 	                }
 	            }
-	
+
 	        });
 	    };
 	    // 渲染校内协作
@@ -518,7 +527,7 @@ function load(){
 	                {field: 'FP_MONEY', align: 'right', title: '已分配金额', width: 120,sort: true},
 	                {field: 'ZT_MONEY', align: 'right', title: '在途金额', width: 120,sort: true},
 	                {field: 'D_SH_MONEY', align: 'right', title: '待审核金额', width: 120,sort: true}
-	                
+
 	            ]],
 	            id: 'projectSchoolTable',
 	            treeId:'ID',//树形id字段名称
@@ -534,38 +543,38 @@ function load(){
 	            	projectSchoolList = res.data;
 	                layer.closeAll('loading');
 	            }
-	            
+
 	        });
 	    };
-	
+
 	    function requestAllTableData (params) {
 	        budgetLeftTable(params);
 	        BudgetRightTable(params);
-	
+
 	        yearBudgetLeftTable(params);
 	        yearBudgetRightTable(params);
-	
+
 	        totalBudgetTable(params);
 	        yearBudgetTotalTable(params);
-	
+
 	        distributionMoneyTable(params);
 	        projectExecTable(params);
 	        renderSchoolTable(params);
-	
+
 	    }
-	
+
 	    // 初始时加载主表
 	    renderMainTable();
-	
+
 	    // 默认请求一次，未带项目id应无数据无数据
 	    //requestAllTableData();
-	
+
 	    //监听主表格行单击事件
 	    table.on('row(budgetDashbordTable)', function(obj){
 	    	obj.tr.addClass('layui-table-click').siblings().removeClass('layui-table-click');
 	        budgetType = obj.data.CATEGORY_CODE;
 	        budgetTotalObj = obj.data;
-	        
+
 	        mainId = budgetTotalObj.id;
 	        let params = {
 	            T_P_ID : budgetTotalObj.ID,
@@ -573,7 +582,7 @@ function load(){
 	        };
 	        requestAllTableData(params);
 	    });
-	
+
 	    // 点击按钮触发动作
 	    var active = {
 			// 搜索
@@ -612,13 +621,13 @@ function load(){
 	                        maxmin : false,
 	                        shadeClose : false, // 点击遮罩关闭层
 	                        area : [ '900px', '600px' ],
-	                        content :path + 'webpage/budget/templates/budgetDashbord/totalBudget2.html?T_P_ID=' + 
+	                        content :path + 'webpage/budget/templates/budgetDashbord/totalBudget2.html?T_P_ID=' +
 	                    		budgetTotalObj.ID + "&FUNDS_TYPE=" + budgetTotalObj.code
 	                    });
 	                	layer.full(index);
 	                }
 	            });
-	            
+
 	        },// 新增年度预算
 	        addYear: function(){
 	        	if(budgetTotalObj === null) {
@@ -641,13 +650,13 @@ function load(){
 	                        maxmin : false,
 	                        shadeClose : false, // 点击遮罩关闭层
 	                        area : [ '900px', '600px' ],
-	                        content : path + 'webpage/budget/templates/budgetDashbord/yearBudget.html?T_P_ID=' + 
+	                        content : path + 'webpage/budget/templates/budgetDashbord/yearBudget.html?T_P_ID=' +
 	                        	budgetTotalObj.ID + "&FUNDS_TYPE=" + budgetTotalObj.code
 	                    });
 	                    layer.full(index);
 	                }
 	            });
-	            
+
 	        },
 			//调整预算申请
             adjustYsApply: function(){
@@ -670,8 +679,8 @@ function load(){
 	        var type = $(this).data('type');
 	        active[type] ? active[type].call(this) : '';
 	    });
-	
-	
+
+
 	    //监听总预算左侧表格行双击事件
 	    table.on('rowDouble(budgetLeftTable)', function(obj){
 	        obj.tr.addClass('layui-table-click').siblings().removeClass('layui-table-click');
@@ -691,7 +700,7 @@ function load(){
 	        };
 	        yearBudgetRightTable(params);
 	    });
-	
+
 	});
 }
 
@@ -706,7 +715,7 @@ var editTotal = function(id,type){
 			maxmin : false,
 			shadeClose : false, // 点击遮罩关闭层
 			area : [ '1000px', '600px' ],
-			content : path + 'webpage/budget/templates/budgetDashbord/totalBudget2.html?T_P_ID=' + 
+			content : path + 'webpage/budget/templates/budgetDashbord/totalBudget2.html?T_P_ID=' +
 				budgetTotalObj.ID + "&FUNDS_TYPE=" + budgetTotalObj.code + "&ysId=" + id
 		});
     }else if(type == 2){
@@ -717,11 +726,11 @@ var editTotal = function(id,type){
     	        maxmin : false,
     	        shadeClose : false, // 点击遮罩关闭层
     	        area : [ '1000px', '600px' ],
-    	        content : path + 'webpage/budget/templates/budgetDashbord/yearBudget.html?T_P_ID=' + 
+    	        content : path + 'webpage/budget/templates/budgetDashbord/yearBudget.html?T_P_ID=' +
             	budgetTotalObj.ID + "&FUNDS_TYPE=" + budgetTotalObj.code  + "&ysId=" + id
     	    });
     }
-   
+
     layer.full(index);
 };
 var xzFundData;
@@ -742,12 +751,12 @@ var editSchool = function(id){
         	xzFundData.APPLY_YEAR = r.APPLY_YEAR;
         	xzFundData.NUM = r.NUM;
         	openLaye();
-        	
+
         }
     });
 	function openLaye(){
-		
-		var html = 
+
+		var html =
 		'<div class="layui-form-item"> '+
 		'	<label class="layui-form-label">协作费:</label>'+
 		'	<div class="layui-input-block">'+
@@ -783,7 +792,7 @@ var editSchool = function(id){
 			,yes: function(a,b){
 				var schoolMenoy = Number(b.find("#schoolMenoy").val());
 				var allotMenoy = Number(b.find("#allotMenoy").val());
-				
+
 				if(schoolMenoy < 0 ){
 					layer.msg("分配金额大于协作费");
 				}else if(allotMenoy > xzFundData.KFP){
@@ -829,7 +838,7 @@ var editSchool = function(id){
 	        	isExdit: false
     		};
 		}
-		
+
 		$.ajax({
 	        url : path + "ysController.do?saveOrUpdateXZFunds",
 	        type : "post",
@@ -843,7 +852,7 @@ var editSchool = function(id){
 	        }
 	    });
 	}
-	
+
 }
 
 // 删除总预算
@@ -913,7 +922,7 @@ var editYear = function(id){
         maxmin : false,
         shadeClose : false, // 点击遮罩关闭层
         area : [ '900px', '400px' ],
-        content : path + 'webpage/budget/templates/budgetDashbord/yearBudget.html?T_P_ID=' + 
+        content : path + 'webpage/budget/templates/budgetDashbord/yearBudget.html?T_P_ID=' +
         	budgetTotalObj.ID + "&ysId=" + id
     });
     layer.full(index);
